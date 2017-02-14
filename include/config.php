@@ -50,10 +50,7 @@
 	define('CUTMATDIFF', '2');
 
 
-	define('DB_SERVER', 'localhost');
-	define('DB_SERVER_USERNAME', 'root');
-	define('DB_SERVER_PASSWORD', '');
-	define('DB_DATABASE', 'dynamic');
+	
 	define('USE_PCONNECT', 'false');
 	define('STORE_SESSIONS', 'mysql');
 	define('RECORDS_PER_PAGE',25);
@@ -67,6 +64,11 @@
 		define('DB_SERVER_PASSWORD', '123456');
 		define('DB_DATABASE', 'u646130367_dynam');
 		
+	}else{
+		define('DB_SERVER', 'localhost');
+		define('DB_SERVER_USERNAME', 'root');
+		define('DB_SERVER_PASSWORD', '');
+		define('DB_DATABASE', 'dynamic');
 	}
 	
 
