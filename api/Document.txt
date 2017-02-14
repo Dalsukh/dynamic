@@ -1,0 +1,69 @@
+Dynamic App(Android-iPhone) Api information
+
+we uses Same Table and API for user(Buyer) and merchant(Seller).
+For Register and Login.
+
+1.
+Register User or Buyer API
+Root URL http://p2d.esy.es/dynamic/api/usersRegister.php
+
+Created date:05-02-2017
+Created by: Dalsukh
+Argument:
+
+first_name
+last_name
+email
+mobile
+password
+city
+pincode
+latitude
+longitude
+
+Return: If Register Succesfully message success otherwise give fails message with errors.
+
+2.
+Login User or Buyer API
+Root URL http://p2d.esy.es/dynamic/api/usersLogin.php
+
+Created date:05-02-2017
+Created by: Dalsukh
+Argument:
+
+email
+password
+
+Return: Give Data of Users if Login Success Otherwise give appropriate error Message.
+
+
+getUserDetail
+
+
+  user_id
+  member_id
+  company_name
+  company_logo
+  job_title
+  email1
+  email2
+  website
+  address
+  city 
+  state
+  country
+  pincode
+  mobile1
+  mobile2
+  landline1
+  landline2
+  fax1
+  fax2
+  facebook
+  twitter
+  google 
+  youtube
+  merchant_type
+  business_type
+  additional_business
+

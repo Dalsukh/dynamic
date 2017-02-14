@@ -1,0 +1,93 @@
+[04-Feb-2017 23:41:13 Asia/Calcutta] PHP Warning:  include_once(include/AES.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\index.php on line 9
+[04-Feb-2017 23:41:13 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'include/AES.php' for inclusion (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\index.php on line 9
+[04-Feb-2017 23:41:13 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs/templates/main_page.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\index.php on line 38
+[04-Feb-2017 23:41:13 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs/templates/main_page.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\index.php on line 38
+[05-Feb-2017 00:09:39 Asia/Calcutta] PHP Warning:  include_once(include/AES.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\index.php on line 9
+[05-Feb-2017 00:09:39 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'include/AES.php' for inclusion (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\index.php on line 9
+[05-Feb-2017 00:09:39 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs/templates/main_page.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\index.php on line 38
+[05-Feb-2017 00:09:39 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs/templates/main_page.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\index.php on line 38
+[05-Feb-2017 00:31:41 Asia/Calcutta] PHP Deprecated:  Function ereg_replace() is deprecated in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 87
+[05-Feb-2017 00:31:41 Asia/Calcutta] PHP Fatal error:  Call to undefined function now() in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 10
+[05-Feb-2017 00:33:32 Asia/Calcutta] PHP Warning:  preg_replace(): Compilation failed: POSIX named classes are supported only within a class at offset 0 in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 89
+[05-Feb-2017 00:33:32 Asia/Calcutta] PHP Fatal error:  Call to undefined function now() in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 10
+[05-Feb-2017 00:33:45 Asia/Calcutta] PHP Fatal error:  Call to undefined function now() in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 10
+[05-Feb-2017 00:34:15 Asia/Calcutta] PHP Warning:  date() expects at least 1 parameter, 0 given in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 10
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: first_name in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: last_name in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 212
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Deprecated:  Function ereg() is deprecated in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 213
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 245
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 245
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: password in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: gender in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: pincode in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: latitude in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:42:21 Asia/Calcutta] PHP Notice:  Undefined index: longitude in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: first_name in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: last_name in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 212
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 245
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 245
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: password in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: gender in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: pincode in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: latitude in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:43:43 Asia/Calcutta] PHP Notice:  Undefined index: longitude in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: first_name in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: last_name in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 212
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 245
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 245
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: password in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: gender in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: pincode in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: latitude in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:45:33 Asia/Calcutta] PHP Notice:  Undefined index: longitude in E:\Xampp\htdocs\dynamic\validator\Validator.php on line 146
+[05-Feb-2017 00:50:31 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 39
+[05-Feb-2017 00:51:30 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 40
+[05-Feb-2017 00:51:41 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 41
+[05-Feb-2017 00:52:40 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 42
+[05-Feb-2017 00:53:28 Asia/Calcutta] PHP Fatal error:  Call to undefined function dump() in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 42
+[05-Feb-2017 01:11:59 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs/include/functions//functions.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\include\config.php on line 83
+[05-Feb-2017 01:11:59 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs/include/functions//functions.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\include\config.php on line 83
+[05-Feb-2017 01:13:30 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamicinclude/functions//functions.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\include\config.php on line 83
+[05-Feb-2017 01:13:30 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamicinclude/functions//functions.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\include\config.php on line 83
+[05-Feb-2017 01:13:39 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs/dynamic/include/functions//functions.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\include\config.php on line 83
+[05-Feb-2017 01:13:39 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs/dynamic/include/functions//functions.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\include\config.php on line 83
+[05-Feb-2017 01:14:41 Asia/Calcutta] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:04 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:04 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:04 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:04 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:04 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:04 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:04 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:04 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:04 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:15:18 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[05-Feb-2017 01:25:47 Asia/Calcutta] PHP Notice:  Undefined variable: json_encode in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 57
+[05-Feb-2017 01:25:47 Asia/Calcutta] PHP Fatal error:  Function name must be a string in E:\Xampp\htdocs\dynamic\api\usersRegister.php on line 57
+[05-Feb-2017 22:37:24 Asia/Calcutta] PHP Notice:  Undefined variable: email in E:\Xampp\htdocs\dynamic\api\usersLogin.php on line 24
+[05-Feb-2017 22:37:24 Asia/Calcutta] PHP Notice:  Undefined variable: password in E:\Xampp\htdocs\dynamic\api\usersLogin.php on line 24
+[05-Feb-2017 22:37:32 Asia/Calcutta] PHP Notice:  Undefined variable: email in E:\Xampp\htdocs\dynamic\api\usersLogin.php on line 24
+[05-Feb-2017 22:37:32 Asia/Calcutta] PHP Notice:  Undefined variable: password in E:\Xampp\htdocs\dynamic\api\usersLogin.php on line 24
