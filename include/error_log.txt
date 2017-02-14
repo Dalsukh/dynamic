@@ -91,3 +91,9 @@
 [05-Feb-2017 22:37:24 Asia/Calcutta] PHP Notice:  Undefined variable: password in E:\Xampp\htdocs\dynamic\api\usersLogin.php on line 24
 [05-Feb-2017 22:37:32 Asia/Calcutta] PHP Notice:  Undefined variable: email in E:\Xampp\htdocs\dynamic\api\usersLogin.php on line 24
 [05-Feb-2017 22:37:32 Asia/Calcutta] PHP Notice:  Undefined variable: password in E:\Xampp\htdocs\dynamic\api\usersLogin.php on line 24
+[14-Feb-2017 23:55:57 Asia/Calcutta] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 89
+[14-Feb-2017 23:55:58 Asia/Calcutta] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 89
+[14-Feb-2017 23:57:21 Asia/Calcutta] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 90
+[14-Feb-2017 23:57:21 Asia/Calcutta] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 90
+[14-Feb-2017 23:57:42 Asia/Calcutta] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 91
+[14-Feb-2017 23:57:42 Asia/Calcutta] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 91

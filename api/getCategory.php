@@ -12,6 +12,6 @@
 		}
 		$response = array("status"=>"success","data"=>$data);	
 	}else{
-		$response = array('status' => "fail","msg"=>"Please Login First");
+		$response = array('status' => "fail","msg"=>"No Category Found");
 	}		
 	echo json_encode($response);

@@ -57,7 +57,7 @@
 	
 	
 
-	if($_SERVER['HTTP_HOST'] !="http://dalsukhp.io")
+	if($_SERVER['HTTP_HOST'] !="dalsukhp.io")
 	{		
 		define('DB_SERVER', 'mysql.hostinger.in');
 		define('DB_SERVER_USERNAME', 'u646130367_dynam');
