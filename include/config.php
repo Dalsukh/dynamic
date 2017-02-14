@@ -57,14 +57,18 @@
 	define('USE_PCONNECT', 'false');
 	define('STORE_SESSIONS', 'mysql');
 	define('RECORDS_PER_PAGE',25);
+	
+	
 
-	/*
-	define('DB_SERVER', 'mysql.hostinger.in');
-	define('DB_SERVER_USERNAME', 'u646130367_dynam');
-	define('DB_SERVER_PASSWORD', '123456');
-	define('DB_DATABASE', 'u646130367_dynam');
-	*/
-
+	if($_SERVER['HTTP_HOST'] !="http://dalsukhp.io")
+	{		
+		define('DB_SERVER', 'mysql.hostinger.in');
+		define('DB_SERVER_USERNAME', 'u646130367_dynam');
+		define('DB_SERVER_PASSWORD', '123456');
+		define('DB_DATABASE', 'u646130367_dynam');
+		
+	}
+	
 
 	/*
 	u646130367_dynam	u646130367_dynam	mysql.hostinger.in	0.02
