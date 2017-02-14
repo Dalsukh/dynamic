@@ -31,7 +31,7 @@
 
     define('SITE_URL_INCLUDES', SITE_URL.'include/');
 	
-	define('DIR_FS',$_SERVER['DOCUMENT_ROOT']."dynamic/");
+	define('DIR_FS',$_SERVER['DOCUMENT_ROOT']."/dynamic/");
     define('DIR_FS_ADMIN',DIR_FS.'admin-cp/');
     define('DIR_FS_CSS', DIR_FS.'css/');
     define('DIR_FS_JS', DIR_FS.'js/');
@@ -76,7 +76,6 @@
 	u646130367_dynam	u646130367_dynam	mysql.hostinger.in	0.02
 	*/
 	
-
 	/*
 	$link=mysql_connect($host,$user,$pass) or 
 		die("Error To Connect".mysql_error());
@@ -99,5 +98,5 @@
 	$page_name=basename($_SERVER['PHP_SELF']);
 
 	require_once("../validator/Validator.php");
-	require_once(DIR_FS_INCLUDES_FUNCTION."/function.php");
+	require_once(DIR_FS_INCLUDES_FUNCTION."function.php");
 	
