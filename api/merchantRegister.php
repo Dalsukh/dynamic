@@ -12,13 +12,7 @@
 	CURRENT_TIMESTAMP()
 	insert into visits set source = '',col2='';
 	INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `mobile`, `password`, `gender`, `user_type`, `address`, `city`, `state`, `country`, `pincode`, `latitude`, `longitude`, `status`, `created_at`, `updated_at`, `deleted`) VALUES (NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', '');
-	*/
-
-	$validator->email("email");
-	$validator->filledIn("mobile");
-	$validator->filledIn("pincode");
-	$validator->filledIn("latitude");
-	$validator->filledIn("longitude");
+	*/	
 
 	$errors = $validator->getErrors();
 	$id = $validator->getId();

@@ -97,3 +97,9 @@
 [14-Feb-2017 23:57:21 Asia/Calcutta] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 90
 [14-Feb-2017 23:57:42 Asia/Calcutta] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 91
 [14-Feb-2017 23:57:42 Asia/Calcutta] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 91
+[15-Feb-2017 23:15:50 Asia/Calcutta] PHP Warning:  require_once(header.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 2
+[15-Feb-2017 23:15:50 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'header.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 2
+[15-Feb-2017 23:16:24 Asia/Calcutta] PHP Warning:  require_once(header.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 2
+[15-Feb-2017 23:16:24 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'header.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 2
+[15-Feb-2017 23:17:09 Asia/Calcutta] PHP Fatal error:  Call to undefined method mysqli::re_db_query() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\index.tpl.php on line 27
+[15-Feb-2017 23:17:50 Asia/Calcutta] PHP Fatal error:  Call to undefined method mysqli::re_db_query() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\index.tpl.php on line 27
