@@ -648,9 +648,9 @@ function sendMail($from="parmar.dalsukh@gmail.com",$to="",$subject="")
 	//Tell PHPMailer to use SMTP
 	//$mail->isSendmail();
 	$mail->isSMTP();
-	$mail->Host = 'localhost';
-	
-	
+	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+	$mail->SMTPAuth = false;                              
+		
 	//Set who the message is to be sent from
 	$mail->setFrom($from, 'Dalsukh Parmar');
 	
