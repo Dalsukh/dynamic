@@ -19,7 +19,7 @@
 
 		$to = $_REQUEST['email'];
 		$subject = "This is Test Mail";
-		$result = sendMail($from="parmar.dalsukh@gmail.com",$to,$subject="")
+		$result = sendMail($from="parmar.dalsukh@gmail.com",$to,$subject="");
 		echo json_encode($result);
 	}
 ?>
