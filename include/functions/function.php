@@ -648,7 +648,7 @@ function sendMail($from="parmar.dalsukh@gmail.com",$to="",$subject="")
 	//Tell PHPMailer to use SMTP
 	//$mail->isSendmail();
 	$mail->isSMTP();
-	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+	$mail->Host = 'mx1.hostinger.nl';  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = false;                              
 
 	$mail->Port = 587;
