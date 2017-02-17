@@ -1,3 +1,62 @@
+<?php
+    require_once("../include/config.php");
+    require_once("./GUMP/gump.class.php");
+    $errors = array(
+            "first_name"=>"",
+            "last_name"=>"",
+            "email"=>"",
+            "mobile"=>"",
+            "password"=>"",
+            "confirm_password"=>""
+            );
+    $data = array(
+            "first_name"=>"",
+            "last_name"=>"",
+            "email"=>"",
+            "mobile"=>"",
+            );
+    $message = "";
+
+    if(isset($_POST['Register'])){
+
+        $gump = new GUMP();
+        
+        $gump->validation_rules(array(
+        'first_name'  => 'required|alpha_numeric',
+        'last_name'   => 'required|alpha_numeric',
+        "mobile" => "required|numeric|min_len,10",
+        'password'    => 'required|max_len,100',
+        'confirm_password'    => 'confirm,password',
+        'email'       => 'required|valid_email',    
+        ));
+
+        
+        $validated_data = $gump->run($_POST);
+
+        if($validated_data === false) {
+
+        $result = $gump->get_errors_array();
+        $errors =array_merge($errors,$result);
+        $data = $_POST;
+
+        } else {
+
+        $INSERT = "INSERT INTO super_admin (`id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `status`, `created_at`, `updated_at`, `deleted`)
+             VALUES 
+             (NULL, '".re_db_input($_POST['first_name'],$db)."',
+                    '".re_db_input($_POST['last_name'],$db)."',
+                    '".re_db_input($_POST['email'],$db)."',
+                    '".md5(re_db_input($_POST['password'],$db))."',
+                    '".re_db_input($_POST['mobile'],$db)."',
+                    '1',CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP(), '0');";
+        $result = mysqli_query($db,$INSERT);
+        $message = "Record Insert Successfully";
+        }
+        
+        
+    }
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,32 +82,59 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+    <style>
+    .errors{
+        font-weight: bold;
+        color: #FF0000;
+    }
+    </style>
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="./index.php"><b>Dynamic</b> Dashboard</a>
   </div>
-
+    <?php if(!empty($message)) { ?>
+    
+    <div class="alert alert-dissmable alert-success"><?php echo $message; ?></div>
+    <?php } ?>
   <div class="register-box-body">
     <p class="login-box-msg">Register a new membership</p>
 
-    <form action="../../index.html" method="post">
+    <form action="register.php" method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Full name">
+        <input type="text" class="form-control" placeholder="First name" name="first_name" 
+        value="<?php echo $data['first_name']; ?>">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        <span class="errors"><?php echo $errors['first_name'];?></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="text" class="form-control" placeholder="Last Name" name="last_name"
+        value="<?php echo $data['last_name']; ?>">
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        <span class="errors"><?php echo $errors['last_name'];?></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="email" class="form-control" placeholder="Email" name="email"
+        value="<?php echo $data['email']; ?>">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <span class="errors"><?php echo $errors['email'];?></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="text" class="form-control" placeholder="Mobile" name="mobile"
+        value="<?php echo $data['mobile']; ?>">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <span class="errors"><?php echo $errors['mobile'];?></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Password" name="password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        <span class="errors"><?php echo $errors['password'];?></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Retype password">
+        <input type="password" class="form-control" placeholder="Retype password" name="confirm_password">
         <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+        <span class="errors"><?php echo $errors['confirm_password'];?></span>
       </div>
       <div class="row">
         <div class="col-xs-8">
@@ -60,13 +146,11 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+          <button type="submit" name="Register" class="btn btn-primary btn-block btn-flat">Register</button>
         </div>
         <!-- /.col -->
       </div>
     </form>
-
-    
     <a href="login.php" class="text-center">I already have a membership</a>
   </div>
   <!-- /.form-box -->

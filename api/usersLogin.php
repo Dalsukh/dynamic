@@ -21,7 +21,7 @@
 		$email = $_REQUEST['email'];
 		$password = $_REQUEST['password'];
 
-		$select = "SELECT * FROM users WHERE (email='$email' OR mobile='$email') AND password='".md5(re_db_input($password))."'";
+		$select = "SELECT * FROM users WHERE (email='$email' OR mobile='$email') AND password='".md5(re_db_input($password,$db))."'";
 		$result = mysqli_query($db,$select);	
 		if($result && mysqli_num_rows($result)){
 			$row = $row=mysqli_fetch_assoc($result);

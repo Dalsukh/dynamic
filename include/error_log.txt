@@ -103,3 +103,36 @@
 [15-Feb-2017 23:16:24 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'header.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 2
 [15-Feb-2017 23:17:09 Asia/Calcutta] PHP Fatal error:  Call to undefined method mysqli::re_db_query() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\index.tpl.php on line 27
 [15-Feb-2017 23:17:50 Asia/Calcutta] PHP Fatal error:  Call to undefined method mysqli::re_db_query() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\index.tpl.php on line 27
+[16-Feb-2017 23:14:50 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'Exception' with message 'Validator method 'validate_min_len4' does not exist.' in E:\Xampp\htdocs\dynamic\admin-cp\GUMP\gump.class.php:405
+Stack trace:
+#0 E:\Xampp\htdocs\dynamic\admin-cp\GUMP\gump.class.php(250): GUMP->validate(Array, Array)
+#1 E:\Xampp\htdocs\dynamic\admin-cp\register.php(25): GUMP->run(Array)
+#2 {main}
+  thrown in E:\Xampp\htdocs\dynamic\admin-cp\GUMP\gump.class.php on line 405
+[16-Feb-2017 23:14:59 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'Exception' with message 'Validator method 'validate_min_len4' does not exist.' in E:\Xampp\htdocs\dynamic\admin-cp\GUMP\gump.class.php:405
+Stack trace:
+#0 E:\Xampp\htdocs\dynamic\admin-cp\GUMP\gump.class.php(250): GUMP->validate(Array, Array)
+#1 E:\Xampp\htdocs\dynamic\admin-cp\register.php(25): GUMP->run(Array)
+#2 {main}
+  thrown in E:\Xampp\htdocs\dynamic\admin-cp\GUMP\gump.class.php on line 405
+[16-Feb-2017 23:27:31 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 25
+[16-Feb-2017 23:40:19 Asia/Calcutta] PHP Notice:  Undefined variable: field_class in E:\Xampp\htdocs\dynamic\admin-cp\GUMP\gump.class.php on line 699
+[16-Feb-2017 23:43:31 Asia/Calcutta] PHP Notice:  Undefined index: first_name in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 83
+[16-Feb-2017 23:44:01 Asia/Calcutta] PHP Notice:  Undefined index: first_name in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 84
+[16-Feb-2017 23:44:51 Asia/Calcutta] PHP Notice:  Undefined index: first_name in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 80
+[17-Feb-2017 00:00:11 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[17-Feb-2017 00:00:11 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[17-Feb-2017 00:00:11 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[17-Feb-2017 00:00:11 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 40
+[17-Feb-2017 00:00:11 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[17-Feb-2017 00:00:48 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[17-Feb-2017 00:00:48 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[17-Feb-2017 00:00:48 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[17-Feb-2017 00:00:48 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[17-Feb-2017 00:00:48 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 40
+[17-Feb-2017 00:00:48 Asia/Calcutta] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 195
+[17-Feb-2017 00:02:03 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 40
+[17-Feb-2017 00:03:02 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 40
+[17-Feb-2017 00:03:02 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 109
+[17-Feb-2017 00:03:25 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 41
+[17-Feb-2017 00:23:54 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ')' in E:\Xampp\htdocs\dynamic\admin-cp\GUMP\gump.class.php on line 1141
