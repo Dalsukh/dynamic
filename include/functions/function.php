@@ -650,6 +650,8 @@ function sendMail($from="parmar.dalsukh@gmail.com",$to="",$subject="")
 	$mail->isSMTP();
 	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = false;                              
+
+	$mail->Port = 587;
 		
 	//Set who the message is to be sent from
 	$mail->setFrom($from, 'Dalsukh Parmar');
