@@ -705,4 +705,18 @@ function sendMail($from="parmar.dalsukh@gmail.com",$to="",$subject="")
 	}
 	return $return;
 }
+function otherMail()
+{
+
+
+$to      = 'dalsukhp15.iipl@gmail.com';
+$subject = 'the subject';
+$message = 'hello';
+$headers = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+return mail($to, $subject, $message, $headers);
+}
+ 
 ?>

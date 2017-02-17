@@ -19,7 +19,8 @@
 
 		$to = $_REQUEST['email'];
 		$subject = "This is Test Mail";
-		$result = sendMail($from="parmar.dalsukh@gmail.com",$to,$subject="");
-		echo json_encode($result);
+		//$result = sendMail($from="parmar.dalsukh@gmail.com",$to,$subject="");
+		vardum(otherMail());
+		//echo json_encode($result);
 	}
 ?>
