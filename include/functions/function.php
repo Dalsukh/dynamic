@@ -736,7 +736,7 @@ function forgotPassword($email,$db="")
 
 
 	$INSERT = "INSERT INTO password_resets (`user_id`,`email`, `token`, `created_at`)
-				VALUES ('".$row['id']."',$email', '$token', CURRENT_TIMESTAMP());";
+				VALUES ('".$row['id']."','$email', '$token', CURRENT_TIMESTAMP());";
 	$result = mysqli_query($db,$INSERT);
 
 	$message = '<html>

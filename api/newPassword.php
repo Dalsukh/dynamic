@@ -18,6 +18,7 @@
 
 	
 	if(count($errors)==0){
+		$token = $_REQUEST['token'];
 		$SELECT = "SELECT * FROM  password_resets  WHERE token = '$token'";
 
 		$result = mysqli_query($db,$SELECT);
