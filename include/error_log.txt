@@ -137,3 +137,7 @@ Stack trace:
 [17-Feb-2017 00:03:25 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\admin-cp\register.php on line 41
 [17-Feb-2017 00:23:54 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ')' in E:\Xampp\htdocs\dynamic\admin-cp\GUMP\gump.class.php on line 1141
 [18-Feb-2017 08:16:47 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$headers' (T_VARIABLE) in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 713
+[18-Feb-2017 08:29:29 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$headers' (T_VARIABLE) in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 713
+[18-Feb-2017 08:29:34 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$headers' (T_VARIABLE) in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 713
+[18-Feb-2017 08:30:14 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 739
+[18-Feb-2017 08:30:34 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$message' (T_VARIABLE) in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 770
