@@ -97,7 +97,7 @@
 
 	$page_name=basename($_SERVER['PHP_SELF']);
 
-	require_once("../validator/Validator.php");
-	require_once("../PHPMailer/PHPMailerAutoload.php");
+	require_once(DIR_FS."/validator/Validator.php");
+	require_once(DIR_FS."/PHPMailer/PHPMailerAutoload.php");
 	require_once(DIR_FS_INCLUDES_FUNCTION."function.php");
 	

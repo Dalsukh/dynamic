@@ -32,7 +32,7 @@
 		}		
 		echo json_encode($response);		
 	}else{
-		$response = array('status' => "fail");
+		$response = array('status' => "fail","msg"=>"Please Provide Correct Data");
 		foreach($errors as $key => $value) {
 			if(strstr($key, "|")) {
 				$key = str_replace("|", " and ", $key);

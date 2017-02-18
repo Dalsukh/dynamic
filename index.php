@@ -6,7 +6,8 @@
 					With Only One Form for Insert And Update
 	 */
 	require_once("include/config.php");
-	include_once('include/AES.php');
+	
+	
 	
 	
 	

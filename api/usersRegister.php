@@ -48,14 +48,14 @@
 		$insert .="status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
 		$result = mysqli_query($db,$insert);
 		if($result){
-			$response = array("status"=>"success","msg"=>"Users Register Successfully");	
+			$response = array("status"=>"success","msg"=>"User Register Successfully");	
 		}else{
-			$response = array('status' => "fail");
+			$response = array('status' => "fail","msg"=>"User Registeration Fail");
 		}
 		
 		echo json_encode($response);		
 	}else{
-		$response = array('status' => "fail");
+		$response = array('status' => "fail","msg"=>"User Registeration Fail");
 		foreach($errors as $key => $value) {
 			if(strstr($key, "|")) {
 				$key = str_replace("|", " and ", $key);

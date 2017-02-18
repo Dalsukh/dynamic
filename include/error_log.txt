@@ -141,3 +141,17 @@ Stack trace:
 [18-Feb-2017 08:29:34 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$headers' (T_VARIABLE) in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 713
 [18-Feb-2017 08:30:14 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 739
 [18-Feb-2017 08:30:34 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$message' (T_VARIABLE) in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 770
+[18-Feb-2017 23:22:07 Asia/Calcutta] PHP Warning:  require_once(../validator/Validator.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\include\config.php on line 100
+[18-Feb-2017 23:22:07 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required '../validator/Validator.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\include\config.php on line 100
+[18-Feb-2017 23:23:22 Asia/Calcutta] PHP Warning:  require_once(/validator/Validator.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\include\config.php on line 100
+[18-Feb-2017 23:23:22 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required '/validator/Validator.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\include\config.php on line 100
+[18-Feb-2017 23:23:29 Asia/Calcutta] PHP Warning:  require_once(/validator/Validator.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\include\config.php on line 100
+[18-Feb-2017 23:23:29 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required '/validator/Validator.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\include\config.php on line 100
+[18-Feb-2017 23:24:13 Asia/Calcutta] PHP Warning:  include_once(include/AES.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\index.php on line 9
+[18-Feb-2017 23:24:13 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'include/AES.php' for inclusion (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\index.php on line 9
+[18-Feb-2017 23:24:13 Asia/Calcutta] PHP Notice:  Undefined variable: your_user_login in E:\Xampp\htdocs\dynamic\index.php on line 11
+[18-Feb-2017 23:24:13 Asia/Calcutta] PHP Fatal error:  Call to undefined method mysqli::re_db_query() in E:\Xampp\htdocs\dynamic\templates\content\index.tpl.php on line 27
+[18-Feb-2017 23:25:01 Asia/Calcutta] PHP Warning:  include_once(include/AES.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\index.php on line 9
+[18-Feb-2017 23:25:01 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'include/AES.php' for inclusion (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\index.php on line 9
+[18-Feb-2017 23:25:01 Asia/Calcutta] PHP Notice:  Undefined variable: your_user_login in E:\Xampp\htdocs\dynamic\index.php on line 11
+[18-Feb-2017 23:25:12 Asia/Calcutta] PHP Notice:  Undefined variable: your_user_login in E:\Xampp\htdocs\dynamic\index.php on line 10
