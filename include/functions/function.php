@@ -710,7 +710,7 @@ function simpleMail($from="parmar.dalsukh@gmail.com",$to="",$subject="",$body=""
 
 	$to = $to;
 	$subject = $subject;
-	$headers = "From: " . strip_tags($from) . "\r\n";
+	$headers = "From: Dynamic <" . strip_tags($from) . ">\r\n";
 	//$headers .= "Reply-To: ". strip_tags($from) . "\r\n";
 	//$headers .= "CC: susan@example.com\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
@@ -734,8 +734,9 @@ function forgotPassword($email,$db="")
 	$row =mysqli_fetch_assoc($result);
 	$token = generateRandomString();
 
-	$INSERT = "INSERT INTO password_resets (`email`, `token`, `created_at`)
-				VALUES ('$email', '$token', CURRENT_TIMESTAMP());";
+
+	$INSERT = "INSERT INTO password_resets (`user_id`,`email`, `token`, `created_at`)
+				VALUES ('".$row['id']."',$email', '$token', CURRENT_TIMESTAMP());";
 	$result = mysqli_query($db,$INSERT);
 
 	$message = '<html>
