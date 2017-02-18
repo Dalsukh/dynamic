@@ -724,7 +724,7 @@ function simpleMail($from="parmar.dalsukh@gmail.com",$to="",$subject="",$body=""
 	return mail($to, $subject, $message, $headers);
 }
 
-function forgotPassword($email)
+function forgotPassword($email,$db="")
 {
 	$return = array();
 	$select = "SELECT * FROM users WHERE email='$email'";

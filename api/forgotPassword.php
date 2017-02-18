@@ -10,17 +10,14 @@
 	
 	
 	$validator->email("email");	
-	$validator->filledIn("password");
 	$errors = $validator->getErrors();
 	$id = $validator->getId();
-
 	
 	if(count($errors)==0){
 
-		$to = $_REQUEST['email'];
-		$subject = "This is Test Mail";
-		//$result = sendMail($from="parmar.dalsukh@gmail.com",$to,$subject="");
-		$result = forgotPassword();
-		//echo json_encode($result);
+		$email = $_REQUEST['email'];
+
+		$result = forgotPassword($email,$db);
+		echo json_encode($result);
 	}
 ?>
