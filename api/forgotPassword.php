@@ -20,7 +20,7 @@
 		$to = $_REQUEST['email'];
 		$subject = "This is Test Mail";
 		//$result = sendMail($from="parmar.dalsukh@gmail.com",$to,$subject="");
-		vardum(otherMail());
+		$result = forgotPassword();
 		//echo json_encode($result);
 	}
 ?>

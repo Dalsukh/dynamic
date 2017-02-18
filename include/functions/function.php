@@ -705,18 +705,90 @@ function sendMail($from="parmar.dalsukh@gmail.com",$to="",$subject="")
 	}
 	return $return;
 }
-function otherMail()
+function simpleMail($from="parmar.dalsukh@gmail.com",$to="",$subject="",$body="")
 {
 
+	$to = $to;
+	$subject = $subject
+	$headers = "From: " . strip_tags($from) . "\r\n";
+	//$headers .= "Reply-To: ". strip_tags($from) . "\r\n";
+	//$headers .= "CC: susan@example.com\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$headers .= 'X-Mailer: PHP/' . phpversion();
 
-$to      = 'dalsukhp15.iipl@gmail.com';
-$subject = 'the subject';
-$message = 'hello';
-$headers = 'From: webmaster@example.com' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+	$message = $body;
 
-return mail($to, $subject, $message, $headers);
+	
+
+	return mail($to, $subject, $message, $headers);
+}
+
+function forgotPassword($email)
+{
+	$return = array();
+	$select = "SELECT * FROM users WHERE email='$email'";
+	$result = mysqli_query($db,$select);	
+	if($result && mysqli_num_rows($result)){
+
+	$row =mysqli_fetch_assoc($result);
+	$token = generateRandomString();
+
+	$INSERT = "INSERT INTO password_resets (`email`, `token`, `created_at`)
+				VALUES ('$email', '$token', CURRENT_TIMESTAMP());"
+	$result = mysqli_query($db,$INSERT);
+
+	$message = '<html>
+				<head>
+				<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+				</head>
+				<body>';
+	$message .='<div class="row">
+					<div class="col-md-6">
+						<br/><br/>
+						Hi '.$row['full_name'].' <br/>
+						Your password reset token is : '.$token.'
+						<br/>
+						Thanks & Regards
+						Dynamic		
+					</div>
+				</div>'
+
+	
+	
+	/*$addURLS = $_POST['addURLS'];
+	if (($addURLS) != '') {
+	    $message .= "<tr><td><strong>URL To Change (additional):</strong> </td><td>" . strip_tags($addURLS) . "</td></tr>";
+	}*/
+	/*$curText = htmlentities($_POST['curText']);           
+	if (($curText) != '') {
+	    $message .= "<tr><td><strong>CURRENT Content:</strong> </td><td>" . $curText . "</td></tr>";
+	}
+	$message .= "<tr><td><strong>NEW Content:</strong> </td><td>" . htmlentities($_POST['newText']) . "</td></tr>";
+	$message .= "</table>";*/
+	$message .= '<img src="'.SITE_URL.'/images/full_logo_small.png" alt="Dynamic" />';
+	$message .= "</body></html>";
+
+	simpleMail($from="no-reply@p2d.esy.es",$to=$email,$subject="Forgot Password - Dynamic",$message);	
+	$return = array('status' => "success","msg"=>"Email send success");
+	return $return;
+
+	}
+	else{
+		$return = array('status' => "fail","msg"=>"Email not found");
+		return $return;
+	}
+	
+}
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
 }
  
 ?>
