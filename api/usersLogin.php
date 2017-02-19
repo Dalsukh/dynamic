@@ -8,47 +8,29 @@
 		exit;
 	}
 	
-	
-	$validator->email("email");	
-	$validator->filledIn("password");
-	
-	$errors = $validator->getErrors();
-	$id = $validator->getId();
+	$gump = new GUMP($db);
+	$errors = array();
+    
+    $gump->validation_rules(array(
+    'email'      => 'required',    
+    'password'   => 'required',
+    ));
+    
+    $validated_data = $gump->run($_REQUEST);
 
+
+    if($validated_data === false) {
+    	$errors = $gump->get_errors_array();
+	}        
 	
 	if(count($errors)==0){
 
-		$email = $_REQUEST['email'];
-		$password = $_REQUEST['password'];
-
-		$select = "SELECT * FROM users WHERE (email='$email' OR mobile='$email') AND password='".md5(re_db_input($password,$db))."'";
-		$result = mysqli_query($db,$select);	
-		if($result && mysqli_num_rows($result)){
-			$row = $row=mysqli_fetch_assoc($result);
-
-			$response = array("status"=>"success","data"=>$row);	
-		}else{
-			$response = array('status' => "fail","msg"=>"Wrong email or password");
-		}		
+		$user = new User($db);
+		$response=$user->login();
 		echo json_encode($response);		
 	}else{
 		$response = array('status' => "fail","msg"=>"Please Provide Correct Data");
-		foreach($errors as $key => $value) {
-			if(strstr($key, "|")) {
-				$key = str_replace("|", " and ", $key);
 
-			}
-			$field = str_replace("_", " ", $key);
-			$response[$key] = $field . " field required";
-			//echo "<b>Error $value:</b> on field $key<br>";			
-			
-		}
+		$response['errors'] = $errors;
 		echo json_encode($response);
 	}
-
-
-		
-
-
-
-

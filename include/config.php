@@ -46,6 +46,7 @@
     define('ALLOWED_DAYS',30);
     
     define('DIR_FS_INCLUDES_FUNCTION',DIR_FS_INCLUDES.'functions/');
+    define('DIR_FS_INCLUDES_CLASS',DIR_FS_INCLUDES.'class/');
 
 	define('CUTMATDIFF', '2');
 
@@ -100,4 +101,7 @@
 	require_once(DIR_FS."/validator/Validator.php");
 	require_once(DIR_FS."/PHPMailer/PHPMailerAutoload.php");
 	require_once(DIR_FS_INCLUDES_FUNCTION."function.php");
+	require_once(DIR_FS_INCLUDES_CLASS."User.php");
+	require_once(DIR_FS_INCLUDES_CLASS."GUMP.php");
+	require_once(DIR_FS_INCLUDES."QR/qrlib.php");
 	

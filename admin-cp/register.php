@@ -1,6 +1,5 @@
 <?php
-    require_once("../include/config.php");
-    require_once("./GUMP/gump.class.php");
+    require_once("../include/config.php");    
     $errors = array(
             "first_name"=>"",
             "last_name"=>"",
@@ -24,9 +23,9 @@
         $gump->validation_rules(array(
         'first_name'  => 'required|alpha_numeric',
         'last_name'   => 'required|alpha_numeric',
-        "mobile" => "required|numeric|min_len,10",
-        'password'    => 'required|max_len,100',
-        'confirm_password'    => 'confirm,password',
+        "mobile" => "required|numeric|min_len:10",
+        'password'    => 'required|max_len:100',
+        'confirm_password'    => 'confirm:password',
         'email'       => 'required|valid_email',    
         ));
 

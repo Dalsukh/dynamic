@@ -12,7 +12,7 @@
 <form action="usersRegister.php">
 	<?php
 
-		$fields = array('first_name', 'last_name', 'email', 'mobile', 'password', 'gender', 'user_type', 'address', 'city', 'state', 'country', 'pincode', 'latitude', 'longitude',);
+		$fields = array('full_name', 'email', 'mobile', 'password', 'gender', 'user_type', 'address', 'city', 'state', 'country', 'pincode', 'latitude', 'longitude',);
 		foreach ($fields as $key => $value) {
 			echo $value;
 			echo "<input type='text' name='$value'>";
