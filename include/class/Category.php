@@ -11,6 +11,25 @@ class Category
         $this->db=$db;
         $this->table = "category";
     }
+    public function index($where = array())
+    {
+    	$select = "SELECT * FROM category  WHERE deleted='0'";
+		$result = mysqli_query($this->db,$select);	
+		$data = array();
+		$response = array();
+		if($result && mysqli_num_rows($result)){
+			while($row=mysqli_fetch_assoc($result))
+			{
+				$row['image'] = SITE_URL."images/Category/".$row['logo'];
+				$row['thumb'] = SITE_URL."images/Category/Thumb/".$row['logo'];
+				$data[]=$row;
+			}
+			$response = array("status"=>"success","data"=>$data);	
+		}else{
+			$response = array('status' => "fail","msg"=>"No Category Found");
+		}
+		return $response;
+    }
 	public function store($data = array())
 	{
 		$insert = "INSERT INTO category SET ";

@@ -13,7 +13,7 @@
 	}
 
 	date_default_timezone_set ("Asia/Calcutta");
-	define('HTTP_SERVER', "http://".$_SERVER['HTTP_HOST'].'/dynamic'); 
+	define('HTTP_SERVER', "http://".$_SERVER['HTTP_HOST'].'/dynamic/'); 
 	define('HTTPS_SERVER', '');
 	define('ENABLE_SSL', false);
 	define('HTTP_COOKIE_DOMAIN', HTTP_SERVER);
