@@ -48,6 +48,8 @@ class User
     public function store($data = array())
     {
 
+        $otp = mt_rand(1000,9999);
+
         $insert = "INSERT INTO users SET ";
         foreach($_REQUEST as $key=>$val){
             if($key == 'password')
@@ -58,7 +60,8 @@ class User
             }
         }
         //$insert .= "state='GUJARAT', country='INDIA',";
-        $insert .="status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
+        $insert .="otp='$otp', status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
+
         $result = mysqli_query($this->db,$insert);
         
         $user_id = mysqli_insert_id($this->db);
@@ -89,8 +92,8 @@ class User
             VALUES 
             (NULL, '$user_id', '$member_id', '$member_qr_code',
             '', '', '',
-            '".$data['email']."', '', '', '', '".$data['city']."', 'GUJARAT', 'INDIA', 
-            '".$data['pincode']."',
+            'first@mail.com', '', '', '', 'Rajkot', 'GUJARAT', 'INDIA', 
+            '360001',
             '".$data['mobile']."', '', '', '', '', '', 
             'facebook.com', 'twitter.com', 'google.com', 'youtube.com', 'FREE', '',
             '', '', '',
@@ -100,7 +103,8 @@ class User
 
 
         if($result){
-            $response = array("status"=>"success","msg"=>"User Register Successfully"); 
+            $response = array("status"=>"success","msg"=>"User Register Successfully",
+                "data"=>array("user_id"=>$user_id)); 
         }else{
             $response = array('status' => "fail","msg"=>"User Registeration Fail");
         }
@@ -128,7 +132,17 @@ class User
      */
     public function update($data=array(),$id)
     {
-        
+        $update = "UPDATE users SET ";
+        foreach($data as $key=>$val)
+        {
+            $update.="$key = '".$val."',";           
+
+        }
+        $update.="updated_at = CURRENT_TIMESTAMP";
+        $update.=" WHERE id='$id'";
+
+        $result = mysqli_query($this->db,$update);
+        return $result;
     }
 
     /**
@@ -141,4 +155,43 @@ class User
     {
         
     }
+    public function verifyOTP($user_id,$otp)
+    {
+        $user_id = $_REQUEST['user_id'];
+        $otp = $_REQUEST['otp'];
+        $response = array();
+        
+        echo $select = "SELECT * FROM users WHERE id = '$user_id' AND otp='$otp'";
+        $result = mysqli_query($this->db,$select);    
+        if($result && mysqli_num_rows($result)){
+            $row = $row=mysqli_fetch_assoc($result);
+
+            $update_data = array('mobile_verified' => "1");
+            $this->update($update_data,$user_id);
+
+            $response = array("status"=>"success","msg"=>"OTP Verify success","data"=>$row);    
+        }else{
+            $response = array('status' => "fail","msg"=>"Wrong OTP");
+        } 
+        return $response;
+    }
 }
+/*
+if(!empty($_FILES['image']['name'])){
+    
+    //call thumbnail creation function and store thumbnail name
+    $upload_img = cwUpload('image','uploads/','',TRUE,'uploads/thumbs/','200','160');
+    
+    //full path of the thumbnail image
+    $thumb_src = 'uploads/thumbs/'.$upload_img;
+    
+    //set success and error messages
+    $message = $upload_img?"<span style='color:#008000;'>Image thumbnail have been created successfully.</span>":"<span style='color:#F00000;'>Some error occurred, please try again.</span>";
+    
+}else{
+    
+    //if form is not submitted, below variable should be blank
+    $thumb_src = '';
+    $message = '';
+}
+*/

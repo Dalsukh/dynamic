@@ -13,11 +13,11 @@
     
     $gump->validation_rules(array(
     'full_name'  => 'required',
-    'email'      => 'valid_email|unique:users',    
+    //'email'      => 'valid_email|unique:users',    
     "mobile" 	 => "required|numeric|min_len:10|unique:users",
     'password'   => 'required|max_len:100',
-    'city'		 => "required",
-    "pincode"    => "required",
+    //'city'		 => "required",
+    //"pincode"    => "required",
     ));
     
     $validated_data = $gump->run($_REQUEST);
