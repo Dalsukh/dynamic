@@ -194,3 +194,5 @@ Stack trace:
 [22-Feb-2017 23:21:46 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\api\forgotPassword.php on line 45
 [22-Feb-2017 23:21:49 Asia/Calcutta] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 724
 [22-Feb-2017 23:22:28 Asia/Calcutta] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 724
+[23-Feb-2017 00:53:09 Asia/Calcutta] PHP Notice:  Undefined variable: subCategory in E:\Xampp\htdocs\dynamic\api\getSubCategory.php on line 22
+[23-Feb-2017 00:53:09 Asia/Calcutta] PHP Fatal error:  Call to a member function index() on null in E:\Xampp\htdocs\dynamic\api\getSubCategory.php on line 22
