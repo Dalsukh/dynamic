@@ -188,3 +188,9 @@ Stack trace:
 [21-Feb-2017 00:32:33 Asia/Calcutta] PHP Fatal error:  Class 'Category' not found in E:\Xampp\htdocs\dynamic\admin-cp\addCategory.php on line 6
 [21-Feb-2017 00:52:49 Asia/Calcutta] PHP Notice:  Undefined variable: db in E:\Xampp\htdocs\dynamic\include\class\Category.php on line 17
 [21-Feb-2017 00:52:49 Asia/Calcutta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in E:\Xampp\htdocs\dynamic\include\class\Category.php on line 17
+[22-Feb-2017 23:20:34 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';', expecting '{' in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 727
+[22-Feb-2017 23:21:01 Asia/Calcutta] PHP Fatal error:  Non-abstract method User::forgotPassword() must contain body in E:\Xampp\htdocs\dynamic\include\class\User.php on line 180
+[22-Feb-2017 23:21:37 Asia/Calcutta] PHP Fatal error:  Non-abstract method User::forgotPassword() must contain body in E:\Xampp\htdocs\dynamic\include\class\User.php on line 180
+[22-Feb-2017 23:21:46 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\api\forgotPassword.php on line 45
+[22-Feb-2017 23:21:49 Asia/Calcutta] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 724
+[22-Feb-2017 23:22:28 Asia/Calcutta] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 724

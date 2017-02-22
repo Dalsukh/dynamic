@@ -175,23 +175,75 @@ class User
         } 
         return $response;
     }
+
+
+    public function forgotPassword($mobile,$email,$db)
+    {
+        $return = array();
+        $select = "SELECT * FROM users WHERE email='$email' OR mobile = '$mobile'";
+        $result = mysqli_query($db,$select);    
+        if($result && mysqli_num_rows($result)){
+
+        $row =mysqli_fetch_assoc($result);
+
+        $token = generateRandomString();
+        if(!empty($mobile))
+        {
+            $token = mt_rand(1000,9999);
+        }
+
+
+        $INSERT = "INSERT INTO password_resets (`user_id`,`email`, `token`, `created_at`)
+                    VALUES ('".$row['id']."','$email', '$token', CURRENT_TIMESTAMP());";
+        $result = mysqli_query($db,$INSERT);
+
+        if(!empty($mobile))
+        {
+            $return = array('status' => "success","msg"=>"SMS send success","data"=>array("token"=>$token));
+            return $return;
+        }
+
+        $message = '<html>
+                    <head>
+                    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                    </head>
+                    <body>';
+        $message .='<div class="row">
+                        <div class="col-md-6">
+                            <br/><br/>
+                            Hi '.$row['full_name'].' <br/>
+                            Your password reset token is : '.$token.'
+                            <br/>
+                            Thanks & Regards
+                            Dynamic     
+                        </div>
+                    </div>';
+
+        
+        
+        /*$addURLS = $_POST['addURLS'];
+        if (($addURLS) != '') {
+            $message .= "<tr><td><strong>URL To Change (additional):</strong> </td><td>" . strip_tags($addURLS) . "</td></tr>";
+        }*/
+        /*$curText = htmlentities($_POST['curText']);           
+        if (($curText) != '') {
+            $message .= "<tr><td><strong>CURRENT Content:</strong> </td><td>" . $curText . "</td></tr>";
+        }
+        $message .= "<tr><td><strong>NEW Content:</strong> </td><td>" . htmlentities($_POST['newText']) . "</td></tr>";
+        $message .= "</table>";*/
+        $message .= '<img src="'.SITE_URL.'/images/full_logo_small.png" alt="Dynamic" />';
+        $message .= "</body></html>";
+
+        simpleMail($from="no-reply@p2d.esy.es",$to=$email,$subject="Forgot Password - Dynamic",$message);   
+        $return = array('status' => "success","msg"=>"Email send success");
+        return $return;
+
+        }
+        else{
+            $return = array('status' => "fail","msg"=>"Email not found");
+            return $return;
+        }
+        
+    }
 }
-/*
-if(!empty($_FILES['image']['name'])){
-    
-    //call thumbnail creation function and store thumbnail name
-    $upload_img = cwUpload('image','uploads/','',TRUE,'uploads/thumbs/','200','160');
-    
-    //full path of the thumbnail image
-    $thumb_src = 'uploads/thumbs/'.$upload_img;
-    
-    //set success and error messages
-    $message = $upload_img?"<span style='color:#008000;'>Image thumbnail have been created successfully.</span>":"<span style='color:#F00000;'>Some error occurred, please try again.</span>";
-    
-}else{
-    
-    //if form is not submitted, below variable should be blank
-    $thumb_src = '';
-    $message = '';
-}
-*/

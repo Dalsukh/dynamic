@@ -723,8 +723,8 @@ function simpleMail($from="parmar.dalsukh@gmail.com",$to="",$subject="",$body=""
 
 	return mail($to, $subject, $message, $headers);
 }
-
-function forgotPassword($email,$db="")
+//forgotPassword($mobile,$email,$db);
+function forgotPassword($mobile,$email,$db)
 {
 	$return = array();
 	$select = "SELECT * FROM users WHERE email='$email'";
