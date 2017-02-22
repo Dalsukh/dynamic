@@ -9,13 +9,21 @@
 		exit;
 	}
 	
-	$validator->filledIn("token");
-	$validator->filledIn("password");	
-	$validator->filledIn("confirm_password");	
-	
-	$errors = $validator->getErrors();
-	$id = $validator->getId();
+	$gump = new GUMP($db);
+	$errors = array();
+    
+    $gump->validation_rules(array(
+    'token'      => 'required',    
+    'password'   => 'required',
+    'confirm_password'   => 'required',
+    ));
+    
+    $validated_data = $gump->run($_REQUEST);
 
+
+    if($validated_data === false) {
+    	$errors = $gump->get_errors_array();
+	}  
 	
 	if(count($errors)==0){
 		$token = $_REQUEST['token'];
@@ -38,17 +46,9 @@
 		echo json_encode($response);		
 		
 	}else{
-		$response = array('status' => "fail");
-		foreach($errors as $key => $value) {
-			if(strstr($key, "|")) {
-				$key = str_replace("|", " and ", $key);
-
-			}
-			$field = str_replace("_", " ", $key);
-			$response[$key] = $field . " field required";
-			
-			
-		}
+		
+		$response = array('status' => "fail","msg"=>"Reset Password Faail","errors"=>$errors);
+		
 		echo json_encode($response);
 	}
 

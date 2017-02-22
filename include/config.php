@@ -103,6 +103,7 @@
 	require_once(DIR_FS_INCLUDES_FUNCTION."function.php");
 	require_once(DIR_FS_INCLUDES_CLASS."User.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Category.php");
+	require_once(DIR_FS_INCLUDES_CLASS."SubCategory.php");
 	require_once(DIR_FS_INCLUDES_CLASS."GUMP.php");
 	require_once(DIR_FS_INCLUDES_CLASS."cwUpload.php");
 	require_once(DIR_FS_INCLUDES."QR/qrlib.php");
