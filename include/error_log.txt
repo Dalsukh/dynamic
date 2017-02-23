@@ -196,3 +196,15 @@ Stack trace:
 [22-Feb-2017 23:22:28 Asia/Calcutta] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 724
 [23-Feb-2017 00:53:09 Asia/Calcutta] PHP Notice:  Undefined variable: subCategory in E:\Xampp\htdocs\dynamic\api\getSubCategory.php on line 22
 [23-Feb-2017 00:53:09 Asia/Calcutta] PHP Fatal error:  Call to a member function index() on null in E:\Xampp\htdocs\dynamic\api\getSubCategory.php on line 22
+[23-Feb-2017 23:29:23 Asia/Calcutta] PHP Notice:  Undefined index: logo in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 21
+[23-Feb-2017 23:29:23 Asia/Calcutta] PHP Warning:  getimagesize(): Filename cannot be empty in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 21
+[23-Feb-2017 23:29:23 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 62
+[23-Feb-2017 23:29:23 Asia/Calcutta] PHP Notice:  Undefined index: logo in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 21
+[23-Feb-2017 23:29:23 Asia/Calcutta] PHP Warning:  getimagesize(): Filename cannot be empty in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 21
+[23-Feb-2017 23:29:23 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 62
+[23-Feb-2017 23:29:23 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 62
+[23-Feb-2017 23:29:23 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 62
+[23-Feb-2017 23:30:16 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/Product/Dalsukh-1487872816.png): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 47
+[23-Feb-2017 23:30:16 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move 'E:\Xampp\tmp\php8955.tmp' to '../images/Product/Dalsukh-1487872816.png' in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 47
+[23-Feb-2017 23:30:16 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/Product/Dalsukh-1487872816.png): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 47
+[23-Feb-2017 23:30:16 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move 'E:\Xampp\tmp\php8956.tmp' to '../images/Product/Dalsukh-1487872816.png' in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 47

@@ -13,12 +13,13 @@ class SubCategory
     }
     public function index($where = array())
     {
-    	$select = "SELECT * FROM sub_category  WHERE deleted='0'";
-		$result = mysqli_query($this->db,$select);	
-		$data = array();
+    	$data = array();
+
+    	$select = "SELECT * FROM sub_category  WHERE deleted='0'";		
 		foreach($where as $key=>$val){
 			$select.=" AND $key='$val'";
 		}
+		$result = mysqli_query($this->db,$select);
 		$response = array();
 		if($result && mysqli_num_rows($result)){
 			while($row=mysqli_fetch_assoc($result))
