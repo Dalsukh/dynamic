@@ -20,13 +20,22 @@ class Product
 		if($result && mysqli_num_rows($result)){
 			while($row=mysqli_fetch_assoc($result))
 			{
-				$row['image'] = SITE_URL."images/Product/".$row['logo'];
-				$row['thumb'] = SITE_URL."images/Product/Thumb/".$row['logo'];
+				$row['thumb1'] = SITE_URL."images/Product/Thumb/".$row['image1'];
+				$row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image2'];
+				$row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image3'];
+				$row['thumb4'] = SITE_URL."images/Product/Thumb/".$row['image4'];
+
+				$row['image1'] = SITE_URL."images/Product/".$row['image1'];				
+				$row['image2'] = SITE_URL."images/Product/".$row['image2'];
+				$row['image3'] = SITE_URL."images/Product/".$row['image3'];
+				$row['image4'] = SITE_URL."images/Product/".$row['image4'];
+				
+
 				$data[]=$row;
 			}
 			$response = array("status"=>"success","data"=>$data);	
 		}else{
-			$response = array('status' => "fail","msg"=>"No Category Found");
+			$response = array('status' => "fail","msg"=>"No Product Found");
 		}
 		return $response;
     }
