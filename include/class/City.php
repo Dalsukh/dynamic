@@ -1,6 +1,7 @@
 <?php
+//City.php
 
-class User 
+class City
 {
 
     public function __construct($db=null)
@@ -14,18 +15,23 @@ class User
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($where = array())
+    public function index($city,$where = array())
     {
-        $select = "SELECT * FROM users WHERE deleted='0'";
-        $result = mysqli_query($this->db,$select); 
+
+
+    	$select = "SELECT * FROM geo_locations WHERE pin like '36%' AND name like '%".$city."%'";
+        $result = mysqli_query($this->db,$select);    
         $data = array();
         if($result && mysqli_num_rows($result)){
-            while ($row=mysqli_fetch_assoc($result)) {
-                $data[] = $row;
-            } 
-        }
-        return $data;
-        
+        	while ($row=mysqli_fetch_assoc($result)) {
+        		$data[] = $row;
+        	}
+
+            $response = array("status"=>"success","msg"=>"City found","data"=>$data);    
+        }else{
+            $response = array('status' => "fail","msg"=>"City not found");
+        }         
+        return $response;
     }
 
     public function login($data = array())
@@ -128,16 +134,6 @@ class User
      */
     public function find($id)
     {
-        $select = "SELECT * FROM users WHERE id='$id'";
-        $result = mysqli_query($this->db,$select);    
-        if($result && mysqli_num_rows($result)){
-            $row = $row=mysqli_fetch_assoc($result);
-
-            $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
-        }else{
-            $response = array('status' => "fail","msg"=>"Wrong email or password");
-        } 
-        return $response;   
         
     }
 
@@ -265,3 +261,4 @@ class User
         
     }
 }
+

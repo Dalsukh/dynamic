@@ -13,10 +13,38 @@ class Product
     }
     public function index($where = array())
     {
-    	$select = "SELECT * FROM products  WHERE deleted='0'";
+    	$user = new User($this->db);
+    	$user_data = $user->find($where['user_id']);
+    	$page = 1;
+    	if(isset($where['page']))
+    	{
+    		$page = $where['page'];
+    	}
+    	if($where['type'] = "Popular")
+    	{
+    		$select = "SELECT p.*,pl.status as is_liked FROM products as p 
+    		LEFT JOIN products_likes as pl ON pl.product_id = p.id 
+    		WHERE p.deleted='0' ";
+    		//$result = mysqli_query($this->db,$select);    		
+    	}
+    	else if($where['type'] = "SubCategory")
+    	{
+    		$select = "SELECT p.*,pl.status as is_liked FROM products as p WHERE p.deleted='0'
+    					LEFT JOIN products_likes as pl ON pl.product_id = p.id 
+    					AND p.sub_category_id = '$sub_category_id' 
+    			 		";
+
+    	}
+    	$select .="ORDER BY p.total_likes DESC ";
+
+    	
+
 		$result = mysqli_query($this->db,$select);	
+		$tempData = array();
 		$data = array();
+		$next = "";
 		$response = array();
+		$rpp = 4 ;
 		if($result && mysqli_num_rows($result)){
 			while($row=mysqli_fetch_assoc($result))
 			{
@@ -31,12 +59,23 @@ class Product
 				$row['image4'] = SITE_URL."images/Product/".$row['image4'];
 				
 
-				$data[]=$row;
+				$tempData[]=$row;
 			}
-			$response = array("status"=>"success","data"=>$data);	
+			for($i= (($page - 1) * $rpp);$i< min(mysqli_num_rows($result),$page*$rpp);$i++){
+				$data[] = $tempData[$i];
+			}
+			if(mysqli_num_rows($result)>$page*$rpp){
+				$next = SITE_URL."api/getProductList.php?page=".($page+1);
+				foreach($_REQUEST as $key=>$val){
+					$next.= "&".$key."=".$val;
+				}
+			}
+			
+			$response = array("status"=>"success","data"=>$data,"next"=>$next);	
 		}else{
 			$response = array('status' => "fail","msg"=>"No Product Found");
 		}
+		print_r($response);
 		return $response;
     }
 	public function store($data = array())
@@ -72,7 +111,7 @@ class Product
 		}
 		
         //$insert .= "state='GUJARAT', country='INDIA',";
-        echo $insert .="status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
+        $insert .="status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
 
         $result = mysqli_query($this->db,$insert);
         
