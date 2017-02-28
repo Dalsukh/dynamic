@@ -119,5 +119,17 @@ CREATE TABLE `products` (
   `deleted` tinyint(4) NOT NULL COMMENT '0-NO 1-YES'
   );
 
+
+
+  CREATE TABLE `chatting` (
+  `id` int(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  `from_user_id` int(10) UNSIGNED ,  
+  `to_user_id` int(10) UNSIGNED ,  
+  `message` text,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(4) NOT NULL COMMENT '0-NO 1-YES'
+  );
+
   
 

@@ -18,8 +18,15 @@ class City
     public function index($city,$where = array())
     {
 
+    	if(array_key_exists("latitude", $where) && array_key_exists("longitude", $where)){
 
+    		$result = getPlaceName($where['latitude'], $where['longitude']);
+    		// address city
+    		$city = $result['city'];
+    	}
+    	
     	$select = "SELECT * FROM geo_locations WHERE pin like '36%' AND name like '%".$city."%'";
+    	
         $result = mysqli_query($this->db,$select);    
         $data = array();
         if($result && mysqli_num_rows($result)){
@@ -32,25 +39,6 @@ class City
             $response = array('status' => "fail","msg"=>"City not found");
         }         
         return $response;
-    }
-
-    public function login($data = array())
-    {
-
-        $email = $_REQUEST['email'];
-        $password = $_REQUEST['password'];
-        $response = array();
-        
-        $select = "SELECT * FROM users WHERE (email='$email' OR mobile='$email') AND password='".md5(re_db_input($password,$this->db))."'";
-        $result = mysqli_query($this->db,$select);    
-        if($result && mysqli_num_rows($result)){
-            $row = $row=mysqli_fetch_assoc($result);
-
-            $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
-        }else{
-            $response = array('status' => "fail","msg"=>"Wrong email or password");
-        } 
-        return $response;   
     }
 
     /**

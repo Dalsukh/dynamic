@@ -25,7 +25,7 @@ function cwUpload($field_name = '', $target_folder = '', $file_name = '', $thumb
     	$response = array('status' =>"fail" ,"msg"=>"Please Upload Proper Image");
         return $response;
     }
-	
+	$fileName = "";
 	//file name setup
 	$filename_err = explode(".",$_FILES[$field_name]['name']);
 	$filename_err_count = count($filename_err);
