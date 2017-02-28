@@ -208,3 +208,16 @@ Stack trace:
 [23-Feb-2017 23:30:16 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move 'E:\Xampp\tmp\php8955.tmp' to '../images/Product/Dalsukh-1487872816.png' in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 47
 [23-Feb-2017 23:30:16 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/Product/Dalsukh-1487872816.png): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 47
 [23-Feb-2017 23:30:16 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move 'E:\Xampp\tmp\php8956.tmp' to '../images/Product/Dalsukh-1487872816.png' in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 47
+[27-Feb-2017 23:01:58 Asia/Calcutta] PHP Notice:  Undefined variable: user_id in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 17
+[27-Feb-2017 23:01:58 Asia/Calcutta] PHP Fatal error:  Call to undefined function dump() in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 19
+[27-Feb-2017 23:02:37 Asia/Calcutta] PHP Fatal error:  Call to undefined function dump() in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 19
+[28-Feb-2017 00:22:11 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56
+[28-Feb-2017 00:22:11 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56
+[28-Feb-2017 00:22:11 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56
+[28-Feb-2017 00:22:11 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56
+[28-Feb-2017 00:22:11 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56
+[28-Feb-2017 00:22:21 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56
+[28-Feb-2017 00:22:21 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56
+[28-Feb-2017 00:22:21 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56
+[28-Feb-2017 00:22:21 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56
+[28-Feb-2017 00:22:21 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 56

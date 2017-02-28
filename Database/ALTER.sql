@@ -95,6 +95,29 @@ CREATE TABLE `products` (
   `deleted` tinyint(4) NOT NULL COMMENT '0-NO 1-YES'
   );
   
+
+
+  CREATE TABLE `products_likes` (
+  `id` int(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  `user_id` int(10) UNSIGNED ,  
+  `product_id` varchar(25),
+  `status` tinyint(4) NOT NULL COMMENT '0-INACTIVE OR UNAPROVED 1-ACTIVE OR APPROVED',
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(4) NOT NULL COMMENT '0-NO 1-YES'
+  );
   
+
+  CREATE TABLE `products_views` (
+  `id` int(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  `user_id` int(10) UNSIGNED ,  
+  `product_id` varchar(25),
+  `ip_address` varchar(255),
+  `status` tinyint(4) NOT NULL COMMENT '0-INACTIVE OR UNAPROVED 1-ACTIVE OR APPROVED',
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(4) NOT NULL COMMENT '0-NO 1-YES'
+  );
+
   
 
