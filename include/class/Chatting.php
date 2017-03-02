@@ -44,7 +44,8 @@ class Chatting
         $insert .="created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
 
         $result = mysqli_query($this->db,$insert);
-        return $result;
+        $response = array("status"=>"success","data"=>$data);
+        return $response;
 
 	}
 }

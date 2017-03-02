@@ -160,9 +160,16 @@ class User
     public function update($data=array(),$id)
     {
         $update = "UPDATE users SET ";
+        unset($data['user_id']);
+
         foreach($data as $key=>$val)
         {
-            $update.="$key = '".$val."',";           
+            if($key == 'password')
+            {
+                $update .= $key."='".md5(re_db_input($val,$this->db))."',";
+            }else if($key != 'PHPSESSID'){
+                $update .= $key."='".re_db_input($val,$this->db)."',";
+            }           
 
         }
         $update.="updated_at = CURRENT_TIMESTAMP";

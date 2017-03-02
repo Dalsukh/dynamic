@@ -1152,6 +1152,7 @@ class GUMP
         $param = explode(",",$param);
         
         $Select = "SELECT * FROM ".$param[0]. " WHERE ".$field ." = '".$input[$field]."'";
+        
         $Result = mysqli_query($this->db,$Select);
         $count  = mysqli_num_rows($Result);
 

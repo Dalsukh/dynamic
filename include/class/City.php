@@ -33,8 +33,13 @@ class City
         	while ($row=mysqli_fetch_assoc($result)) {
         		$data[] = $row;
         	}
-
-            $response = array("status"=>"success","msg"=>"City found","data"=>$data);    
+        	if(array_key_exists("latitude", $where))
+        	{
+        		$response = array("status"=>"success","msg"=>"City found","data"=>$data[0]);    
+        	}else{
+        		$response = array("status"=>"success","msg"=>"City found","data"=>$data);    
+        	}
+            
         }else{
             $response = array('status' => "fail","msg"=>"City not found");
         }         
