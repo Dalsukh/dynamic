@@ -26,3 +26,6 @@
 [03-Mar-2017 22:33:33 Asia/Calcutta] PHP Notice:  Undefined index: city in E:\Xampp\htdocs\dynamic\api\getCityByLatLong.php on line 42
 [03-Mar-2017 22:33:52 Asia/Calcutta] PHP Notice:  Undefined index: city in E:\Xampp\htdocs\dynamic\api\getCityByLatLong.php on line 41
 [03-Mar-2017 22:36:27 Asia/Calcutta] PHP Notice:  Use of undefined constant id - assumed 'id' in E:\Xampp\htdocs\dynamic\api\getCityByLatLong.php on line 42
+[03-Mar-2017 23:55:55 Asia/Calcutta] PHP Warning:  Missing argument 2 for Product::find(), called in E:\Xampp\htdocs\dynamic\api\getProduct.php on line 25 and defined in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 128
+[03-Mar-2017 23:55:55 Asia/Calcutta] PHP Notice:  Undefined variable: id in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 132
+[03-Mar-2017 23:57:56 Asia/Calcutta] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 152

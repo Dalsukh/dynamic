@@ -35,6 +35,12 @@ class Product
     			 		";
 
     	}
+    	else if($where['type'] ==  "City"){
+    		$select = "SELECT p.*,pl.status as is_liked FROM products as p WHERE p.deleted='0'
+    					LEFT JOIN products_likes as pl ON pl.product_id = p.id 
+    					AND p.sub_category_id = '$sub_category_id' 
+    			 		";
+    	}
     	$select .="ORDER BY p.total_likes DESC ";
 
     	
@@ -118,4 +124,42 @@ class Product
         return $result;
 
 	}
+
+	public function find($user_id, $id)
+    {
+        $select = "SELECT p.*,pl.status as is_liked FROM products as p 
+    		LEFT JOIN products_likes as pl ON pl.product_id = p.id 
+    		WHERE p.deleted='0' AND p.id = ".$id;
+
+        $result = mysqli_query($this->db,$select);    
+        if($result && mysqli_num_rows($result)){
+
+            $row=mysqli_fetch_assoc($result);
+
+			$row['thumb1'] = SITE_URL."images/Product/Thumb/".$row['image1'];
+			$row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image2'];
+			$row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image3'];
+			$row['thumb4'] = SITE_URL."images/Product/Thumb/".$row['image4'];
+
+			$row['image1'] = SITE_URL."images/Product/".$row['image1'];				
+			$row['image2'] = SITE_URL."images/Product/".$row['image2'];
+			$row['image3'] = SITE_URL."images/Product/".$row['image3'];
+			$row['image4'] = SITE_URL."images/Product/".$row['image4'];
+			
+            $response = array("status"=>"success","msg"=>"Product Found","data"=>$row);
+
+            $SELECT = "SELECT * FROM products_views WHERE $user_id='$user_id' AND product_id = '$id'";
+            $SEL_RES = mysqli_query($this->db,$SELECT);
+            
+            if(mysqli_num_rows($SEL_RES)==0){
+            	
+            	$INSERT = "INSERT INTO products_views SET user_id = '$user_id', product_id = '$id'";
+            	
+            	$INSERT_RES = mysqli_query($this->db,$INSERT);
+            }
+        }else{
+            $response = array('status' => "fail","msg"=>"Product not Found");
+        } 
+        return $response;        
+    }
 }
