@@ -25,7 +25,7 @@ class City
     		$city = $result['city'];
     	}
     	
-    	$select = "SELECT * FROM geo_locations WHERE pin like '36%' AND name like '%".$city."%'";
+    	$select = "SELECT * FROM geo_locations WHERE name like '%".$city."%'";
     	
         $result = mysqli_query($this->db,$select);    
         $data = array();

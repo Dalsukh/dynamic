@@ -24,8 +24,7 @@
 	$type = $_REQUEST['type'];
 
 	$response = $product->index($_REQUEST);	
-	exit();
-
+	
 	echo json_encode($response);
 
 	}

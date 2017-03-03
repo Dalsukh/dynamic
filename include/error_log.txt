@@ -23,3 +23,6 @@
 [01-Mar-2017 00:30:25 Asia/Calcutta] PHP Notice:  Undefined index: logo in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 21
 [01-Mar-2017 00:30:25 Asia/Calcutta] PHP Warning:  getimagesize(): Filename cannot be empty in E:\Xampp\htdocs\dynamic\include\class\cwUpload.php on line 21
 [01-Mar-2017 00:30:25 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\User.php on line 156
+[03-Mar-2017 22:33:33 Asia/Calcutta] PHP Notice:  Undefined index: city in E:\Xampp\htdocs\dynamic\api\getCityByLatLong.php on line 42
+[03-Mar-2017 22:33:52 Asia/Calcutta] PHP Notice:  Undefined index: city in E:\Xampp\htdocs\dynamic\api\getCityByLatLong.php on line 41
+[03-Mar-2017 22:36:27 Asia/Calcutta] PHP Notice:  Use of undefined constant id - assumed 'id' in E:\Xampp\htdocs\dynamic\api\getCityByLatLong.php on line 42
