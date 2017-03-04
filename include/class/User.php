@@ -45,6 +45,7 @@ class User
             $row=mysqli_fetch_assoc($result);
             
             if(!empty($row['image'])){
+
                 $row['thumb'] = SITE_URL."images/User/Thumb".$row['image'];
                 $row['image'] = SITE_URL."images/User/".$row['image'];    
             }

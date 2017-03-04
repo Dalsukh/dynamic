@@ -1,7 +1,7 @@
 <?php
 	//usersRegister.php
 	require_once("../include/config.php");
-	$validator = new Validator($_REQUEST);
+	
 
 	if(count($_REQUEST)==0){
 		echo json_encode(array('status'=>'fail',"msg"=>"Please Provide Data"));

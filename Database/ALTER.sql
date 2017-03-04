@@ -137,3 +137,5 @@ referral_code
 referral_id
 
 ALTER TABLE `users` ADD `referral_code` VARCHAR(100) NOT NULL AFTER `status`, ADD `referral_id` INT NOT NULL AFTER `referral_code`;
+
+ALTER TABLE  `merchants` DROP  `user_id` ;

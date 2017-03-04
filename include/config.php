@@ -58,18 +58,18 @@
 	
 	
 
-	if($_SERVER['HTTP_HOST'] !="dalsukhp.io")
+	if($_SERVER['HTTP_HOST'] =="p2d.esy.es")
 	{		
 		define('DB_SERVER', 'mysql.hostinger.in');
 		define('DB_SERVER_USERNAME', 'u646130367_dynam');
 		define('DB_SERVER_PASSWORD', '123456');
 		define('DB_DATABASE', 'u646130367_dynam');
 		
-	}else{
+	}else if($_SERVER['HTTP_HOST'] =="localhost"){
 		define('DB_SERVER', 'localhost');
 		define('DB_SERVER_USERNAME', 'root');
 		define('DB_SERVER_PASSWORD', '');
-		define('DB_DATABASE', 'dynamic');
+		define('DB_DATABASE', 'u646130367_dynam');
 	}
 	
 
