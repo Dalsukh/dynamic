@@ -1,12 +1,13 @@
 <?php
+//Merchants.php
 
-class User 
+class Merchants
 {
 
     public function __construct($db=null)
     {
         $this->db=$db;
-        $this->table = "users";
+        $this->table = "merchants";
     }
 
     /**
@@ -16,7 +17,7 @@ class User
      */
     public function index($where = array())
     {
-        $select = "SELECT * FROM users WHERE deleted='0'";
+        $select = "SELECT * FROM merchants WHERE deleted='0'";
         $result = mysqli_query($this->db,$select); 
         $data = array();
         if($result && mysqli_num_rows($result)){
@@ -68,7 +69,7 @@ class User
 
         $otp = mt_rand(1000,9999);
 
-        $insert = "INSERT INTO users SET ";
+        $insert = "INSERT INTO merchants SET ";
         foreach($_REQUEST as $key=>$val){
             if($key == 'password')
             {
@@ -99,32 +100,11 @@ class User
         */   
 
         
-        $merchants_insert = "INSERT INTO `merchants` (
-            `id`, `user_id`, `member_id`, `member_qr_code`,
-            `company_name`, `company_logo`, `job_title`,
-            `email1`, `email2`, `website`, `address`, `city`, `state`, `country`, `pincode`,
-            `mobile1`, `mobile2`, `landline1`, `landline2`, `fax1`, `fax2`, 
-            `facebook`, `twitter`, `google`, `youtube`, `merchant_type`, `business_type`, 
-            `additional_business`, `latitude`, `longitude`, 
-            `status`, `created_at`, `updated_at`, `deleted`) 
-            VALUES 
-            (NULL, '$user_id', '$member_id', '$member_qr_code',
-            '', '', '',
-            'first@mail.com', '', '', '', 'Rajkot', 'GUJARAT', 'INDIA', 
-            '360001',
-            '".$data['mobile']."', '', '', '', '', '', 
-            'facebook.com', 'twitter.com', 'google.com', 'youtube.com', 'FREE', '',
-            '', '', '',
-            '1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, '0');";
-
-        $result = mysqli_query($this->db,$merchants_insert);
-
-
         if($result){
-            $response = array("status"=>"success","msg"=>"User Register Successfully",
+            $response = array("status"=>"success","msg"=>"Merhchant Register Successfully",
                 "data"=>array("user_id"=>$user_id)); 
         }else{
-            $response = array('status' => "fail","msg"=>"User Registeration Fail");
+            $response = array('status' => "fail","msg"=>"Merhchant Registeration Fail");
         }
         return $response;
         

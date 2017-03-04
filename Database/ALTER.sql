@@ -138,4 +138,11 @@ referral_id
 
 ALTER TABLE `users` ADD `referral_code` VARCHAR(100) NOT NULL AFTER `status`, ADD `referral_id` INT NOT NULL AFTER `referral_code`;
 
+04032017
+
 ALTER TABLE  `merchants` DROP  `user_id` ;
+ALTER TABLE `merchants` ADD `referral_code` VARCHAR(100) NOT NULL AFTER `status`, ADD `referral_id` INT NOT NULL AFTER `referral_code`;
+ALTER TABLE  `merchants` ADD  `min_discount` FLOAT NOT NULL AFTER  `referral_id` ,
+ADD  `otp` INT NOT NULL AFTER  `min_discount`
+
+ALTER TABLE  `merchants` ADD  `full_name` VARCHAR( 255 ) NOT NULL

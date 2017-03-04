@@ -31,6 +31,7 @@ class City
         if(empty($city)){
             $select.= " AND pin like '36%'";
         }
+        $select .= " ORDER BY name ASC";
     	
         $result = mysqli_query($this->db,$select);    
         $data = array();
