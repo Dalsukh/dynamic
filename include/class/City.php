@@ -27,6 +27,7 @@ class City
     	
     	$select = "SELECT * FROM geo_locations WHERE name like '%".$city."%'";
 
+
         if(empty($city)){
             $select.= " AND pin like '36%'";
         }
