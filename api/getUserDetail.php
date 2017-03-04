@@ -8,41 +8,34 @@
 		echo json_encode(array('status'=>'fail',"msg"=>"Please Provide Data"));
 		exit;
 	}
-	
-	
-	$validator->filledIn("user_id");
-	
-	$errors = $validator->getErrors();
-	$id = $validator->getId();
+	$gump = new GUMP($db);
+	$errors = array();
+    
+    $gump->validation_rules(array(
+    'user_id'      => 'required',    
+    
+    ));
+    
+    $validated_data = $gump->run($_REQUEST);
 
+
+    if($validated_data === false) {
+    	$errors = $gump->get_errors_array();
+	} 
+	
+	
 	
 	if(count($errors)==0){
 
-		$user_id = $_REQUEST['user_id'];
+		$user_id = $_REQUEST['user_id'];		
+
+		$user = new User($db);
+		$response = $user->find($_REQUEST);
 		
-
-		$select = "SELECT * FROM users WHERE id =".$user_id;
-		$result = mysqli_query($db,$select);	
-		if($result && mysqli_num_rows($result)){
-			$row = $row=mysqli_fetch_assoc($result);
-
-			$response = array("status"=>"success","data"=>$row);	
-		}else{
-			$response = array('status' => "fail","msg"=>"User not found");
-		}		
 		echo json_encode($response);		
 	}else{
-		$response = array('status' => "fail");
-		foreach($errors as $key => $value) {
-			if(strstr($key, "|")) {
-				$key = str_replace("|", " and ", $key);
-
-			}
-			$field = str_replace("_", " ", $key);
-			$response[$key] = $field . " field required";
-			//echo "<b>Error $value:</b> on field $key<br>";			
-			
-		}
+		$response = array('status' => "fail","msg"=>"User Not Found"),
+		
 		echo json_encode($response);
 	}
 

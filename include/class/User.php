@@ -42,7 +42,12 @@ class User
         $select = "SELECT * FROM users WHERE (email='$email' OR mobile='$email') AND password='".md5(re_db_input($password,$this->db))."'";
         $result = mysqli_query($this->db,$select);    
         if($result && mysqli_num_rows($result)){
-            $row = $row=mysqli_fetch_assoc($result);
+            $row=mysqli_fetch_assoc($result);
+            
+            if(!empty($row['image'])){
+                $row['thumb'] = SITE_URL."images/User/Thumb".$row['image'];
+                $row['image'] = SITE_URL."images/User/".$row['image'];    
+            }
 
             $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
         }else{
@@ -160,9 +165,16 @@ class User
     public function update($data=array(),$id)
     {
         $update = "UPDATE users SET ";
+        unset($data['user_id']);
+
         foreach($data as $key=>$val)
         {
-            $update.="$key = '".$val."',";           
+            if($key == 'password')
+            {
+                $update .= $key."='".md5(re_db_input($val,$this->db))."',";
+            }else if($key != 'PHPSESSID'){
+                $update .= $key."='".re_db_input($val,$this->db)."',";
+            }           
 
         }
         $update.="updated_at = CURRENT_TIMESTAMP";

@@ -1,5 +1,5 @@
 <?php
-//getCity.php
+	//getCity.php
 
 	require_once("../include/config.php");
 	
@@ -12,16 +12,16 @@
 	$gump = new GUMP($db);
 	$errors = array();
     
-    $gump->validation_rules(array(
+    /*$gump->validation_rules(array(
     'city'      => 'required',        
-    ));
+    ));*/
     
-    $validated_data = $gump->run($_REQUEST);
+    /*$validated_data = $gump->run($_REQUEST);*/
 
 
-    if($validated_data === false) {
+    /*if($validated_data === false) {
     	$errors = $gump->get_errors_array();
-	}        
+	}        */
 	
 	if(count($errors)==0){
 
@@ -29,8 +29,8 @@
 		$response=$city->index($_REQUEST['city']);
 		echo json_encode($response);		
 	}else{
-		$response = array('status' => "fail","msg"=>"Please Provide Correct Data");
 
+		$response = array('status' => "fail","msg"=>"Please Provide Correct Data");
 		$response['errors'] = $errors;
 		echo json_encode($response);
 	}

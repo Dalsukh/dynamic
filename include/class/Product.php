@@ -75,7 +75,7 @@ class Product
 		}else{
 			$response = array('status' => "fail","msg"=>"No Product Found");
 		}
-		print_r($response);
+		
 		return $response;
     }
 	public function store($data = array())

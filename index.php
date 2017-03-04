@@ -6,11 +6,6 @@
 					With Only One Form for Insert And Update
 	 */
 	require_once("include/config.php");
-	
-	
-	
-	
-	
 	extract($_SESSION);
 	extract($_POST);
 	extract($_GET);

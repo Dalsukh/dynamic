@@ -7,7 +7,7 @@ class City
     public function __construct($db=null)
     {
         $this->db=$db;
-        $this->table = "users";
+        $this->table = "geo_locations";
     }
 
     /**
@@ -25,7 +25,11 @@ class City
     		$city = $result['city'];
     	}
     	
-    	$select = "SELECT * FROM geo_locations WHERE pin like '36%' AND name like '%".$city."%'";
+    	$select = "SELECT * FROM geo_locations WHERE name like '%".$city."%'";
+
+        if(empty($city)){
+            $select.= " AND pin like '36%'";
+        }
     	
         $result = mysqli_query($this->db,$select);    
         $data = array();
@@ -33,8 +37,13 @@ class City
         	while ($row=mysqli_fetch_assoc($result)) {
         		$data[] = $row;
         	}
-
-            $response = array("status"=>"success","msg"=>"City found","data"=>$data);    
+        	if(array_key_exists("latitude", $where))
+        	{
+        		$response = array("status"=>"success","msg"=>"City found","data"=>$data[0]);    
+        	}else{
+        		$response = array("status"=>"success","msg"=>"City found","data"=>$data);    
+        	}
+            
         }else{
             $response = array('status' => "fail","msg"=>"City not found");
         }         
