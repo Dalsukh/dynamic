@@ -269,4 +269,18 @@ class User
         }
         
     }
+
+    public function sendSms($mobile='',$message='')
+    {
+        $curlSession = curl_init();
+        curl_setopt($curlSession, CURLOPT_URL, 'http://sms.hspsms.com/sendSMS?username=FMANTRA&message='.$message.'&sendername=MANTRA&smstype=TRANS&numbers='.$mobile.'&apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9');
+        curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);
+        curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, true);
+
+        $jsonData = json_decode(curl_exec($curlSession));
+        
+        curl_close($curlSession);
+        //$jsonData = file_get_contents('http://sms.hspsms.com/sendSMS?username=FMANTRA&message='.$message.'&sendername=MANTRA&smstype=TRANS&numbers='.$mobile.'&apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9');
+        return $jsonData;
+    }
 }

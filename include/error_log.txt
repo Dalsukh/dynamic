@@ -1,3 +1,17 @@
 [05-Mar-2017 01:12:12 Asia/Calcutta] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\dynamic\include\config.php on line 90
 [05-Mar-2017 01:12:12 Asia/Calcutta] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\dynamic\include\config.php on line 90
 [05-Mar-2017 01:13:45 Asia/Calcutta] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'dynamic' in C:\xampp\htdocs\dynamic\include\config.php on line 90
+[05-Mar-2017 04:26:53 Asia/Calcutta] PHP Warning:  file_get_contents(http://sms.hspsms.com/sendSMS?username=FMANTRA&amp;message=Test  Message \n Dynamic&amp;sendername=XYZ&amp;smstype=TRANS&amp;numbers=8000881833&amp;apikey=d0002689-c347-4b82-af90-9d3188ad6c6e): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\dynamic\include\class\User.php on line 283
+[05-Mar-2017 04:27:58 Asia/Calcutta] PHP Warning:  file_get_contents(http://sms.hspsms.com/sendSMS?username=FMANTRA&amp;message=Test  Message Dynamic&amp;sendername=XYZ&amp;smstype=TRANS&amp;numbers=8000881833&amp;apikey=d0002689-c347-4b82-af90-9d3188ad6c6e): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\dynamic\include\class\User.php on line 283
+[05-Mar-2017 04:45:53 Asia/Calcutta] PHP Warning:  file_get_contents(http://sms.hspsms.com/sendSMS?username=FMANTRA&amp;message=Test  Message Dynamic&amp;sendername=XYZ&amp;smstype=TRANS&amp;numbers=8000881833&amp;apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\dynamic\include\class\User.php on line 283
+[05-Mar-2017 04:47:57 Asia/Calcutta] PHP Warning:  file_get_contents(http://sms.hspsms.com/sendSMS?username=FMANTRA&amp;message=Test  Message Dynamic&amp;sendername=XYZ&amp;smstype=TRANS&amp;numbers=8000881833&amp;apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\dynamic\include\class\User.php on line 283
+[05-Mar-2017 04:48:21 Asia/Calcutta] PHP Warning:  file_get_contents(http://sms.hspsms.com/sendSMS?username=FMANTRA&amp;message=Test  Message Dynamic&amp;sendername=MANTRA&amp;smstype=TRANS&amp;numbers=8000881833&amp;apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\dynamic\include\class\User.php on line 283
+[05-Mar-2017 04:55:44 Asia/Calcutta] PHP Warning:  file_get_contents(http://sms.hspsms.com/sendSMS?username=FMANTRA&amp;message=Test  Message Dynamic&amp;sendername=MANTRA&amp;smstype=TRANS&amp;numbers=8000881833&amp;apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\dynamic\include\class\User.php on line 283
+[05-Mar-2017 04:59:19 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in C:\xampp\htdocs\dynamic\include\class\User.php on line 284
+[05-Mar-2017 04:59:37 Asia/Calcutta] PHP Notice:  Undefined variable: jsonData in C:\xampp\htdocs\dynamic\include\class\User.php on line 287
