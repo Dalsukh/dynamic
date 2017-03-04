@@ -99,25 +99,7 @@ class User
         */   
 
         
-        $merchants_insert = "INSERT INTO `merchants` (
-            `id`, `user_id`, `member_id`, `member_qr_code`,
-            `company_name`, `company_logo`, `job_title`,
-            `email1`, `email2`, `website`, `address`, `city`, `state`, `country`, `pincode`,
-            `mobile1`, `mobile2`, `landline1`, `landline2`, `fax1`, `fax2`, 
-            `facebook`, `twitter`, `google`, `youtube`, `merchant_type`, `business_type`, 
-            `additional_business`, `latitude`, `longitude`, 
-            `status`, `created_at`, `updated_at`, `deleted`) 
-            VALUES 
-            (NULL, '$user_id', '$member_id', '$member_qr_code',
-            '', '', '',
-            'first@mail.com', '', '', '', 'Rajkot', 'GUJARAT', 'INDIA', 
-            '360001',
-            '".$data['mobile']."', '', '', '', '', '', 
-            'facebook.com', 'twitter.com', 'google.com', 'youtube.com', 'FREE', '',
-            '', '', '',
-            '1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, '0');";
-
-        $result = mysqli_query($this->db,$merchants_insert);
+        
 
 
         if($result){

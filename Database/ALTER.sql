@@ -146,3 +146,8 @@ ALTER TABLE  `merchants` ADD  `min_discount` FLOAT NOT NULL AFTER  `referral_id`
 ADD  `otp` INT NOT NULL AFTER  `min_discount`
 
 ALTER TABLE  `merchants` ADD  `full_name` VARCHAR( 255 ) NOT NULL
+
+ALTER TABLE  `merchants` ADD  `mobile_verified` TINYINT NOT NULL AFTER  `otp` ,
+ADD  `email_verified` TINYINT NOT NULL AFTER  `mobile_verified`
+
+ALTER TABLE  `merchants` ADD  `password` VARCHAR( 255 ) NOT NULL AFTER  `email2`

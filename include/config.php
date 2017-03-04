@@ -103,6 +103,7 @@
 	require_once(DIR_FS_INCLUDES_CLASS."City.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Chatting.php");
 	require_once(DIR_FS_INCLUDES_CLASS."User.php");
+	require_once(DIR_FS_INCLUDES_CLASS."User.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Category.php");
 	require_once(DIR_FS_INCLUDES_CLASS."SubCategory.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Product.php");

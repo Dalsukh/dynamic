@@ -37,7 +37,7 @@ image
 		    //call thumbnail creation function and store thumbnail name
 		    //cwUpload($field_name = '', $target_folder = '', $file_name = '', $thumb = FALSE, $thumb_folder = '', $thumb_width = '', $thumb_height = ''){
 				    $upload_img = cwUpload('image','../images/User/',$_REQUEST['user_id'],TRUE,'../images/User/Thumb/',
-				    	'100','100');
+				    	'200','200');
 		
 		$user = new User($db);
 		$data = array("image"=>$upload_img);

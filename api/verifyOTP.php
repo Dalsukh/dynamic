@@ -28,8 +28,16 @@
 		$user_id = $_REQUEST['user_id'];
 		$otp = $_REQUEST['otp'];
 
-		$user = new User($db);
-		$response=$user->verifyOTP($user_id,$otp);
+		if(isset($_REQUEST['type']))
+		{
+			$merchant = new Merchants($db);
+			$response=$merchant->verifyOTP($user_id,$otp);
+		}else{
+			$user = new User($db);
+			$response=$user->verifyOTP($user_id,$otp);	
+		}
+
+		
 		echo json_encode($response);		
 	}else{
 		$response = array('status' => "fail","msg"=>"Please Provide Correct Data");

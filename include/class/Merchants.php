@@ -79,12 +79,13 @@ class Merchants
             }
         }
         //$insert .= "state='GUJARAT', country='INDIA',";
-        $insert .="otp='$otp', status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
-
-        $result = mysqli_query($this->db,$insert);
-        
-        $user_id = mysqli_insert_id($this->db);
         $member_id = strtoupper(generateRandomString(25));
+
+        $insert .="otp='$otp', status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
+        $insert .=",member_id = ".$member_id;
+
+        $result = mysqli_query($this->db,$insert);       
+        
 
         $QR_path = DIR_FS."images/QRCode/";
         $QR_name = $member_id.".png";
@@ -182,12 +183,13 @@ class Merchants
         $otp = $_REQUEST['otp'];
         $response = array();
         
-        echo $select = "SELECT * FROM users WHERE id = '$user_id' AND otp='$otp'";
+        echo $select = "SELECT * FROM merchants WHERE id = '$user_id' AND otp='$otp'";
         $result = mysqli_query($this->db,$select);    
         if($result && mysqli_num_rows($result)){
             $row = $row=mysqli_fetch_assoc($result);
 
             $update_data = array('mobile_verified' => "1");
+
             $this->update($update_data,$user_id);
 
             $response = array("status"=>"success","msg"=>"OTP Verify success","data"=>$row);    
