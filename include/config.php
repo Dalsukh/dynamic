@@ -99,7 +99,6 @@
 	$page_name=basename($_SERVER['PHP_SELF']);
 
 	require_once(DIR_FS."/validator/Validator.php");
-	require_once(DIR_FS."/PHPMailer/PHPMailerAutoload.php");
 	require_once(DIR_FS_INCLUDES_FUNCTION."function.php");
 	require_once(DIR_FS_INCLUDES_CLASS."City.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Chatting.php");
