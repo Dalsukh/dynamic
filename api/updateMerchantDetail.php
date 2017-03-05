@@ -39,7 +39,7 @@
     'company_name'  => 'required',
     'job_title'      => 'required',    
     "city" 	 => "required",
-    'password'   => 'required|max_len:100',    
+    //'password'   => 'required|max_len:100',    
     'address', 
     'pincode', 
     'website',

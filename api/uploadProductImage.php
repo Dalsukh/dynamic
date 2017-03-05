@@ -44,12 +44,12 @@ require_once("../include/config.php");
 		{
 
 
-			if(isset($_FILES['image'.$i]['name']) && !empty($_FILES['image']['name'])){
-	    
+			if(isset($_FILES['image'.$i]['name']) && !empty($_FILES['image'.$i]['name']))
+			{
+				
 			    //call thumbnail creation function and store thumbnail name
 			    //cwUpload($field_name = '', $target_folder = '', $file_name = '', $thumb = FALSE, $thumb_folder = '', $thumb_width = '', $thumb_height = ''){
-				$upload_img = cwUpload('image'.$i,'../images/Product/',$_FILES['image'.$i]['name'],TRUE,'../images/Product/Thumb/',
-				    	'100','100');
+				$upload_img = cwUpload('image'.$i ,'../images/Product/',$_FILES['image'.$i]['name'],TRUE,'../images/Product/Thumb/','100','100');
 				    
 				    	    
 			$product = new Product($db);
