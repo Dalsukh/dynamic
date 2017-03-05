@@ -30,7 +30,7 @@
             '1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, '0');";
 
         $result = mysqli_query($this->db,$merchants_insert);*/
-	*/
+	
 	$gump = new GUMP($db);
 	$errors = array();
     
