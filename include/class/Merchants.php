@@ -40,16 +40,16 @@ class Merchants
         $password = $_REQUEST['password'];
         $response = array();
         
-        $select = "SELECT * FROM users WHERE (email='$email' OR mobile='$email') AND password='".md5(re_db_input($password,$this->db))."'";
+        $select = "SELECT * FROM merchants WHERE (email1='$email' OR mobile1='$email') AND password='".md5(re_db_input($password,$this->db))."'";
         $result = mysqli_query($this->db,$select);    
         if($result && mysqli_num_rows($result)){
             $row=mysqli_fetch_assoc($result);
             
-            if(!empty($row['image'])){
+            /*if(!empty($row['image'])){
 
                 $row['thumb'] = SITE_URL."images/User/Thumb/".$row['image'];
                 $row['image'] = SITE_URL."images/User/".$row['image'];    
-            }
+            }*/
 
             $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
         }else{
@@ -119,15 +119,11 @@ class Merchants
      */
     public function find($id)
     {
-        $select = "SELECT * FROM users WHERE id='$id'";
+        $select = "SELECT * FROM merchants WHERE id='$id'";
         $result = mysqli_query($this->db,$select);    
         if($result && mysqli_num_rows($result)){
             $row=mysqli_fetch_assoc($result);
-            if(!empty($row['image'])){
-                $row['thumb'] = SITE_URL."images/User/Thumb/".$row['image'];
-                $row['image'] = SITE_URL."images/User/".$row['image'];    
-            }
-            
+                       
 
             $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
         }else{
@@ -146,7 +142,7 @@ class Merchants
      */
     public function update($data=array(),$id)
     {
-        $update = "UPDATE users SET ";
+        $update = "UPDATE merchants SET ";
         unset($data['user_id']);
 
         foreach($data as $key=>$val)

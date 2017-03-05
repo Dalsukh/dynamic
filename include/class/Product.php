@@ -94,33 +94,39 @@ class Product
             }
         }
         $upload_img = "";
-        for($i=1;$i<=4;$i++){
+        if(count($_FILES)>0)
+        {
+	        for($i=1;$i<=4;$i++){
 
-	        if(!empty($_FILES['image'.$i]['name'])){
-	    
-			    //call thumbnail creation function and store thumbnail name
-			    //cwUpload($field_name = '', $target_folder = '', $file_name = '', $thumb = FALSE, $thumb_folder = '', $thumb_width = '', $thumb_height = ''){
-			    $upload_img = cwUpload('image'.$i,'../images/Product/',$_FILES['image'.$i]['name'],TRUE,'../images/Product/Thumb/',
-			    	'100','100');
-			    
-			    	    
-			    //set success and error messages
-			    $message = $upload_img?"<span style='color:#008000;'>Image thumbnail have been created successfully.</span>":"<span style='color:#F00000;'>Some error occurred, please try again.</span>";
-			    
-			}else{
-			    
-			    //if form is not submitted, below variable should be blank
-			    $thumb_src = '';
-			    $message = '';
+		        if(!empty($_FILES['image'.$i]['name'])){
+		    
+				    //call thumbnail creation function and store thumbnail name
+				    //cwUpload($field_name = '', $target_folder = '', $file_name = '', $thumb = FALSE, $thumb_folder = '', $thumb_width = '', $thumb_height = ''){
+				    $upload_img = cwUpload('image'.$i,'../images/Product/',$_FILES['image'.$i]['name'],TRUE,'../images/Product/Thumb/',
+				    	'100','100');
+				    
+				    	    
+				    //set success and error messages
+				    $message = $upload_img?"<span style='color:#008000;'>Image thumbnail have been created successfully.</span>":"<span style='color:#F00000;'>Some error occurred, please try again.</span>";
+				    
+				}else{
+				    
+				    //if form is not submitted, below variable should be blank
+				    $thumb_src = '';
+				    $message = '';
+				}
+				$insert.="image$i='".$upload_img."',";
 			}
-			$insert.="image$i='".$upload_img."',";
 		}
 		
         //$insert .= "state='GUJARAT', country='INDIA',";
         $insert .="status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
 
         $result = mysqli_query($this->db,$insert);
+        $product_id = mysqli_insert_id($this->db);
         
+        $repsonse = array("status"=>"success","msg"=>"Product Add success",
+        		"data"=>array("product_id"=>$product_id));
         return $result;
 
 	}
@@ -162,4 +168,28 @@ class Product
         } 
         return $response;        
     }
+
+    public function update($data=array(),$id)
+    {
+        $update = "UPDATE products SET ";
+        unset($data['product_id']);
+
+        foreach($data as $key=>$val)
+        {
+            if($key == 'password')
+            {
+                $update .= $key."='".md5(re_db_input($val,$this->db))."',";
+            }else if($key != 'PHPSESSID'){
+                $update .= $key."='".re_db_input($val,$this->db)."',";
+            }           
+
+        }
+        $update.="updated_at = CURRENT_TIMESTAMP";
+        $update.=" WHERE id='$id'";
+
+        $result = mysqli_query($this->db,$update);
+        $response = array("status"=>"success","msg"=>"Update Successfully");
+        return $response;
+    }
+
 }
