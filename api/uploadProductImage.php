@@ -31,11 +31,11 @@ require_once("../include/config.php");
     $validated_data = $gump->run($_REQUEST);
 	
 
-    /*
+    
     if($validated_data === false) {
     	$errors = $gump->get_errors_array();
 	}
-	*/        
+	
 	
 	if(count($errors)==0)
 	{

@@ -36,7 +36,7 @@
 				
 		echo json_encode($response);		
 	}else{
-		$response = array('status' => "fail","msg"=>"User Registeration Fail");
+		$response = array('status' => "fail","msg"=>"User Registeration Fail Mobile Already Registered");
 		$response['errors'] = $errors;
 		echo json_encode($response);		
 	}

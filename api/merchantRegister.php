@@ -31,7 +31,7 @@
 		
 		echo json_encode($response);		
 	}else{
-		$response = array('status' => "fail","msg"=>"Please Provide Correct Data","errors"=>$errors);
+		$response = array('status' => "fail","msg"=>"Mobile Already Registered","errors"=>$errors);
 		
 		echo json_encode($response);
 	}
