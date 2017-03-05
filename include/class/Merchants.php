@@ -82,8 +82,8 @@ class Merchants
         $member_id = strtoupper(generateRandomString(25));
 
         $insert .="otp='$otp', status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
-        $insert .=",member_id = ".$member_id;
-
+        $insert .=",member_id = '".$member_id."'";
+        
         $result = mysqli_query($this->db,$insert);       
         
 

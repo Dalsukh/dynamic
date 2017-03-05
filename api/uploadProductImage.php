@@ -1,5 +1,5 @@
 <?php
-//addProduct.php
+//uploadProductImage.php
 require_once("../include/config.php");
 	
 /*

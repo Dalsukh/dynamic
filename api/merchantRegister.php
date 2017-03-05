@@ -11,7 +11,7 @@
 
 	$gump->validation_rules(array(
     'full_name'  => 'required',
-    "mobile1" 	 => "required|numeric|min_len:10|unique:users",
+    "mobile1" 	 => "required|numeric|min_len:10|unique:merchants",
     'password'   => 'required',
     'min_discount'   => 'required',
     'referral_code'   => 'required',    
