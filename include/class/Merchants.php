@@ -86,6 +86,7 @@ class Merchants
         
         $result = mysqli_query($this->db,$insert);       
         
+        $merchant_id = mysqli_insert_id($this->db);
 
         $QR_path = DIR_FS."images/QRCode/";
         $QR_name = $member_id.".png";
@@ -103,7 +104,7 @@ class Merchants
         
         if($result){
             $response = array("status"=>"success","msg"=>"Merhchant Register Successfully",
-                "data"=>array("user_id"=>$user_id)); 
+                "data"=>array("merchant_id"=>$merchant_id)); 
         }else{
             $response = array('status' => "fail","msg"=>"Merhchant Registeration Fail");
         }
