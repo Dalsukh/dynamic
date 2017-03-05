@@ -127,7 +127,7 @@ class Product
         
         $repsonse = array("status"=>"success","msg"=>"Product Add success",
         		"data"=>array("product_id"=>$product_id));
-        return $result;
+        return $repsonse;
 
 	}
 

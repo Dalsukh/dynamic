@@ -21,6 +21,7 @@ require_once("../include/config.php");
 	
 	$gump = new GUMP($db);
 	$errors = array();
+	$response = array();
     
     
     $gump->validation_rules(array(
