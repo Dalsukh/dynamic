@@ -15,3 +15,40 @@
  in C:\xampp\htdocs\dynamic\include\class\User.php on line 283
 [05-Mar-2017 04:59:19 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in C:\xampp\htdocs\dynamic\include\class\User.php on line 284
 [05-Mar-2017 04:59:37 Asia/Calcutta] PHP Notice:  Undefined variable: jsonData in C:\xampp\htdocs\dynamic\include\class\User.php on line 287
+[14-Mar-2017 22:42:23 Asia/Calcutta] PHP Notice:  Use of undefined constant DB_SERVER - assumed 'DB_SERVER' in E:\Xampp\htdocs\dynamic\include\config.php on line 90
+[14-Mar-2017 22:42:23 Asia/Calcutta] PHP Notice:  Use of undefined constant DB_SERVER_USERNAME - assumed 'DB_SERVER_USERNAME' in E:\Xampp\htdocs\dynamic\include\config.php on line 90
+[14-Mar-2017 22:42:23 Asia/Calcutta] PHP Notice:  Use of undefined constant DB_SERVER_PASSWORD - assumed 'DB_SERVER_PASSWORD' in E:\Xampp\htdocs\dynamic\include\config.php on line 90
+[14-Mar-2017 22:42:23 Asia/Calcutta] PHP Notice:  Use of undefined constant DB_DATABASE - assumed 'DB_DATABASE' in E:\Xampp\htdocs\dynamic\include\config.php on line 90
+[14-Mar-2017 22:42:26 Asia/Calcutta] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 90
+[14-Mar-2017 22:42:26 Asia/Calcutta] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\Xampp\htdocs\dynamic\include\config.php on line 90
+[14-Mar-2017 22:44:09 Asia/Calcutta] PHP Notice:  Undefined variable: senderId in E:\Xampp\htdocs\dynamic\include\class\User.php on line 312
+[15-Mar-2017 22:40:37 Asia/Calcutta] PHP Fatal error:  Call to undefined method mysqli::re_db_query() in E:\Xampp\htdocs\dynamic\templates\content\index.tpl.php on line 27
+[15-Mar-2017 23:13:50 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 90
+[15-Mar-2017 23:14:19 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 90
+[15-Mar-2017 23:15:02 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 90
+[15-Mar-2017 23:15:18 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 91
+[15-Mar-2017 23:15:42 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 91
+[15-Mar-2017 23:15:53 Asia/Calcutta] PHP Notice:  Undefined index: password in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 32
+[15-Mar-2017 23:15:53 Asia/Calcutta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 35
+[15-Mar-2017 23:16:10 Asia/Calcutta] PHP Notice:  Undefined index: password in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 32
+[15-Mar-2017 23:16:10 Asia/Calcutta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 35
+[15-Mar-2017 23:16:36 Asia/Calcutta] PHP Notice:  Undefined index: password in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 32
+[15-Mar-2017 23:16:36 Asia/Calcutta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 35
+[15-Mar-2017 23:17:03 Asia/Calcutta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 36
+[15-Mar-2017 23:17:24 Asia/Calcutta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 36
+[15-Mar-2017 23:17:51 Asia/Calcutta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 37
+[15-Mar-2017 23:18:30 Asia/Calcutta] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 37
+[15-Mar-2017 23:18:30 Asia/Calcutta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 38
+[15-Mar-2017 23:18:45 Asia/Calcutta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\Xampp\htdocs\dynamic\admin-cp\login.php on line 38
+[15-Mar-2017 23:39:18 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamic/templates/admin-cp/content/category.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[15-Mar-2017 23:39:18 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/category.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[15-Mar-2017 23:46:11 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamic/templates/admin-cp/content/addCategory.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[15-Mar-2017 23:46:11 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/addCategory.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[15-Mar-2017 23:53:38 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamic/templates/admin-cp/content/product.php.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[15-Mar-2017 23:53:38 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/product.php.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[15-Mar-2017 23:53:53 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamic/templates/admin-cp/content/product..tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[15-Mar-2017 23:53:53 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/product..tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[15-Mar-2017 23:54:00 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamic/templates/admin-cp/content/product.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[15-Mar-2017 23:54:00 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/product.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[16-Mar-2017 00:12:34 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamic/templates/admin-cp/content/buyer.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[16-Mar-2017 00:12:34 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/buyer.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4

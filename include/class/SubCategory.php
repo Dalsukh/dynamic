@@ -36,8 +36,7 @@ class SubCategory
     }
 	public function store($data = array())
 	{
-		print_r($data);
-
+		
 		$insert = "INSERT INTO sub_category SET ";
         foreach($_REQUEST as $key=>$val){
             

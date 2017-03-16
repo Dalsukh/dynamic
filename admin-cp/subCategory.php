@@ -1,3 +1,4 @@
+<!-- subCategory.php -->
 <?php
 require_once("../include/config.php");
 /*
@@ -5,6 +6,6 @@ INSERT INTO `category` (`id`, `name`, `logo`, `keywords`, `status`, `created_at`
 */
 $category = new Category($db);
 $category->store();
-$content="addCategory";
+$content="subCategory";
 require_once(DIR_FS_TEMPLATES_ADMIN."main_page.tpl.php");
 ?>

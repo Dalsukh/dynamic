@@ -283,4 +283,71 @@ class User
         //$jsonData = file_get_contents('http://sms.hspsms.com/sendSMS?username=FMANTRA&message='.$message.'&sendername=MANTRA&smstype=TRANS&numbers='.$mobile.'&apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9');
         return $jsonData;
     }
+    public function sendMMS($mobile='',$message='')
+    {
+
+    /*Send SMS using PHP*/    
+    
+    //Your authentication key
+    $apikey = "6d7fc73c-a8b7-4d1d-8037-75f64fce38e9";
+    
+    //Multiple mobiles numbers separated by comma
+    $mobileNumber = $mobile;
+    
+    //Sender ID,While using route4 sender id should be 6 characters long.
+    //$senderId = "102234";
+    $sendername='MANTRA';
+    
+    //Your message to send, Add URL encoding here.
+    $message = urlencode("Test message");
+    
+    //Define route 
+    $route = "default";
+    /*username=FMANTRA&message='.$message.'&sendername=MANTRA&smstype=TRANS&numbers='.$mobile.'&apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9');*/
+    //Prepare you post parameters
+    $postData = array(
+        'apikey' => $apikey,
+        'numbers' => $mobile,
+        'message' => $message,
+        //'sender' => $senderId,
+        'route' => $route,
+        'username'=>'FMANTRA',
+        'message'=>$message,
+        'sendername'=>'MANTRA',
+        'smstype'=>'TRANS',
+    );
+    
+    //API URL
+    $url="http://sms.hspsms.com/sendSMS";
+    
+    // init the resource
+    $ch = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => $url,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => $postData
+        //,CURLOPT_FOLLOWLOCATION => true
+    ));
+    
+
+    //Ignore SSL certificate verification
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+
+    
+    //get response
+    $output = curl_exec($ch);
+    
+    //Print error if any
+    if(curl_errno($ch))
+    {
+        echo 'error:' . curl_error($ch);
+    }
+    
+    curl_close($ch);
+    
+    echo $output;
+
+    }
 }

@@ -1,3 +1,50 @@
+<?php 
+  require_once("../include/config.php");
+  $errors = array(
+            "email"=>"",
+            "password"=>"",
+            );
+    $data = array(
+            'email'=>"",
+            );
+    $message = "";
+
+    if(isset($_POST['Login'])){
+
+        $gump = new GUMP();
+        
+        $gump->validation_rules(array(
+        'password'    => 'required|max_len:100',
+        'email'       => 'required|valid_email',    
+        ));
+
+        
+        $validated_data = $gump->run($_POST);
+
+        if($validated_data === false) {
+
+        $result = $gump->get_errors_array();
+        $errors =array_merge($errors,$result);
+        $data = $_POST;
+
+        } else {
+
+        $data = $_POST;
+        $SELECT = "SELECT * FROM super_admin WHERE email='".$data['email']."' AND password='".md5($data['password'])."' AND deleted='0'";
+
+        $result = mysqli_query($db,$SELECT);
+        if(mysqli_num_rows($result)){
+            $row=mysqli_fetch_assoc($result);
+            $_SESSION['admin_id']=$row['id'];   
+            header("Location:index.php");
+        }else{
+            $errors['password'] = "Wrong email or Password";
+        }       
+        $message = "Record Insert Successfully";
+        }
+    }
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +70,12 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <style>
+    .errors{
+        font-weight: bold;
+        color: #FF0000;
+    }
+    </style>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
@@ -33,14 +86,16 @@
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-    <form action="../../index2.html" method="post">
+    <form action="" method="post">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" name='email' class="form-control" placeholder="Email" value="<?php echo $data["email"];?>">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <span class="errors"><?php echo $errors['email']?></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" name="password" class="form-control" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        <span class="errors"><?php echo $errors['password']?></span>
       </div>
       <div class="row">
         <div class="col-xs-8">
@@ -52,7 +107,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat" name="Login">Sign In</button>
         </div>
         <!-- /.col -->
       </div>

@@ -5,6 +5,9 @@ INSERT INTO `category` (`id`, `name`, `logo`, `keywords`, `status`, `created_at`
 */
 $category = new Category($db);
 $category->store();
-$content="addCategory";
+
+$content=basename($_SERVER['REQUEST_URI'],".php");
 require_once(DIR_FS_TEMPLATES_ADMIN."main_page.tpl.php");
 ?>
+
+

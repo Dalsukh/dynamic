@@ -70,6 +70,12 @@
 		define('DB_SERVER_USERNAME', 'root');
 		define('DB_SERVER_PASSWORD', '');
 		define('DB_DATABASE', 'u646130367_dynam');
+	}else{
+		define('DB_SERVER', 'localhost');
+		define('DB_SERVER_USERNAME', 'root');
+		define('DB_SERVER_PASSWORD', '');
+		define('DB_DATABASE', 'dynamic');
+
 	}
 	
 
@@ -110,3 +116,5 @@
 	require_once(DIR_FS_INCLUDES_CLASS."GUMP.php");
 	require_once(DIR_FS_INCLUDES_CLASS."cwUpload.php");
 	require_once(DIR_FS_INCLUDES."QR/qrlib.php");
+
+	$content=basename($_SERVER['REQUEST_URI'],".php");
