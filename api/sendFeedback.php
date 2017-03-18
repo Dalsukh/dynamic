@@ -33,7 +33,7 @@
 		if(isset($_REQUEST['email'])){
 			$from = $_REQUEST['email'];
 		}
-		$to = "parmar.dalsukh@gmail.com";
+		$email = "parmar.dalsukh@gmail.com";
 		$message = "Feedback From : ".$_REQUEST['name']."<br/>";
 		$message.= $_REQUEST['message'];
 		$message.= "<br/> Mobile No:".$_REQUEST['mobile'];

@@ -33,4 +33,49 @@
 
 		$response['errors'] = $errors;
 		echo json_encode($response);
+	} /*
+include("../include/config.php");
+	if(isset($_REQUEST['password'])){
+          if(isset($_REQUEST['mobile'])){
+		$username = $_REQUEST['mobile'];
+//                $email=$_REQUEST['email'];
+		$password = md5($_REQUEST['password']);
+		$result = mysqli_query($db,"SELECT * FROM users WHERE mobile= '$username' AND password= '$password'");
+
+
+		$json = array();
+		$category = array();
+		if(mysqli_num_rows($result)){
+			$row = mysqli_fetch_assoc($result);
+			$json['data'] = $row;
+			$json['success'] = 'success';
+		}else{
+			$json['success'] = 'fail';
+			$json["message"] = "No data found";
+		}
+}else{
+//$username = $_REQUEST['mobile'];
+                $email=$_REQUEST['email'];
+		$password = md5($_REQUEST['password']);
+		$result = mysqli_query($db,"SELECT * FROM users WHERE email= '$email' AND password= '$password'");
+
+
+		$json = array();
+		$category = array();
+		if(mysqli_num_rows($result)){
+			$row = mysqli_fetch_assoc($result);
+			$json['data'] = $row;
+			$json['success'] = 'success';
+		}else{
+			$json['success'] = 'fail';
+			$json["message"] = "No data found";
+		}
+}
+
+	}else{
+		$json['success'] = '0';
+		$json["message"] = "Parameters not valid";
 	}
+	echo json_encode($json);
+	mysqli_close($db);
+	*/
