@@ -52,3 +52,306 @@
 [15-Mar-2017 23:54:00 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/product.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
 [16-Mar-2017 00:12:34 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamic/templates/admin-cp/content/buyer.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
 [16-Mar-2017 00:12:34 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/buyer.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 4
+[18-Mar-2017 23:59:55 Asia/Calcutta] PHP Fatal error:  Call to undefined method mysqli::re_db_query() in E:\Xampp\htdocs\dynamic\templates\content\index.tpl.php on line 27
+[19-Mar-2017 00:17:12 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ')' in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 8
+[19-Mar-2017 00:17:22 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ')' in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 8
+[19-Mar-2017 00:17:57 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ')' in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 8
+[19-Mar-2017 00:52:21 Asia/Calcutta] PHP Notice:  Undefined variable: sellars in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 10
+[19-Mar-2017 00:52:21 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 10
+[19-Mar-2017 00:52:21 Asia/Calcutta] PHP Notice:  Undefined variable: sellars in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 16
+[19-Mar-2017 00:52:21 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 16
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 10
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 10
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 18
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:54:43 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 10
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 10
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 18
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 00:55:22 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 19
+[19-Mar-2017 01:05:27 Asia/Calcutta] PHP Notice:  Undefined variable: products in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 16
+[19-Mar-2017 01:05:27 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 16
+[19-Mar-2017 01:05:27 Asia/Calcutta] PHP Notice:  Undefined variable: products in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 22
+[19-Mar-2017 01:05:27 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 22
+[19-Mar-2017 01:06:03 Asia/Calcutta] PHP Notice:  Undefined variable: products in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:06:03 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:06:03 Asia/Calcutta] PHP Notice:  Undefined variable: products in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 18
+[19-Mar-2017 01:06:03 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 18
+[19-Mar-2017 01:20:43 Asia/Calcutta] PHP Notice:  Undefined variable: products in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:20:43 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:20:43 Asia/Calcutta] PHP Notice:  Undefined variable: products in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 18
+[19-Mar-2017 01:20:43 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 18
+[19-Mar-2017 01:21:34 Asia/Calcutta] PHP Notice:  Undefined index: user_id in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 17
+[19-Mar-2017 01:21:34 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:21:34 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:21:34 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:21:34 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:21:34 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:21:34 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:21:34 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:21:34 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:21:51 Asia/Calcutta] PHP Warning:  Cannot use a scalar value as an array in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 23
+[19-Mar-2017 01:21:51 Asia/Calcutta] PHP Warning:  Cannot use a scalar value as an array in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 30
+[19-Mar-2017 01:21:51 Asia/Calcutta] PHP Notice:  Undefined variable: select in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 44
+[19-Mar-2017 01:21:51 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:21:51 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:21:51 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:21:51 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:22:31 Asia/Calcutta] PHP Notice:  Undefined index: user_id in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 17
+[19-Mar-2017 01:22:31 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:22:31 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:22:31 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:22:31 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:22:31 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:22:31 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:22:31 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:22:31 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:22:53 Asia/Calcutta] PHP Notice:  Undefined index: user_id in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 17
+[19-Mar-2017 01:22:53 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:22:53 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:22:53 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:22:53 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:22:53 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:22:53 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:22:53 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:22:53 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:23:06 Asia/Calcutta] PHP Notice:  Undefined index: user_id in E:\Xampp\htdocs\dynamic\include\class\Product.php on line 17
+[19-Mar-2017 01:23:06 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:23:06 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:23:06 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:23:06 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:23:06 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:23:06 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:23:06 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:23:06 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:23:13 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:23:13 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 12
+[19-Mar-2017 01:23:13 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 01:23:13 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:23:13 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:23:13 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:23:13 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 21
+[19-Mar-2017 01:23:13 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 20
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 10:59:29 Asia/Calcutta] PHP Notice:  Undefined index: thumb in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 71
+[19-Mar-2017 12:12:51 Asia/Calcutta] PHP Notice:  Undefined variable: header_fields in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 60
+[19-Mar-2017 12:12:51 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 60
+[19-Mar-2017 12:12:51 Asia/Calcutta] PHP Notice:  Undefined variable: users in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[19-Mar-2017 12:12:51 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[19-Mar-2017 12:13:35 Asia/Calcutta] PHP Notice:  Undefined variable: users in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[19-Mar-2017 12:13:35 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[19-Mar-2017 12:14:17 Asia/Calcutta] PHP Notice:  Undefined variable: users in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[19-Mar-2017 12:14:17 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[19-Mar-2017 12:14:19 Asia/Calcutta] PHP Notice:  Undefined variable: users in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[19-Mar-2017 12:14:19 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:14:36 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:22:57 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:22:57 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:22:57 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:22:57 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[19-Mar-2017 12:22:57 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 75
+[20-Mar-2017 22:08:10 Asia/Calcutta] PHP Notice:  Undefined variable: $_REQUEST[filter][full_name][value] in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 23
+[20-Mar-2017 22:08:57 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 16
+[20-Mar-2017 22:09:22 Asia/Calcutta] PHP Notice:  Undefined variable: $_REQUEST[filter][full_name][value] in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 23
+[20-Mar-2017 22:09:46 Asia/Calcutta] PHP Notice:  Use of undefined constant filter - assumed 'filter' in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 22
+[20-Mar-2017 22:09:46 Asia/Calcutta] PHP Notice:  Use of undefined constant full_name - assumed 'full_name' in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 22
+[20-Mar-2017 22:09:46 Asia/Calcutta] PHP Notice:  Use of undefined constant value - assumed 'value' in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 22
+[20-Mar-2017 22:09:46 Asia/Calcutta] PHP Notice:  Undefined variable: $_REQUEST[filter][full_name][value] in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 24
+[20-Mar-2017 22:09:59 Asia/Calcutta] PHP Notice:  Undefined variable: $_REQUEST[filter][full_name][value] in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 24
+[20-Mar-2017 22:11:32 Asia/Calcutta] PHP Notice:  Undefined variable: $_REQUEST['filter']['full_name']['value' in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 24
+[20-Mar-2017 22:11:54 Asia/Calcutta] PHP Notice:  Undefined variable: $_REQUEST['filter']['full_name']['value'] in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 24
+[20-Mar-2017 22:12:13 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE), expecting ',' or ';' in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 24
+[20-Mar-2017 22:12:18 Asia/Calcutta] PHP Notice:  Undefined variable: $_REQUEST['filter']['full_name']['value'] in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 25
+[20-Mar-2017 22:13:35 Asia/Calcutta] PHP Notice:  Undefined variable: data in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 18

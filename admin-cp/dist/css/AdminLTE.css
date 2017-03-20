@@ -1255,7 +1255,7 @@ a:focus {
  * ---------------
  */
 .form-control {
-  border-radius: 0;
+  border-radius: 4px;
   box-shadow: none;
   border-color: #d2d6de;
 }
@@ -4940,3 +4940,13 @@ table.text-center th {
     white-space: normal !important;
   }
 }
+/* .table > thead > tr > th 
+{
+  background-color: #FFF !important;
+}
+*/
+    hr
+    {
+        border-top: 1px solid #3c8dbc !important;
+    }
+ 

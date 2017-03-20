@@ -1,13 +1,12 @@
 <?php
-//City.php
-
-class City
+//Admin.php
+class Admin 
 {
 
     public function __construct($db=null)
     {
         $this->db=$db;
-        $this->table = "geo_locations";
+        $this->table = "super_admin";
     }
 
     /**
@@ -15,41 +14,38 @@ class City
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($city,$where = array())
+    public function index($where = array())
     {
-
-    	if(array_key_exists("latitude", $where) && array_key_exists("longitude", $where)){
-
-    		$result = getPlaceName($where['latitude'], $where['longitude']);
-    		// address city
-    		$city = $result['city'];
-    	}
-    	
-    	$select = "SELECT DISTINCT(name) AS name,id FROM geo_locations WHERE name like '%".$city."%'";
-
-
-        if(empty($city)){
-            $select.= " AND pin like '3%'";
-        }
-        $select .= " ORDER BY name ASC";
-    	
-        $result = mysqli_query($this->db,$select);    
+        $select = "SELECT * FROM super_admin WHERE deleted='0'";
+        $result = mysqli_query($this->db,$select); 
         $data = array();
         if($result && mysqli_num_rows($result)){
-        	while ($row=mysqli_fetch_assoc($result)) {
-        		$data[] = $row;
-        	}
-        	if(array_key_exists("latitude", $where))
-        	{
-        		$response = array("status"=>"success","msg"=>"City found","data"=>$data[0]);    
-        	}else{
-        		$response = array("status"=>"success","msg"=>"City found","data"=>$data);    
-        	}
+            while ($row=mysqli_fetch_assoc($result)) {
+                
+                $data[] = $row;
+            } 
+        }
+        return $data;
+        
+    }
+
+    public function login($data = array())
+    {
+
+        $email = $_REQUEST['email'];
+        $password = $_REQUEST['password'];
+        $response = array();
+        
+        $select = "SELECT * FROM super_admin WHERE (email='$email' OR mobile='$email') AND password='".md5(re_db_input($password,$this->db))."'";
+        $result = mysqli_query($this->db,$select);    
+        if($result && mysqli_num_rows($result)){
+            $row=mysqli_fetch_assoc($result);
             
+            $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
         }else{
-            $response = array('status' => "fail","msg"=>"City not found");
-        }         
-        return $response;
+            $response = array('status' => "fail","msg"=>"Wrong email or password");
+        } 
+        return $response;   
     }
 
     /**
@@ -63,7 +59,7 @@ class City
 
         $otp = mt_rand(1000,9999);
 
-        $insert = "INSERT INTO users SET ";
+        $insert = "INSERT INTO super_admin SET ";
         foreach($_REQUEST as $key=>$val){
             if($key == 'password')
             {
@@ -73,48 +69,14 @@ class City
             }
         }
         //$insert .= "state='GUJARAT', country='INDIA',";
-        $insert .="otp='$otp', status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
+        $insert .="status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
 
         $result = mysqli_query($this->db,$insert);
         
         $user_id = mysqli_insert_id($this->db);
         $member_id = strtoupper(generateRandomString(25));
 
-        $QR_path = DIR_FS."images/QRCode/";
-        $QR_name = $member_id.".png";
-        $errorCorrectionLevel = 'H';
-        //array('L','M','Q','H')
-        $matrixPointSize = 10;
-        $member_qr_code = SITE_URL."/images/QRCode/".$QR_name;
-
-        QRcode::png($member_id, $QR_path.$QR_name, $errorCorrectionLevel, $matrixPointSize, 2); 
-        /*
-        png($text, $outfile = false, $level = QR_ECLEVEL_L, $size = 3, $margin = 4, $saveandprint=false)
-        png($text, $outfile = false, $level = QR_ECLEVEL_L, $size = 3, $margin = 4, $saveandprint=false)
-        */   
-
-        
-        $merchants_insert = "INSERT INTO `merchants` (
-            `id`, `user_id`, `member_id`, `member_qr_code`,
-            `company_name`, `company_logo`, `job_title`,
-            `email1`, `email2`, `website`, `address`, `city`, `state`, `country`, `pincode`,
-            `mobile1`, `mobile2`, `landline1`, `landline2`, `fax1`, `fax2`, 
-            `facebook`, `twitter`, `google`, `youtube`, `merchant_type`, `business_type`, 
-            `additional_business`, `latitude`, `longitude`, 
-            `status`, `created_at`, `updated_at`, `deleted`) 
-            VALUES 
-            (NULL, '$user_id', '$member_id', '$member_qr_code',
-            '', '', '',
-            'first@mail.com', '', '', '', 'Rajkot', 'GUJARAT', 'INDIA', 
-            '360001',
-            '".$data['mobile']."', '', '', '', '', '', 
-            'facebook.com', 'twitter.com', 'google.com', 'youtube.com', 'FREE', '',
-            '', '', '',
-            '1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, '0');";
-
-        $result = mysqli_query($this->db,$merchants_insert);
-
-
+       
         if($result){
             $response = array("status"=>"success","msg"=>"User Register Successfully",
                 "data"=>array("user_id"=>$user_id)); 
@@ -133,6 +95,16 @@ class City
      */
     public function find($id)
     {
+        $select = "SELECT * FROM super_admin WHERE id='$id'";
+        $result = mysqli_query($this->db,$select);    
+        if($result && mysqli_num_rows($result)){
+            $row=mysqli_fetch_assoc($result);
+           
+            $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
+        }else{
+            $response = array('status' => "fail","msg"=>"Wrong email or password");
+        } 
+        return $response;   
         
     }
 
@@ -145,17 +117,25 @@ class City
      */
     public function update($data=array(),$id)
     {
-        $update = "UPDATE users SET ";
+        $update = "UPDATE super_admin SET ";
+        unset($data['user_id']);
+
         foreach($data as $key=>$val)
         {
-            $update.="$key = '".$val."',";           
+            if($key == 'password')
+            {
+                $update .= $key."='".md5(re_db_input($val,$this->db))."',";
+            }else if($key != 'PHPSESSID'){
+                $update .= $key."='".re_db_input($val,$this->db)."',";
+            }           
 
         }
         $update.="updated_at = CURRENT_TIMESTAMP";
         $update.=" WHERE id='$id'";
 
         $result = mysqli_query($this->db,$update);
-        return $result;
+        $response = array("status"=>"success","msg"=>"Update Successfully");
+        return $response;
     }
 
     /**
@@ -174,12 +154,12 @@ class City
         $otp = $_REQUEST['otp'];
         $response = array();
         
-        echo $select = "SELECT * FROM users WHERE id = '$user_id' AND otp='$otp'";
+        echo $select = "SELECT * FROM super_admin WHERE id = '$user_id' AND otp='$otp'";
         $result = mysqli_query($this->db,$select);    
         if($result && mysqli_num_rows($result)){
             $row = $row=mysqli_fetch_assoc($result);
 
-            $update_data = array('mobile_verified' => "1");
+            
             $this->update($update_data,$user_id);
 
             $response = array("status"=>"success","msg"=>"OTP Verify success","data"=>$row);    
@@ -193,7 +173,7 @@ class City
     public function forgotPassword($mobile,$email,$db)
     {
         $return = array();
-        $select = "SELECT * FROM users WHERE email='$email' OR mobile = '$mobile'";
+        $select = "SELECT * FROM super_admin WHERE email='$email' OR mobile = '$mobile'";
         $result = mysqli_query($db,$select);    
         if($result && mysqli_num_rows($result)){
 
@@ -258,6 +238,102 @@ class City
             return $return;
         }
         
+    }
+
+    public function sendSms($mobile='',$message='')
+    {
+        $curlSession = curl_init();
+        curl_setopt($curlSession, CURLOPT_URL, 'http://sms.hspsms.com/sendSMS?username=FMANTRA&message='.$message.'&sendername=MANTRA&smstype=TRANS&numbers='.$mobile.'&apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9');
+        curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);
+        curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, true);
+
+        $jsonData = json_decode(curl_exec($curlSession));
+        
+        curl_close($curlSession);
+        //$jsonData = file_get_contents('http://sms.hspsms.com/sendSMS?username=FMANTRA&message='.$message.'&sendername=MANTRA&smstype=TRANS&numbers='.$mobile.'&apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9');
+        return $jsonData;
+    }
+    public function sendMMS($mobile='',$message='')
+    {
+
+    /*Send SMS using PHP*/    
+    
+    //Your authentication key
+    $apikey = "6d7fc73c-a8b7-4d1d-8037-75f64fce38e9";
+    
+    //Multiple mobiles numbers separated by comma
+    $mobileNumber = $mobile;
+    
+    //Sender ID,While using route4 sender id should be 6 characters long.
+    //$senderId = "102234";
+    $sendername='MANTRA';
+    
+    //Your message to send, Add URL encoding here.
+    $message = urlencode("Test message");
+    
+    //Define route 
+    $route = "default";
+    /*username=FMANTRA&message='.$message.'&sendername=MANTRA&smstype=TRANS&numbers='.$mobile.'&apikey=6d7fc73c-a8b7-4d1d-8037-75f64fce38e9');*/
+    //Prepare you post parameters
+    $postData = array(
+        'apikey' => $apikey,
+        'numbers' => $mobile,
+        'message' => $message,
+        //'sender' => $senderId,
+        'route' => $route,
+        'username'=>'FMANTRA',
+        'message'=>$message,
+        'sendername'=>'MANTRA',
+        'smstype'=>'TRANS',
+    );
+    
+    //API URL
+    $url="http://sms.hspsms.com/sendSMS";
+    
+    // init the resource
+    $ch = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => $url,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => $postData
+        //,CURLOPT_FOLLOWLOCATION => true
+    ));
+    
+
+    //Ignore SSL certificate verification
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+
+    
+    //get response
+    $output = curl_exec($ch);
+    
+    //Print error if any
+    if(curl_errno($ch))
+    {
+        echo 'error:' . curl_error($ch);
+    }
+    
+    curl_close($ch);
+    
+    echo $output;
+
+    }
+
+
+    public function checkLogin()
+    {
+    	if(isset($_SESSION['admin_id']))
+    	{
+    		return true;
+    	}
+    	else{
+    		header("Location:login.php");
+    		exit();
+    		return false;
+
+    	}
     }
 }
 

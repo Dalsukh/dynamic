@@ -24,6 +24,8 @@ class User
                 if(!empty($row['image'])){
                     $row['thumb'] = SITE_URL."images/User/Thumb/".$row['image'];
                     $row['image'] = SITE_URL."images/User/".$row['image'];
+                }else{
+                    $row['thumb']='';
                 }
                 $data[] = $row;
             } 
@@ -48,6 +50,8 @@ class User
 
                 $row['thumb'] = SITE_URL."images/User/Thumb/".$row['image'];
                 $row['image'] = SITE_URL."images/User/".$row['image'];    
+            }else{
+                $row['thumb'] = '';
             }
 
             $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
@@ -127,8 +131,9 @@ class User
             if(!empty($row['image'])){
                 $row['thumb'] = SITE_URL."images/User/Thumb/".$row['image'];
                 $row['image'] = SITE_URL."images/User/".$row['image'];    
+            }else{
+                $row['thumb'] = '';
             }
-            
 
             $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
         }else{

@@ -29,6 +29,5 @@
 
 	}
 	else{
-
 		echo json_encode($errors);
 	}

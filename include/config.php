@@ -109,12 +109,16 @@
 	require_once(DIR_FS_INCLUDES_CLASS."City.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Chatting.php");
 	require_once(DIR_FS_INCLUDES_CLASS."User.php");
+	require_once(DIR_FS_INCLUDES_CLASS."Admin.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Merchants.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Category.php");
 	require_once(DIR_FS_INCLUDES_CLASS."SubCategory.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Product.php");
 	require_once(DIR_FS_INCLUDES_CLASS."GUMP.php");
+	require_once(DIR_FS_INCLUDES_CLASS."Input.php");
 	require_once(DIR_FS_INCLUDES_CLASS."cwUpload.php");
 	require_once(DIR_FS_INCLUDES."QR/qrlib.php");
 
+	$input = new Input();
+	
 	$content=basename($_SERVER['REQUEST_URI'],".php");

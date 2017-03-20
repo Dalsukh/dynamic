@@ -38,12 +38,10 @@ class Product
     	else if($where['type'] ==  "City"){
     		$select = "SELECT p.*,pl.status as is_liked FROM products as p WHERE p.deleted='0'
     					LEFT JOIN products_likes as pl ON pl.product_id = p.id 
-    					AND p.sub_category_id = '$sub_category_id' 
-    			 		";
+    					LEFT JOIN merchants as m ON p.user_id = m.id
+    					AND m.city LIKE '%".$where['city']."%'";
     	}
-    	$select .="ORDER BY p.total_likes DESC ";
-
-    	
+    	$select .="ORDER BY p.total_likes DESC ";    	
 
 		$result = mysqli_query($this->db,$select);	
 		$tempData = array();
@@ -133,8 +131,28 @@ class Product
 
 	public function find($user_id, $id)
     {
-        $select = "SELECT p.*,pl.status as is_liked FROM products as p 
+		/*
+		
+				(p.price * m.min_discount/100) as discounts,
+				//m.city,
+		*/
+        $select = "SELECT p.*,pl.status as is_liked,
+        		m.id as m_id,
+        		m.company_name,
+        		m.company_logo,
+        		m.job_title,
+        		m.email1,
+        		m.website,
+        		m.address,        		
+        		m.mobile1 as mobile,
+        		m.landline1 as landline,
+        		m.merchant_type,
+        		m.business_type,
+        		m.min_discount,
+        		m.full_name		
+        			FROM products as p 
     		LEFT JOIN products_likes as pl ON pl.product_id = p.id 
+    		LEFT JOIN merchants as m ON p.user_id = m.id
     		WHERE p.deleted='0' AND p.id = ".$id;
 
         $result = mysqli_query($this->db,$select);    
@@ -162,6 +180,7 @@ class Product
             	$INSERT = "INSERT INTO products_views SET user_id = '$user_id', product_id = '$id'";
             	
             	$INSERT_RES = mysqli_query($this->db,$INSERT);
+
             }
         }else{
             $response = array('status' => "fail","msg"=>"Product not Found");
@@ -191,5 +210,9 @@ class Product
         $response = array("status"=>"success","msg"=>"Update Successfully");
         return $response;
     }
+
+    //getPlaceName($latitude, $longitude)
+    //city
+    //address
 
 }

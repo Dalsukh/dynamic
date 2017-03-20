@@ -7,18 +7,15 @@
 	 */
 	require_once("../include/config.php");
 	//include_once('include/AES.php');
-	
+	$admin = new Admin($db);
+	$admin->checkLogin();
 	
 	
 	extract($_SESSION);
 	extract($_POST);
 	extract($_GET);
 	$count=0;
-	if(isset($user_id) && $user_type!="ADMIN")
-	{
-		header("Location:home.php");
-		exit();
-	}
+	
 	/*else if(!isset($user_id)){
 		header("Location:login.php");
 	}*/

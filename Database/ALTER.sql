@@ -151,3 +151,9 @@ ALTER TABLE  `merchants` ADD  `mobile_verified` TINYINT NOT NULL AFTER  `otp` ,
 ADD  `email_verified` TINYINT NOT NULL AFTER  `mobile_verified`
 
 ALTER TABLE  `merchants` ADD  `password` VARCHAR( 255 ) NOT NULL AFTER  `email2`
+
+add in products
+city
+discount
+old_price
+cash_back
