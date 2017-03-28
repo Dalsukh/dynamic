@@ -1,4 +1,5 @@
 <?php
+	//getCategory.php
 	require_once("../include/config.php");
 	$category = new Category($db);
 	$response = $category->index();	

@@ -58,8 +58,8 @@
             'rpp' => 10,
             'key' => 'page',
             'target' => '',
-            'next' => 'Next',
-            'previous' => 'Previous',
+            'next' => 'Next &raquo;',
+            'previous' => '&laquo; Previous',
             'alwaysShowPagination' => false,
             'clean' => false
         );
@@ -85,7 +85,7 @@
             }
 
             // Pass along get (for link generation)
-            $this->_variables['get'] = $_REQUEST;
+            $this->_variables['get'] = $_GET;
         }
 
         /**

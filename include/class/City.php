@@ -189,75 +189,34 @@ class City
         return $response;
     }
 
-
-    public function forgotPassword($mobile,$email,$db)
+    public function getNearByCity($latitude,$longitude,$radius=50)
     {
-        $return = array();
-        $select = "SELECT * FROM users WHERE email='$email' OR mobile = '$mobile'";
-        $result = mysqli_query($db,$select);    
-        if($result && mysqli_num_rows($result)){
+        // get geocode object as array from The Google Maps Geocoding API
+        /*$geocodeObject = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address={RAJKOT},{IN}'), true);
+        */
+        // get latitude and longitude from geocode object
+        // $latitude = $geocodeObject['results'][0]['geometry']['location']['lat'];
+        // $longitude = $geocodeObject['results'][0]['geometry']['location']['lng'];
 
-        $row =mysqli_fetch_assoc($result);
+        // set request options
+        $responseStyle = 'short'; // the length of the response
+        $citySize = 'cities15000'; // the minimal number of citizens a city must have
+        //$radius = 50; // the radius in KM
+        $maxRows = 50; // the maximum number of rows to retrieve
+        $username = 'dilkumarparmar'; // the username of your GeoNames account
 
-        $token = generateRandomString();
-        if(!empty($mobile))
-        {
-            $token = mt_rand(1000,9999);
+        // get nearby cities based on range as array from The GeoNames API
+        $nearbyCities = json_decode(file_get_contents('http://api.geonames.org/findNearbyPlaceNameJSON?lat='.$latitude.'&lng='.$longitude.'&style='.$responseStyle.'&cities='.$citySize.'&radius='.$radius.'&maxRows='.$maxRows.'&username='.$username, true));
+
+        // foreach nearby city get city details
+
+        $data = array();
+        foreach($nearbyCities->geonames as $cityDetails)
+        {   
+            $data[] = $cityDetails->name;                        
         }
-
-
-        $INSERT = "INSERT INTO password_resets (`user_id`,`email`, `token`, `created_at`)
-                    VALUES ('".$row['id']."','$email', '$token', CURRENT_TIMESTAMP());";
-        $result = mysqli_query($db,$INSERT);
-
-        if(!empty($mobile))
-        {
-            $return = array('status' => "success","msg"=>"SMS send success","data"=>array("token"=>$token));
-            return $return;
-        }
-
-        $message = '<html>
-                    <head>
-                    <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-                    </head>
-                    <body>';
-        $message .='<div class="row">
-                        <div class="col-md-6">
-                            <br/><br/>
-                            Hi '.$row['full_name'].' <br/>
-                            Your password reset token is : '.$token.'
-                            <br/>
-                            Thanks & Regards
-                            Dynamic     
-                        </div>
-                    </div>';
-
-        
-        
-        /*$addURLS = $_POST['addURLS'];
-        if (($addURLS) != '') {
-            $message .= "<tr><td><strong>URL To Change (additional):</strong> </td><td>" . strip_tags($addURLS) . "</td></tr>";
-        }*/
-        /*$curText = htmlentities($_POST['curText']);           
-        if (($curText) != '') {
-            $message .= "<tr><td><strong>CURRENT Content:</strong> </td><td>" . $curText . "</td></tr>";
-        }
-        $message .= "<tr><td><strong>NEW Content:</strong> </td><td>" . htmlentities($_POST['newText']) . "</td></tr>";
-        $message .= "</table>";*/
-        $message .= '<img src="'.SITE_URL.'/images/full_logo_small.png" alt="Dynamic" />';
-        $message .= "</body></html>";
-
-        simpleMail($from="no-reply@p2d.esy.es",$to=$email,$subject="Forgot Password - Dynamic",$message);   
-        $return = array('status' => "success","msg"=>"Email send success");
-        return $return;
-
-        }
-        else{
-            $return = array('status' => "fail","msg"=>"Email not found");
-            return $return;
-        }
-        
+        return $data;
     }
+    
 }
 

@@ -18,17 +18,25 @@ class Merchants
     public function index($where = array())
     {
         $select = "SELECT * FROM merchants WHERE deleted='0'";
+        if(is_array($where)){
+            foreach($where as $key=>$val)
+            {
+                $select .=" AND $key LIKE '%".$val."%'";
+            }
+        }
         $result = mysqli_query($this->db,$select); 
         $data = array();
         if($result && mysqli_num_rows($result)){
             while ($row=mysqli_fetch_assoc($result)) {
-                if(!empty($row['image'])){
-                    $row['thumb'] = SITE_URL."images/User/Thumb/".$row['image'];
-                    $row['image'] = SITE_URL."images/User/".$row['image'];
+                if(!empty($row['company_logo'])){
+                    $row['thumb'] = SITE_URL."images/User/Thumb/".$row['company_logo'];
+                    $row['image'] = SITE_URL."images/User/".$row['company_logo'];
                 }
                 $data[] = $row;
+
             } 
         }
+        
         return $data;
         
     }
@@ -45,13 +53,19 @@ class Merchants
         if($result && mysqli_num_rows($result)){
             $row=mysqli_fetch_assoc($result);
             
-            /*if(!empty($row['image'])){
+            if(!empty($row['company_logo'])){
 
-                $row['thumb'] = SITE_URL."images/User/Thumb/".$row['image'];
-                $row['image'] = SITE_URL."images/User/".$row['image'];    
-            }*/
+                $row['thumb'] = SITE_URL."images/User/Thumb/".$row['company_logo'];
+                $row['image'] = SITE_URL."images/User/".$row['company_logo'];    
+            }else{
+                $row['thumb'] = "";
+                $row['image'] = "";      
+            }
 
-            $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
+            $response = array("status"=>"success",
+                        "msg"=>"Login success",
+                        "sender"=>"SELLER",
+                        "data"=>$row);    
         }else{
             $response = array('status' => "fail","msg"=>"Wrong email or password");
         } 
@@ -124,8 +138,13 @@ class Merchants
         $result = mysqli_query($this->db,$select);    
         if($result && mysqli_num_rows($result)){
             $row=mysqli_fetch_assoc($result);
-                       
 
+            /*if(!empty($row['company_logo'])){
+
+                $row['thumb'] = SITE_URL."images/User/Thumb/".$row['company_logo'];
+                $row['image'] = SITE_URL."images/User/".$row['company_logo'];    
+            }*/
+            
             $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
         }else{
             $response = array('status' => "fail","msg"=>"Wrong email or password");
@@ -172,7 +191,8 @@ class Merchants
      */
     public function destroy($id)
     {
-        
+        $delete = "UPDATE merchants SET deleted='1' WHERE id = '$id'";
+        $result = mysqli_query($this->db,$delete);        
     }
     public function verifyOTP($user_id,$otp)
     {
@@ -180,7 +200,7 @@ class Merchants
         $otp = $_REQUEST['otp'];
         $response = array();
         
-        echo $select = "SELECT * FROM merchants WHERE id = '$user_id' AND otp='$otp'";
+        $select = "SELECT * FROM merchants WHERE id = '$user_id' AND otp='$otp'";
         $result = mysqli_query($this->db,$select);    
         if($result && mysqli_num_rows($result)){
             $row = $row=mysqli_fetch_assoc($result);

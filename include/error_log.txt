@@ -355,3 +355,804 @@
 [20-Mar-2017 22:12:13 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE), expecting ',' or ';' in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 24
 [20-Mar-2017 22:12:18 Asia/Calcutta] PHP Notice:  Undefined variable: $_REQUEST['filter']['full_name']['value'] in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 25
 [20-Mar-2017 22:13:35 Asia/Calcutta] PHP Notice:  Undefined variable: data in E:\Xampp\htdocs\dynamic\include\class\Input.php on line 18
+[23-Mar-2017 22:50:40 Asia/Calcutta] PHP Fatal error:  Cannot redeclare User::destroy() in E:\Xampp\htdocs\dynamic\include\class\User.php on line 356
+[23-Mar-2017 22:54:06 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\User.php on line 22
+[23-Mar-2017 22:54:06 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\User.php on line 22
+[23-Mar-2017 22:54:06 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\User.php on line 22
+[23-Mar-2017 22:56:24 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\User.php on line 22
+[23-Mar-2017 22:56:24 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\User.php on line 22
+[23-Mar-2017 22:56:24 Asia/Calcutta] PHP Notice:  Array to string conversion in E:\Xampp\htdocs\dynamic\include\class\User.php on line 22
+[23-Mar-2017 22:59:08 Asia/Calcutta] PHP Notice:  Undefined index: filter in E:\Xampp\htdocs\dynamic\admin-cp\buyer.php on line 8
+[23-Mar-2017 22:59:08 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\include\class\User.php on line 20
+[23-Mar-2017 23:00:28 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\include\class\User.php on line 20
+[23-Mar-2017 23:06:55 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamic/templates/admin-cp/content/addUser.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 6
+[23-Mar-2017 23:06:55 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/addUser.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 6
+[23-Mar-2017 23:09:51 Asia/Calcutta] PHP Notice:  Undefined index: name in E:\Xampp\htdocs\dynamic\admin-cp\left-side-bar.php on line 11
+[23-Mar-2017 23:10:51 Asia/Calcutta] PHP Notice:  Undefined index: name in E:\Xampp\htdocs\dynamic\admin-cp\left-side-bar.php on line 11
+[23-Mar-2017 23:10:53 Asia/Calcutta] PHP Notice:  Undefined index: name in E:\Xampp\htdocs\dynamic\admin-cp\left-side-bar.php on line 11
+[23-Mar-2017 23:23:57 Asia/Calcutta] PHP Notice:  Undefined variable: field_list in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\addUser.tpl.php on line 15
+[23-Mar-2017 23:23:57 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\addUser.tpl.php on line 15
+[23-Mar-2017 23:38:47 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'Exception' with message 'Validator method 'validate_Status' does not exist.' in E:\Xampp\htdocs\dynamic\include\class\GUMP.php:412
+Stack trace:
+#0 E:\Xampp\htdocs\dynamic\include\class\GUMP.php(256): GUMP->validate(Array, Array)
+#1 E:\Xampp\htdocs\dynamic\admin-cp\addUser.php(58): GUMP->run(Array)
+#2 {main}
+  thrown in E:\Xampp\htdocs\dynamic\include\class\GUMP.php on line 412
+[23-Mar-2017 23:53:05 Asia/Calcutta] PHP Fatal error:  Cannot access static:: when no class scope is active in E:\Xampp\htdocs\dynamic\include\functions\function.php on line 813
+[23-Mar-2017 23:54:03 Asia/Calcutta] PHP Notice:  Undefined variable: city in E:\Xampp\htdocs\dynamic\admin-cp\addUser.php on line 64
+[23-Mar-2017 23:54:03 Asia/Calcutta] PHP Fatal error:  Call to a member function store() on null in E:\Xampp\htdocs\dynamic\admin-cp\addUser.php on line 64
+[24-Mar-2017 00:50:48 Asia/Calcutta] PHP Notice:  Undefined variable: input in E:\Xampp\htdocs\dynamic\admin-cp\buyer.php on line 8
+[24-Mar-2017 00:50:48 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on null in E:\Xampp\htdocs\dynamic\admin-cp\buyer.php on line 8
+[24-Mar-2017 00:54:10 Asia/Calcutta] PHP Notice:  Undefined variable: input in E:\Xampp\htdocs\dynamic\admin-cp\addUser.php on line 9
+[24-Mar-2017 00:54:10 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on null in E:\Xampp\htdocs\dynamic\admin-cp\addUser.php on line 9
+[24-Mar-2017 01:19:39 Asia/Calcutta] PHP Notice:  Undefined variable: markup in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 92
+[24-Mar-2017 01:20:02 Asia/Calcutta] PHP Notice:  Undefined variable: markup in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 92
+[24-Mar-2017 01:33:22 Asia/Calcutta] PHP Warning:  require_once(E:/Xampp/htdocs//dynamic/templates/admin-cp/content/editUser.tpl.php): failed to open stream: No such file or directory in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 6
+[24-Mar-2017 01:33:22 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'E:/Xampp/htdocs//dynamic/templates/admin-cp/content/editUser.tpl.php' (include_path='E:\Xampp\php\PEAR') in E:\Xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 6
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: Full Name in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: Email in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: Mobile in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: User Type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: City in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: State in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: Country in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: Pincode in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: Mobile Verified in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: Email Verified in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: User Package Type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: Referral Code in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:23 Asia/Calcutta] PHP Notice:  Undefined index: Referral User in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: email in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: mobile in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: user_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: city in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: state in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: country in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: pincode in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: mobile_verified in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: email_verified in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: user_package_type in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: referral_code in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 01:37:36 Asia/Calcutta] PHP Notice:  Undefined index: referral_id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 35
+[24-Mar-2017 23:01:10 Asia/Calcutta] PHP Warning:  Missing argument 2 for User::update(), called in E:\Xampp\htdocs\dynamic\admin-cp\editUser.php on line 67 and defined in E:\Xampp\htdocs\dynamic\include\class\User.php on line 157
+[24-Mar-2017 23:01:10 Asia/Calcutta] PHP Notice:  Undefined variable: id in E:\Xampp\htdocs\dynamic\include\class\User.php on line 173
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:20:00 Asia/Calcutta] PHP Notice:  Undefined index: id in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\buyer.tpl.php on line 83
+[24-Mar-2017 23:31:37 Asia/Calcutta] PHP Notice:  Undefined variable: input in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:31:37 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on null in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:31:47 Asia/Calcutta] PHP Notice:  Undefined variable: input in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:31:47 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on null in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:31:48 Asia/Calcutta] PHP Notice:  Undefined variable: input in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:31:48 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on null in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:32:15 Asia/Calcutta] PHP Notice:  Undefined variable: input in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:32:15 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on null in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:32:26 Asia/Calcutta] PHP Notice:  Undefined variable: input in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:32:26 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on null in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 26
+[24-Mar-2017 23:33:27 Asia/Calcutta] PHP Notice:  Undefined variable: users in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[24-Mar-2017 23:33:27 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[24-Mar-2017 23:33:27 Asia/Calcutta] PHP Notice:  Undefined variable: markup in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 95
+[24-Mar-2017 23:33:31 Asia/Calcutta] PHP Notice:  Undefined variable: users in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[24-Mar-2017 23:33:31 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 67
+[24-Mar-2017 23:33:31 Asia/Calcutta] PHP Notice:  Undefined variable: markup in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 95
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 83
+[24-Mar-2017 23:34:00 Asia/Calcutta] PHP Notice:  Undefined variable: markup in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellar.tpl.php on line 95
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 33
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: users in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 35
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:34:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 42
+[24-Mar-2017 23:35:14 Asia/Calcutta] PHP Notice:  Undefined variable: users in E:\Xampp\htdocs\dynamic\admin-cp\sellar.php on line 39
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 48
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 48
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 42
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:35:52 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 48
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 48
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 42
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:42:13 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 48
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 48
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 42
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[24-Mar-2017 23:51:24 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\editUser.tpl.php on line 38
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:35:32 Asia/Calcutta] PHP Notice:  Undefined index: data in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\sellarForm.tpl.php on line 9
+[25-Mar-2017 00:42:03 Asia/Calcutta] PHP Notice:  Undefined variable: user in E:\Xampp\htdocs\dynamic\admin-cp\editSellar.php on line 85
+[25-Mar-2017 00:42:03 Asia/Calcutta] PHP Fatal error:  Call to a member function update() on null in E:\Xampp\htdocs\dynamic\admin-cp\editSellar.php on line 85
+[25-Mar-2017 00:54:13 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 79
+[25-Mar-2017 00:54:21 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\category.tpl.php on line 79
+[25-Mar-2017 01:06:11 Asia/Calcutta] PHP Notice:  Undefined variable: input in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\categoryForm.tpl.php on line 28
+[25-Mar-2017 01:06:11 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on null in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\categoryForm.tpl.php on line 28
+[25-Mar-2017 01:06:19 Asia/Calcutta] PHP Notice:  Undefined variable: input in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\categoryForm.tpl.php on line 28
+[25-Mar-2017 01:06:19 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on null in E:\Xampp\htdocs\dynamic\templates\admin-cp\content\categoryForm.tpl.php on line 28
+[25-Mar-2017 17:52:30 Asia/Calcutta] PHP Warning:  require_once(C:/xampp/htdocs/dynamic/templates/admin-cp/content/editCategory.tpl.php): failed to open stream: No such file or directory in C:\xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 6
+[25-Mar-2017 17:52:30 Asia/Calcutta] PHP Fatal error:  require_once(): Failed opening required 'C:/xampp/htdocs/dynamic/templates/admin-cp/content/editCategory.tpl.php' (include_path='.;C:\xampp\php\PEAR') in C:\xampp\htdocs\dynamic\templates\admin-cp\main_page.tpl.php on line 6
+[25-Mar-2017 17:55:00 Asia/Calcutta] PHP Notice:  Undefined variable: category in C:\xampp\htdocs\dynamic\admin-cp\editCategory.php on line 38
+[25-Mar-2017 17:55:00 Asia/Calcutta] PHP Fatal error:  Call to a member function find() on a non-object in C:\xampp\htdocs\dynamic\admin-cp\editCategory.php on line 38
+[25-Mar-2017 17:55:28 Asia/Calcutta] PHP Fatal error:  Call to undefined method Category::find() in C:\xampp\htdocs\dynamic\admin-cp\editCategory.php on line 39
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 38
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 46
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 55
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 62
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 80
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 89
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 100
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Notice:  Undefined variable: select in C:\xampp\htdocs\dynamic\include\class\Product.php on line 101
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Notice:  Undefined index: data in C:\xampp\htdocs\dynamic\admin-cp\product.php on line 8
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 60
+[25-Mar-2017 18:07:19 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 66
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 38
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 46
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 55
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 62
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 80
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 89
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 100
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Notice:  Undefined variable: select in C:\xampp\htdocs\dynamic\include\class\Product.php on line 101
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Notice:  Undefined index: data in C:\xampp\htdocs\dynamic\admin-cp\product.php on line 8
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 60
+[25-Mar-2017 18:08:14 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 66
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 38
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 46
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 55
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 62
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 80
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 89
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 100
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Notice:  Undefined variable: select in C:\xampp\htdocs\dynamic\include\class\Product.php on line 101
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Notice:  Undefined index: data in C:\xampp\htdocs\dynamic\admin-cp\product.php on line 8
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 60
+[25-Mar-2017 18:08:44 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 66
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 38
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 46
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 55
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 62
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 80
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 89
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Notice:  Undefined index: type in C:\xampp\htdocs\dynamic\include\class\Product.php on line 100
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Notice:  Undefined variable: select in C:\xampp\htdocs\dynamic\include\class\Product.php on line 101
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Notice:  Undefined index: data in C:\xampp\htdocs\dynamic\admin-cp\product.php on line 8
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 60
+[25-Mar-2017 18:08:45 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 66
+[25-Mar-2017 18:19:52 Asia/Calcutta] PHP Notice:  Undefined index: data in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 9
+[25-Mar-2017 18:19:52 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 53
+[25-Mar-2017 18:19:52 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 59
+[25-Mar-2017 18:19:52 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 59
+[25-Mar-2017 18:20:52 Asia/Calcutta] PHP Notice:  Undefined index: data in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 9
+[25-Mar-2017 18:20:52 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 53
+[25-Mar-2017 18:21:22 Asia/Calcutta] PHP Notice:  Undefined index: data in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 9
+[25-Mar-2017 18:21:22 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 54
+[25-Mar-2017 18:21:29 Asia/Calcutta] PHP Notice:  Undefined index: data in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 10
+[25-Mar-2017 18:21:29 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 55
+[25-Mar-2017 18:22:07 Asia/Calcutta] PHP Notice:  Undefined index: data in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 10
+[25-Mar-2017 18:22:07 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\admin-cp\subCategory.php on line 55
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 18:28:25 Asia/Calcutta] PHP Notice:  Undefined index: action in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategory.tpl.php on line 68
+[25-Mar-2017 19:05:11 Asia/Calcutta] PHP Notice:  Undefined variable: data in C:\xampp\htdocs\dynamic\admin-cp\addSubCategory.php on line 6
+[25-Mar-2017 19:05:11 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 7
+[25-Mar-2017 19:06:30 Asia/Calcutta] PHP Notice:  Undefined variable: data in C:\xampp\htdocs\dynamic\admin-cp\addSubCategory.php on line 6
+[25-Mar-2017 19:06:30 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 7
+[25-Mar-2017 19:06:40 Asia/Calcutta] PHP Notice:  Undefined variable: data in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 7
+[25-Mar-2017 19:06:40 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 7
+[25-Mar-2017 19:07:34 Asia/Calcutta] PHP Notice:  Undefined variable: data in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 7
+[25-Mar-2017 19:07:34 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 7
+[25-Mar-2017 19:10:42 Asia/Calcutta] PHP Fatal error:  Cannot use object of type Category as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 13
+[25-Mar-2017 19:11:08 Asia/Calcutta] PHP Fatal error:  Cannot use object of type Category as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 13
+[25-Mar-2017 19:12:16 Asia/Calcutta] PHP Fatal error:  Cannot use object of type SubCategory as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 13
+[25-Mar-2017 19:15:27 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 37
+[25-Mar-2017 19:15:41 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 37
+[25-Mar-2017 19:16:12 Asia/Calcutta] PHP Fatal error:  Cannot use [] for reading in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 37
+[25-Mar-2017 19:16:24 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 38
+[25-Mar-2017 19:16:24 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 38
+[25-Mar-2017 19:16:24 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 38
+[25-Mar-2017 19:16:24 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 38
+[25-Mar-2017 19:19:04 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ']' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 38
+[25-Mar-2017 19:19:40 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:19:40 Asia/Calcutta] PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:19:40 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:19:40 Asia/Calcutta] PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:19:40 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:19:40 Asia/Calcutta] PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:19:40 Asia/Calcutta] PHP Fatal error:  Cannot use object of type SubCategory as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 13
+[25-Mar-2017 19:21:02 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:21:02 Asia/Calcutta] PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 33
+[25-Mar-2017 19:21:02 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:21:02 Asia/Calcutta] PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 33
+[25-Mar-2017 19:21:02 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:21:02 Asia/Calcutta] PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 33
+[25-Mar-2017 19:21:02 Asia/Calcutta] PHP Fatal error:  Cannot use object of type SubCategory as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 13
+[25-Mar-2017 19:21:57 Asia/Calcutta] PHP Fatal error:  Cannot use object of type SubCategory as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 13
+[25-Mar-2017 19:22:15 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:22:15 Asia/Calcutta] PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:22:15 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:22:15 Asia/Calcutta] PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:22:15 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:22:15 Asia/Calcutta] PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:22:15 Asia/Calcutta] PHP Fatal error:  Cannot use object of type SubCategory as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 13
+[25-Mar-2017 19:22:30 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:22:30 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:22:30 Asia/Calcutta] PHP Warning:  Illegal string offset 'id' in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 32
+[25-Mar-2017 19:22:30 Asia/Calcutta] PHP Fatal error:  Cannot use object of type SubCategory as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 13
+[25-Mar-2017 19:23:58 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\subCategoryForm.tpl.php on line 38
+[25-Mar-2017 19:32:31 Asia/Calcutta] PHP Notice:  Undefined variable: input in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 27
+[25-Mar-2017 19:32:31 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on a non-object in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 27
+[25-Mar-2017 19:32:34 Asia/Calcutta] PHP Notice:  Undefined variable: input in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 27
+[25-Mar-2017 19:32:34 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on a non-object in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 27
+[25-Mar-2017 19:33:06 Asia/Calcutta] PHP Notice:  Undefined variable: header_fields in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 61
+[25-Mar-2017 19:33:06 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 61
+[25-Mar-2017 19:33:06 Asia/Calcutta] PHP Notice:  Undefined variable: sellars in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:33:06 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:33:06 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:33:12 Asia/Calcutta] PHP Notice:  Undefined variable: header_fields in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 61
+[25-Mar-2017 19:33:12 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 61
+[25-Mar-2017 19:33:12 Asia/Calcutta] PHP Notice:  Undefined variable: sellars in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:33:12 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:33:12 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:33:35 Asia/Calcutta] PHP Notice:  Undefined variable: sellars in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:33:35 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:33:35 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:34:03 Asia/Calcutta] PHP Notice:  Undefined variable: sellars in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:34:03 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:34:03 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:34:35 Asia/Calcutta] PHP Notice:  Undefined variable: Products in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:34:35 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 68
+[25-Mar-2017 19:34:35 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:34:49 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:34:49 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:34:49 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:34:49 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:34:49 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 71
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 4 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 10 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 11 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 12 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 13 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 14 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 15 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 16 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 17 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 18 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 19 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 20 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 21 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 22 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 71
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 4 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 10 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 11 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 12 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 13 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 14 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 15 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 16 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 17 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 18 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 19 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 20 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 21 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 22 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 71
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 4 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 10 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 11 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 12 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 13 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 14 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 15 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 16 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 17 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 18 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 19 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 20 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 21 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 22 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 71
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 4 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 10 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 11 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 12 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 13 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 14 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 15 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 16 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 17 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 18 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 19 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 20 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 21 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined offset: 22 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:39:57 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Array to string conversion in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 62
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 71
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 4 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 10 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 11 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 12 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 13 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 14 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 15 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 16 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 17 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 18 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 19 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 20 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 21 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 22 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 71
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 4 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 10 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 11 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 12 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 13 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 14 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 15 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 16 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 17 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 18 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 19 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 20 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 21 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 22 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 71
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 4 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 10 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 11 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 12 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 13 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 14 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 15 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 16 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 17 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 18 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 19 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 20 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 21 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 22 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 71
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 4 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 6 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 9 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 10 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 11 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 12 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 13 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 14 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 15 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 16 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 17 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 18 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 19 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 20 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 21 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined offset: 22 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:43:47 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: discount in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: old_price in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: cash_back in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: discount in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: old_price in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: cash_back in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: discount in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: old_price in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: cash_back in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: discount in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: old_price in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined index: cash_back in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 76
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:45:37 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:45:59 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:45:59 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:45:59 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:45:59 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:45:59 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:47:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:47:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:47:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:47:45 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:47:45 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:48:01 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:48:01 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:48:01 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:48:01 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:48:01 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:49:18 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:49:18 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:49:18 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:49:18 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:49:18 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:50:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:50:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:50:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:50:00 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:50:00 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:50:28 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:50:28 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:50:28 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:50:28 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:50:28 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:55:42 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:55:42 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:55:42 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:55:42 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:55:42 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:56:12 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:12 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:12 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:12 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:12 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:56:39 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:39 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:39 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:39 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:39 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 19:56:56 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:56 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:56 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:56 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 19:56:56 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 20:04:36 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:04:36 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:04:36 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:04:36 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:04:36 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 20:05:37 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:05:37 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:05:37 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:05:37 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:05:37 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 20:06:56 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:06:56 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:06:56 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:06:56 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:06:56 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 20:10:05 Asia/Calcutta] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 37
+[25-Mar-2017 20:10:05 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 37
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 10
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 14
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 16
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 19
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 37
+[25-Mar-2017 20:12:09 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 37
+[25-Mar-2017 20:12:37 Asia/Calcutta] PHP Fatal error:  Cannot use object of type Category as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:12:44 Asia/Calcutta] PHP Fatal error:  Cannot use object of type Category as array in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:13:22 Asia/Calcutta] PHP Notice:  Undefined variable: input in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:13:22 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on a non-object in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:13:27 Asia/Calcutta] PHP Notice:  Undefined variable: input in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:13:27 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on a non-object in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:13:29 Asia/Calcutta] PHP Notice:  Undefined variable: input in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:13:29 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on a non-object in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:14:05 Asia/Calcutta] PHP Notice:  Undefined variable: input in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:14:05 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on a non-object in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:14:06 Asia/Calcutta] PHP Notice:  Undefined variable: input in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:14:06 Asia/Calcutta] PHP Fatal error:  Call to a member function get() on a non-object in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 12
+[25-Mar-2017 20:14:29 Asia/Calcutta] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 37
+[25-Mar-2017 20:14:29 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 37
+[25-Mar-2017 20:14:31 Asia/Calcutta] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 37
+[25-Mar-2017 20:14:31 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\dynamic\templates\admin-cp\content\productForm.tpl.php on line 37
+[25-Mar-2017 20:19:48 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:19:48 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:19:48 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:19:48 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:19:48 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 20:20:40 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:20:40 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:20:40 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:20:40 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:20:40 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 20:20:55 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:20:55 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:20:55 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:20:55 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:20:55 Asia/Calcutta] PHP Notice:  Undefined variable: markup in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 96
+[25-Mar-2017 20:21:26 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:21:26 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:21:26 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84
+[25-Mar-2017 20:21:26 Asia/Calcutta] PHP Notice:  Undefined variable: page in C:\xampp\htdocs\dynamic\templates\admin-cp\content\product.tpl.php on line 84

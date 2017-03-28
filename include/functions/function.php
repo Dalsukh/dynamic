@@ -810,11 +810,11 @@ function forget(&$array, $keys)
 
     foreach ($keys as $key) {
         // if the exact key exists in the top-level, remove it
-        if (static::exists($array, $key)) {
+        /*if (static::exists($array, $key)) {
             unset($array[$key]);
 
             continue;
-        }
+        }*/
 
         $parts = explode('.', $key);
 

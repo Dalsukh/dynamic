@@ -7,6 +7,7 @@
 	ini_set('error_log', __DIR__ . '/error_log.txt');
     //session_name("crud");
 	session_start();
+	date_default_timezone_set('Asia/Kolkata');
 
 	if (!headers_sent()) {
 		header('Content-type: text/html; utf-8');
@@ -74,7 +75,7 @@
 		define('DB_SERVER', 'localhost');
 		define('DB_SERVER_USERNAME', 'root');
 		define('DB_SERVER_PASSWORD', '');
-		define('DB_DATABASE', 'dynamic');
+		define('DB_DATABASE', 'u646130367_dynam');
 
 	}
 	
@@ -116,9 +117,10 @@
 	require_once(DIR_FS_INCLUDES_CLASS."Product.php");
 	require_once(DIR_FS_INCLUDES_CLASS."GUMP.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Input.php");
+	require_once(DIR_FS_INCLUDES_CLASS."Pagination.class.php");
+	require_once(DIR_FS_INCLUDES_CLASS."FeedbackCategory.php");
 	require_once(DIR_FS_INCLUDES_CLASS."cwUpload.php");
 	require_once(DIR_FS_INCLUDES."QR/qrlib.php");
 
-	$input = new Input();
-	
+		
 	$content=basename($_SERVER['REQUEST_URI'],".php");

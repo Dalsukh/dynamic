@@ -35,7 +35,8 @@
         $result = mysqli_query($db,$SELECT);
         if(mysqli_num_rows($result)){
             $row=mysqli_fetch_assoc($result);
-            $_SESSION['admin_id']=$row['id'];   
+            $_SESSION['admin_id']=$row['id'];
+            $_SESSION['name']=$row['first_name']." ".$row['last_name'];
             header("Location:index.php");
         }else{
             $errors['password'] = "Wrong email or Password";

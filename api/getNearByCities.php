@@ -24,9 +24,10 @@ $username = 'dilkumarparmar'; // the username of your GeoNames account
 $nearbyCities = json_decode(file_get_contents('http://api.geonames.org/findNearbyPlaceNameJSON?lat='.$latitude.'&lng='.$longitude.'&style='.$responseStyle.'&cities='.$citySize.'&radius='.$radius.'&maxRows='.$maxRows.'&username='.$username, true));
 
 // foreach nearby city get city details
-var_dump($nearbyCities->geonames);
 
+$data = array();
 foreach($nearbyCities->geonames as $cityDetails)
-{
-    // do something per nearby city
+{	
+	$data[] = $cityDetails->name;                        
 }
+print_r($data);

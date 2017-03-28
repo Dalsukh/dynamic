@@ -11,38 +11,97 @@ class Product
         $this->db=$db;
         $this->table = "products";
     }
-    public function index($where = array())
+    public function index($where = array('type'=>'Popular'))
     {
     	$user = new User($this->db);
     	$user_data = $user->find($where['user_id']);
     	$page = 1;
+        $merchants_fields = "m.id as m_id,
+                m.company_name,
+                m.company_logo,
+                m.job_title,
+                m.email1,
+                m.website,
+                m.address,              
+                m.mobile1 as mobile,
+                m.landline1 as landline,
+                m.merchant_type,
+                m.business_type,
+                m.min_discount,
+                m.full_name,
+                m.latitude,
+                m.longitude";
     	if(isset($where['page']))
     	{
     		$page = $where['page'];
     	}
-    	if($where['type'] = "Popular")
+    	if($where['type'] == "Popular")
     	{
-    		$select = "SELECT p.*,pl.status as is_liked FROM products as p 
-    		LEFT JOIN products_likes as pl ON pl.product_id = p.id 
+    		$select = "SELECT p.*,pl.status as is_liked,m.city as city FROM products as p 
+    		LEFT JOIN products_likes as pl ON pl.product_id = p.id
+            LEFT JOIN merchants as m ON p.user_id = m.id
     		WHERE p.deleted='0' ";
     		//$result = mysqli_query($this->db,$select);    		
     	}
-    	else if($where['type'] = "SubCategory")
+    	else if($where['type'] == "SubCategory")
     	{
-    		$select = "SELECT p.*,pl.status as is_liked FROM products as p WHERE p.deleted='0'
+    		$select = "SELECT p.*,pl.status as is_liked ,m.city as city FROM products as p 
     					LEFT JOIN products_likes as pl ON pl.product_id = p.id 
-    					AND p.sub_category_id = '$sub_category_id' 
-    			 		";
+                        LEFT JOIN merchants as m ON p.user_id = m.id 
+                        WHERE p.deleted='0'
+    					AND p.sub_category_id = '".$where['sub_category_id']."'";            
 
     	}
     	else if($where['type'] ==  "City"){
-    		$select = "SELECT p.*,pl.status as is_liked FROM products as p WHERE p.deleted='0'
+    		$select = "SELECT p.*,pl.status as is_liked,m.city as city FROM products as p 
     					LEFT JOIN products_likes as pl ON pl.product_id = p.id 
-    					LEFT JOIN merchants as m ON p.user_id = m.id
-    					AND m.city LIKE '%".$where['city']."%'";
+    					JOIN merchants as m ON p.user_id = m.id
+                        WHERE p.deleted='0' 
+    					AND m.city LIKE '%".$where['city']."%' ";            
     	}
-    	$select .="ORDER BY p.total_likes DESC ";    	
+        else if($where['type'] == "LatLong")
+        {
+            $latitude = $where['latitude'];
+            $longitude = $where['longitude'];
+            $radius = $where['radius'];
+            $city = new City($this->db);
+            $cities = $city->getNearByCity($latitude,$longitude,$radius=50);
 
+            $select = "SELECT p.*,pl.status as is_liked,m.city as city,
+                    $merchants_fields
+                    FROM products as p WHERE p.deleted='0' 
+                        LEFT JOIN products_likes as pl ON pl.product_id = p.id 
+                        LEFT JOIN merchants as m ON p.user_id = m.id
+                         WHERE p.deleted='0'
+                        AND m.city LIKE '%".$cities[0]."%'";
+            
+
+        }
+        else if($where['type'] == "Promotion")
+        {
+            $select = "SELECT p.*,pl.status as is_liked,m.city as city               
+                         FROM products as p 
+            LEFT JOIN products_likes as pl ON pl.product_id = p.id
+            LEFT JOIN merchants as m ON p.user_id = m.id
+            WHERE p.deleted='0'";
+            $select .=" ORDER BY m.min_discount DESC ";          
+        }
+        else if($where['type'] == "Search")
+        {
+            $select = "SELECT p.*,pl.status as is_liked,m.city as city               
+                         FROM products as p 
+            LEFT JOIN products_likes as pl ON pl.product_id = p.id
+            LEFT JOIN merchants as m ON p.user_id = m.id
+            WHERE p.deleted='0' AND 
+                p.name LIKE '%".$where['name']."%' 
+                OR m.city LIKE '%".$where['name']."%'";
+
+        }
+        if($where['type'] != "Promotion"){
+            $select .=" ORDER BY p.total_likes DESC ";       
+        }
+    	
+        
 		$result = mysqli_query($this->db,$select);	
 		$tempData = array();
 		$data = array();
@@ -61,7 +120,11 @@ class Product
 				$row['image2'] = SITE_URL."images/Product/".$row['image2'];
 				$row['image3'] = SITE_URL."images/Product/".$row['image3'];
 				$row['image4'] = SITE_URL."images/Product/".$row['image4'];
-				
+
+                // $row['price'] = round($row['price']);
+                // $row['discount'] = round($row['price']);
+                // $row['old_price'] = round($row['old_price']);
+                // $row['cash_back'] = round($row['cash_back']);
 
 				$tempData[]=$row;
 			}
@@ -149,7 +212,10 @@ class Product
         		m.merchant_type,
         		m.business_type,
         		m.min_discount,
-        		m.full_name		
+                m.full_name,
+                m.latitude,
+        		m.longitude,
+                m.city as city		
         			FROM products as p 
     		LEFT JOIN products_likes as pl ON pl.product_id = p.id 
     		LEFT JOIN merchants as m ON p.user_id = m.id
@@ -169,6 +235,11 @@ class Product
 			$row['image2'] = SITE_URL."images/Product/".$row['image2'];
 			$row['image3'] = SITE_URL."images/Product/".$row['image3'];
 			$row['image4'] = SITE_URL."images/Product/".$row['image4'];
+
+            // $row['price'] = round($row['price']);
+            // $row['discount'] = round($row['discount']);
+            // $row['old_price'] = round($row['old_price']);
+            // $row['cash_back'] = round($row['cash_back']);
 			
             $response = array("status"=>"success","msg"=>"Product Found","data"=>$row);
 
@@ -211,8 +282,6 @@ class Product
         return $response;
     }
 
-    //getPlaceName($latitude, $longitude)
-    //city
-    //address
+    
 
 }

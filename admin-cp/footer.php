@@ -214,7 +214,6 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- Morris.js charts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="plugins/morris/morris.min.js"></script>
 <!-- Sparkline -->
 <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
@@ -235,9 +234,83 @@
 <script src="plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/app.min.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js"></script>
 </body>
+<script>
+  /* Delete Time Model Open Code */
+(function () {
+    var laravel = {
+        initialize: function () {
+            this.methodLinks = $('body');
+            this.registerEvents();
+        },
+        registerEvents: function () {
+            //this.methodLinks.on('click', this.handleMethod);
+            this.methodLinks.on('click', 'a[data-method]', this.handleMethod);
+        },
+        handleMethod: function (e) {
+            e.preventDefault();
+            var link = $(this);
+            var csrf_token = jQuery('meta[name="csrf-token"]').attr('content');
+            var httpMethod = link.data('method').toUpperCase();
+            var allowedMethods = ['PUT', 'DELETE', 'GET'];
+            var extraMsg = link.data('modal-text');
+            var reject = link.data('reject');
+            delete_msg = "";
+            if (reject) {
+                var msg = '<i class="fa fa-exclamation-triangle fa-2x" style="vertical-align: middle; color:#f39c12;"></i>' + rejectStatus_msg + extraMsg;
+            } else {
+                var msg = '<i class="fa fa-exclamation-triangle fa-2x" style="vertical-align: middle; color:#f39c12;"></i>' + delete_msg + extraMsg;
+            }
+
+            // If the data-method attribute is not PUT or DELETE,
+            // then we don't know what to do. Just ignore.
+            if ($.inArray(httpMethod, allowedMethods) === -1) {
+                return;
+            }
+            please_confirm = 'Are you sure want to delete';
+            cancel_btn = 'Cancel';
+            ok_btn = 'Ok';
+
+            bootbox.dialog({
+                message: msg,
+                title: please_confirm,
+                buttons: {
+                    success: {
+                        label: cancel_btn,
+                        className: "btn-default",
+                        callback: function () {
+                        }
+                    },
+                    danger: {
+                        label: ok_btn,
+                        className: "btn-success",
+                        callback: function () {
+                            var form = $('<form>', {
+                                'method': 'POST',
+                                'action': link.attr('href')
+                            });
+                            var hiddenInput = $('<input>', {
+                                'name': '_method',
+                                'type': 'hidden',
+                                'value': link.data('method')
+                            });
+                            var tokenInput = $('<input>', {
+                                'name': '_token',
+                                'type': 'hidden',
+                                'value': csrf_token
+                            });
+                            form.append(tokenInput);
+                            form.append(hiddenInput).appendTo('body').submit();
+                        }
+                    }
+                }
+            });
+        }
+    };
+    laravel.initialize();
+})();
+</script>
 </html>

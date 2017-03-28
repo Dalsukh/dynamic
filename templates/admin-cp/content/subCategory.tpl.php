@@ -18,23 +18,17 @@
 	    </div>
 	    <a href="addSubCategory.php" class="btn btn-success">Add SubCategory</a>	    
 	    </div>
-	        <div class="panel-body">
+	        <!-- <div class="panel-body">
 	            <form method="GET" action="<?php echo $_SERVER['PHP_SELF'];?>" accept-charset="UTF-8" class="form-filter" role="form">
 	            <div class=" col-md-2 form-group">
-	            <label for="filter[full_name][value]" class="">Full Name:</label>
-	            <input class=" form-control " name="filter[full_name][value]" type="text" value="" id="filter[full_name][value]">
-	            <input name="filter[full_name][operator]" type="hidden" value="like">
+	            <label for="filter[full_name]" class="">Category Name:</label>
+	            <input class=" form-control " name="filter[category_name]" type="text" value="" id="filter[full_name]">	            
 	            </div>
 	            <div class=" col-md-2 form-group">
-	            <label for="filter[email][value]" class="">Email:</label>
-	            <input class=" form-control" name="filter[email][value]" type="text" value="" id="filter[email][value]">
-	            <input name="filter[email][operator]" type="hidden" value="=">
+	            <label for="filter[email]" class="">Sub Category Name:</label>
+	            <input class=" form-control" name="filter[email]" type="text" value="" id="filter[email]">	            
 	            </div>
-	            <div class=" col-md-2 form-group">
-	            <label for="filter[mobile][value]" class="">Mobile:</label>
-	            <input class=" form-control " name="filter[mobile][value]" type="text" value="" id="filter[mobile][value]">
-	            <input name="filter[mobile][operator]" type="hidden" value="like">
-	            </div>
+	            
 	            <div class="form-group col-md-3">
 	                <label for="Search" class="">&nbsp;</label><br/>
 	                <input class="btn btn-sm btn-primary submit" type="submit" value="Search">
@@ -44,8 +38,8 @@
 	            
 	            
 	            </div>
-	            </form>
-	    </div>
+	        	</form>
+	    	</div> -->
 	    </div>
 	</div>
   
@@ -56,21 +50,31 @@
 			<table class="table table-bordered table-striped">
 				<thead>
 					<tr>
-						<?php foreach($categories[0] as $key=>$val){ ?>
-							<th><?php echo $key ;?></th>
+						<?php foreach($header_fields as $key=>$val){ ?>
+							<th><?php echo $val ;?></th>
 						<?php } ?>
+						<!-- <th>Action</th> -->
 					</tr>
 				</thead>
 				<tbody>
 				<?php foreach ($categories as $key => $row) { ?>
 					<tr>
-						<?php foreach($row as $val){ ?>
-							<td><?php echo $val ;?></td>
+						<?php foreach($header_fields as $Hkey=>$val){ ?>
+							<td>
+							<?php if($Hkey == "image") { ?>
+							<img src="<?php echo $row['thumb'];?>" width="35px">
+							<?php	} else{ ?>
+							<?php echo $row[$Hkey] ;?>
+							<?php  } ?>
+							
+								
+							</td>
 						<?php } ?>
 					</tr>
 				<?php } ?>
 				</tbody>		
 			</table>
+			<?php echo $markup;?>
 		</div>
 		</div>
 	</div>

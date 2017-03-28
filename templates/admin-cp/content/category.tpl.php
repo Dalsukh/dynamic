@@ -2,11 +2,11 @@
   <div class="content-wrapper">
   	<div class="content-header">
 		<h1>
-		Users / Buyers
+		Category
 		</h1>
 		<ol class="breadcrumb">
 			<li><a href="index.php"><i class="fa fa-dashboard"></i> Home</a></li>
-			<li class="active">Buyers</li>
+			<li class="active">Category</li>
 		</ol>
 	</div>
 	<hr>
@@ -20,21 +20,17 @@
 		    </div>
 	        <div class="panel-body">
 	            <form method="GET" action="<?php echo $_SERVER['PHP_SELF'];?>" accept-charset="UTF-8" class="form-filter" role="form">
+
 	            <div class=" col-md-2 form-group">
-	            <label for="filter[full_name][value]" class="">Full Name:</label>
-	            <input class=" form-control " name="filter[full_name][value]" type="text" value="" id="filter[full_name][value]">
-	            <input name="filter[full_name][operator]" type="hidden" value="like">
+	            <label for="filter[name]" class="">Category Name:</label>
+	            <input class=" form-control " name="filter[name]" type="text" value="" id="filter[name]">
 	            </div>
+
 	            <div class=" col-md-2 form-group">
-	            <label for="filter[email][value]" class="">Email:</label>
-	            <input class=" form-control" name="filter[email][value]" type="text" value="" id="filter[email][value]">
-	            <input name="filter[email][operator]" type="hidden" value="=">
+	            <label for="filter[keywords]" class="">Keywords:</label>
+	            <input class=" form-control " name="filter[keywords]" type="text" value="" id="filter[keywords]">
 	            </div>
-	            <div class=" col-md-2 form-group">
-	            <label for="filter[mobile][value]" class="">Mobile:</label>
-	            <input class=" form-control " name="filter[mobile][value]" type="text" value="" id="filter[mobile][value]">
-	            <input name="filter[mobile][operator]" type="hidden" value="like">
-	            </div>
+
 	            <div class="form-group col-md-3">
 	                <label for="Search" class="">&nbsp;</label><br/>
 	                <input class="btn btn-sm btn-primary submit" type="submit" value="Search">
@@ -56,21 +52,38 @@
 		<table class="table table-bordered table-striped">
 			<thead>
 				<tr>
-					<?php foreach($categories[0] as $key=>$val){ ?>
-						<th><?php echo $key ;?></th>
+					<?php foreach($header_fields as $key=>$val){ ?>
+						<th><?php echo $val ;?></th>
 					<?php } ?>
 				</tr>
 			</thead>
 			<tbody>
 			<?php foreach ($categories as $key => $row) { ?>
 				<tr>
-					<?php foreach($row as $val){ ?>
-						<td><?php echo $val ;?></td>
+					<?php foreach($row as $HKey=>$val){ ?>
+						<td>
+						<?php 
+						if($HKey == 'image' ||$HKey == 'thumb' && !empty($val)){ ?>
+							<img src="<?php echo $val;?>" alt="" width="25px">
+						<?php	
+						}
+						else
+						{
+							echo $val ;
+						}
+						?>							
+						</td>
 					<?php } ?>
+					<td>
+					<a href="editCategory.php?id=<?php echo $row['id'];?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+
+							<a href="?action=Delete&id=<?php echo $row['id'];?>&page=<?php echo $page;?>" class="action_confirm btn btn-danger" data-method="delete" data-modal-text="are you sure delete this Category?" data-original-title="Delete Category" title="Delete"><i class="fa fa-trash"></i></a>
+					</td>
 				</tr>
 			<?php } ?>
 			</tbody>		
 		</table>
+		<?php echo $markup; ?>
 		</div>		
 		</div>
 	</div>

@@ -20,6 +20,7 @@
     $gump->validation_rules(array(
     'from_user_id'      => 'required',    
     'to_user_id'   => 'required',
+    'sender'	=> 'required'
     ));
     
     $validated_data = $gump->run($_REQUEST);

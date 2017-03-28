@@ -11,10 +11,18 @@
 	
 	$gump = new GUMP($db);
 	$errors = array();
+
+	/*
+	user_id int(11)         
+    feed_catgory_id int(11)         
+    sender  varchar(25) 
+    message
+	*/
     
     $gump->validation_rules(array(
-    'name'  => 'required',
-    "mobile" 	 => "required|numeric|min_len:10",
+    'user_id'  => 'required',
+    "feed_catgory_id" 	 => "required",
+    "sender" 	 => "required",
     'message'   => 'required',    
     ));
     
@@ -29,7 +37,10 @@
 			
 	if(count($errors)==0){
 
-		$from = "no-reply@p2d.esy.es";
+		$feedback = new FeedbackCategory($db);
+		$response = $feedback->store($_REQUEST);
+		
+		/*$from = "no-reply@p2d.esy.es";
 		if(isset($_REQUEST['email'])){
 			$from = $_REQUEST['email'];
 		}
@@ -39,7 +50,7 @@
 		$message.= "<br/> Mobile No:".$_REQUEST['mobile'];
 
 		simpleMail($from,$to=$email,$subject="Feedback - Dynamic",$message);  
-		$response = array('status' => "success","msg"=>"Feedback send successfully!" );
+		$response = array('status' => "success","msg"=>"Feedback send successfully!" );*/
 		echo json_encode($response);		
 	}else{
 		$response = array('status' => "fail","msg"=>"Please input data.");

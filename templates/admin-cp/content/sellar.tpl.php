@@ -2,38 +2,39 @@
 <div class="content-wrapper">
 	<div class="content-header">
 		<h1>
-		Users / Buyers
+		Sellar
 		</h1>
 		<ol class="breadcrumb">
 			<li><a href="index.php"><i class="fa fa-dashboard"></i> Home</a></li>
-			<li class="active">Buyers</li>
+			<li class="active">Sellar</li>
 		</ol>
 	</div>
 	<hr>
 	<div class="container">
 		<div class="panel panel-default search-panel">			
-	    <div class="panel-heading">
-	    <div class="">
-	    	<h5 class="panel-title">Searching</h5>
-	    </div>
-	    <!-- <a href="addUser.php" class="btn btn-success">Add User</a>	     -->
-	    </div>
+		    <div class="panel-heading">
+		    <div class="col-md-10">
+		    	<h5 class="panel-title">Searching</h5>
+		    </div>
+		    <a href="addSellar.php" class="btn btn-success">Add Sellar</a>	    
+		    </div>
 	        <div class="panel-body">
 	            <form method="GET" action="<?php echo $_SERVER['PHP_SELF'];?>" accept-charset="UTF-8" class="form-filter" role="form">
 	            <div class=" col-md-2 form-group">
-	            <label for="filter[full_name][value]" class="">Full Name:</label>
-	            <input class=" form-control " name="filter[full_name][value]" type="text" value="" id="filter[full_name][value]">
-	            <input name="filter[full_name][operator]" type="hidden" value="like">
+	            
+	            <label for="filter[full_name]" class="">Full Name:</label>
+	            <input class=" form-control " name="filter[full_name]" type="text" value="<?php echo $input->get('filter.full_name'); ?>" id="filter[full_name]">	            
 	            </div>
 	            <div class=" col-md-2 form-group">
-	            <label for="filter[email][value]" class="">Email:</label>
-	            <input class=" form-control" name="filter[email][value]" type="text" value="" id="filter[email][value]">
-	            <input name="filter[email][operator]" type="hidden" value="=">
+	            <label for="filter[email1]" class="">Email:</label>
+	            <input class=" form-control" name="filter[email1]" type="text" value="<?php echo $input->get('filter.email1'); ?>" id="filter[email1]">
+	            
 	            </div>
 	            <div class=" col-md-2 form-group">
-	            <label for="filter[mobile][value]" class="">Mobile:</label>
-	            <input class=" form-control " name="filter[mobile][value]" type="text" value="" id="filter[mobile][value]">
-	            <input name="filter[mobile][operator]" type="hidden" value="like">
+	            <label for="filter[mobile1]" class="">Mobile:</label>
+	            <input class=" form-control " name="filter[mobile1]" type="text" 
+	            value="<?php echo $input->get('filter.mobile1'); ?>" id="filter[mobile1]">
+	            
 	            </div>
 	            <div class="form-group col-md-3">
 	                <label for="Search" class="">&nbsp;</label><br/>
@@ -76,16 +77,24 @@
 
 						<?php } ?>
 						<td>
-							<!-- <a href="?show" class="btn btn-default"><i class="fa fa-eye"></i></a>
-							<a href="?edit" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
-							<a href="?delete" class="btn btn-danger"><i class="fa fa-trash"></i></a> -->
+							<!-- <a href="?show" class="btn btn-default"><i class="fa fa-eye"></i></a> -->
+							<a href="editSellar.php?id=<?php echo $row['id'];?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+
+							<a href="?action=Delete&id=<?php echo $row['id'];?>&page=<?php echo $page;?>" class="action_confirm btn btn-danger" data-method="delete" data-modal-text="are you sure delete this Buyer?" data-original-title="Delete buyer" title="Delete"
+							><i class="fa fa-trash"></i></a>							
 						</td>
 					</tr>
 				<?php } ?>
-				</tbody>		
-			</table>
+				</tbody>						
+			</table>			
 		</div>
+		</div>		
+	</div>
+		<div class="text-right">
+		<?php 
+		echo $markup; 
+		?>
 		</div>
 	</div>
-	</div>
+
 </div>

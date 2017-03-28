@@ -15,7 +15,9 @@ class SubCategory
     {
     	$data = array();
 
-    	$select = "SELECT * FROM sub_category  WHERE deleted='0'";		
+    	$select = "SELECT s.*,c.name as category_name FROM sub_category as s
+    		LEFT JOIN category as c ON s.category_id = c.id 
+    		WHERE s.deleted='0' ";		
 		foreach($where as $key=>$val){
 			$select.=" AND $key='$val'";
 		}
@@ -24,8 +26,8 @@ class SubCategory
 		if($result && mysqli_num_rows($result)){
 			while($row=mysqli_fetch_assoc($result))
 			{
-				//$row['image'] = SITE_URL."images/Category/".$row['logo'];
-				//$row['thumb'] = SITE_URL."images/Category/Thumb/".$row['logo'];
+				$row['image'] = SITE_URL."images/Category/".$row['logo'];
+				$row['thumb'] = SITE_URL."images/Category/Thumb/".$row['logo'];
 				$data[]=$row;
 			}
 			$response = array("status"=>"success","data"=>$data);	

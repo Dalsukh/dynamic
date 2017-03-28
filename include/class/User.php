@@ -17,6 +17,12 @@ class User
     public function index($where = array())
     {
         $select = "SELECT * FROM users WHERE deleted='0'";
+        if(is_array($where)){
+            foreach($where as $key=>$val)
+            {
+                $select .=" AND $key LIKE '%".$val."%'";
+            }
+        }
         $result = mysqli_query($this->db,$select); 
         $data = array();
         if($result && mysqli_num_rows($result)){
@@ -54,7 +60,10 @@ class User
                 $row['thumb'] = '';
             }
 
-            $response = array("status"=>"success","msg"=>"Login success","data"=>$row);    
+            $response = array("status"=>"success",
+                    "msg"=>"Login success",
+                    "sender"=>"BUYER",
+                    "data"=>$row,);    
         }else{
             $response = array('status' => "fail","msg"=>"Wrong email or password");
         } 
@@ -73,17 +82,17 @@ class User
         $otp = mt_rand(1000,9999);
 
         $insert = "INSERT INTO users SET ";
-        foreach($_REQUEST as $key=>$val){
+        foreach($data as $key=>$val){
             if($key == 'password')
             {
                 $insert .= $key."='".md5(re_db_input($val,$this->db))."',";
-            }else if($key != 'PHPSESSID'){
+            }else if($key != 'PHPSESSID' || $key != 'submit'){
                 $insert .= $key."='".re_db_input($val,$this->db)."',";
             }
         }
         //$insert .= "state='GUJARAT', country='INDIA',";
         $insert .="otp='$otp', status='1', created_at=CURRENT_TIMESTAMP(), updated_at=CURRENT_TIMESTAMP(), deleted='0'";
-
+        
         $result = mysqli_query($this->db,$insert);
         
         $user_id = mysqli_insert_id($this->db);
@@ -101,11 +110,6 @@ class User
         png($text, $outfile = false, $level = QR_ECLEVEL_L, $size = 3, $margin = 4, $saveandprint=false)
         png($text, $outfile = false, $level = QR_ECLEVEL_L, $size = 3, $margin = 4, $saveandprint=false)
         */   
-
-        
-        
-
-
         if($result){
             $response = array("status"=>"success","msg"=>"User Register Successfully",
                 "data"=>array("user_id"=>$user_id)); 
@@ -173,16 +177,6 @@ class User
         return $response;
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        
-    }
     public function verifyOTP($user_id,$otp)
     {
         $user_id = $_REQUEST['user_id'];
@@ -354,5 +348,16 @@ class User
     
     echo $output;
 
+    }
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        $delete = "UPDATE users SET deleted='1' WHERE id = '$id'";
+        $result = mysqli_query($this->db,$delete);
     }
 }

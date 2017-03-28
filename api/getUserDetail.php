@@ -30,11 +30,11 @@
 		$user_id = $_REQUEST['user_id'];		
 
 		$user = new User($db);
-		$response = $user->find($_REQUEST);
+		$response = $user->find($user_id);
 		
 		echo json_encode($response);		
 	}else{
-		$response = array('status' => "fail","msg"=>"User Not Found"),
+		$response = array('status' => "fail","msg"=>"User Not Found");
 		
 		echo json_encode($response);
 	}
