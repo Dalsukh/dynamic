@@ -14,7 +14,6 @@
     
     $gump->validation_rules(array(
     'user_id'  => 'required',
-    //'email'      => 'valid_email|unique:users',    
     "product_id" 	 => "required",        
     ));
     
@@ -29,15 +28,13 @@
 			
 	if(count($errors)==0){
 
-		$user = new User($db);
-		$response = $user->store($_REQUEST);
+		$productLike = new ProductLike($db);
+		$response = $productLike->like($_REQUEST);
 				
 		echo json_encode($response);		
 	}else{
-		$response = array('status' => "fail","msg"=>"User Registeration Fail");
+		$response = array('status' => "fail","msg"=>"ProductLike Fail");
 		$response['errors'] = $errors;
 		echo json_encode($response);		
 	}
-	
-	
 	

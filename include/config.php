@@ -115,6 +115,7 @@
 	require_once(DIR_FS_INCLUDES_CLASS."Category.php");
 	require_once(DIR_FS_INCLUDES_CLASS."SubCategory.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Product.php");
+	require_once(DIR_FS_INCLUDES_CLASS."ProductLike.php");
 	require_once(DIR_FS_INCLUDES_CLASS."GUMP.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Input.php");
 	require_once(DIR_FS_INCLUDES_CLASS."Pagination.class.php");

@@ -86,8 +86,9 @@ class Chatting
         $select .= " AND from_user_id ='".$where['user_id']."' AND sender ='".$where['sender']."' ";
         $select .= " OR (to_user_id  ='".$where['user_id']."' 
             AND sender !='".$where['sender']."')";
-        $select .=" ORDER BY c.id DESC,to_user_id DESC ";
-        $select .= $group_by;
+
+        $select .="ORDER BY to_user_id DESC,c.id DESC ";
+        //$select .= $group_by;
         /*
         SELECT  c.*,m.full_name as user_name,m.company_logo as thumb,c.message as last_message  FROM chatting as c LEFT JOIN merchants as m ON c.to_user_id = m.id WHERE c.deleted='0'  AND from_user_id ='13' AND sender ='BUYER'  OR (to_user_id  ='13' 
             AND sender !='BUYER') ORDER BY c.id DESC,to_user_id DESC  
@@ -137,7 +138,7 @@ class Chatting
 	public function store($data = array())
 	{
 		$insert = "INSERT INTO chatting SET ";
-        foreach($_REQUEST as $key=>$val){
+        foreach($data as $key=>$val){
             
             if($key != 'PHPSESSID' && $key !="upload"){
                 $insert .= $key."='".re_db_input($val,$this->db)."',";

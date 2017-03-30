@@ -30,6 +30,7 @@ $fields = array(
 if(isset($_POST)){
 	$product = new Product($db);
 	$result = $product->store($_POST);
+	print_r($result);
 	
 }
 

@@ -286,4 +286,13 @@ class Merchants
         }
         
     }
+
+    public function getCount($where = array())
+    {
+        $select = "SELECT * FROM merchants WHERE deleted='0'";
+        $result = mysqli_query($this->db,$select); 
+        $data = array();
+        $count = mysqli_num_rows($result);
+        return $count;
+    }
 }

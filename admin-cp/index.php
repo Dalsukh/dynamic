@@ -9,7 +9,11 @@
 	//include_once('include/AES.php');
 	$admin = new Admin($db);
 	$admin->checkLogin();
-	
+	$product = new Product($db);
+	$category = new Category($db);
+	$merchant = new Merchants($db);
+	$user = new User($db);
+		
 	
 	extract($_SESSION);
 	extract($_POST);

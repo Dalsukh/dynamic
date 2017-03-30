@@ -11,7 +11,7 @@ class Product
         $this->db=$db;
         $this->table = "products";
     }
-    public function index($where = array('type'=>'Popular'))
+    public function index($where = array('type'=>'Popular'),$rpp = 4)
     {
     	$user = new User($this->db);
     	$user_data = $user->find($where['user_id']);
@@ -35,25 +35,27 @@ class Product
     	{
     		$page = $where['page'];
     	}
+        //IF(pl.status IS NULL,0,pl.status)
     	if($where['type'] == "Popular")
     	{
-    		$select = "SELECT p.*,pl.status as is_liked,m.city as city FROM products as p 
+    		$select = "SELECT p.*,IF(pl.status IS NULL,0,pl.status) as is_liked,m.city as city FROM products as p 
     		LEFT JOIN products_likes as pl ON pl.product_id = p.id
             LEFT JOIN merchants as m ON p.user_id = m.id
     		WHERE p.deleted='0' ";
     		//$result = mysqli_query($this->db,$select);    		
     	}
-    	else if($where['type'] == "SubCategory")
+    	else if($where['type'] == "Category")
     	{
-    		$select = "SELECT p.*,pl.status as is_liked ,m.city as city FROM products as p 
+    		$select = "SELECT p.*,IF(pl.status IS NULL,0,pl.status) as is_liked ,m.city as city FROM products as p 
     					LEFT JOIN products_likes as pl ON pl.product_id = p.id 
-                        LEFT JOIN merchants as m ON p.user_id = m.id 
+                        LEFT JOIN merchants as m ON p.user_id = m.id
+                        JOIN sub_category as sc ON p.sub_category_id = sc.id
                         WHERE p.deleted='0'
-    					AND p.sub_category_id = '".$where['sub_category_id']."'";            
+    					AND sc.category_id = '".$where['category_id']."'";            
 
     	}
     	else if($where['type'] ==  "City"){
-    		$select = "SELECT p.*,pl.status as is_liked,m.city as city FROM products as p 
+    		$select = "SELECT p.*,IF(pl.status IS NULL,0,pl.status) as is_liked,m.city as city FROM products as p 
     					LEFT JOIN products_likes as pl ON pl.product_id = p.id 
     					JOIN merchants as m ON p.user_id = m.id
                         WHERE p.deleted='0' 
@@ -66,10 +68,11 @@ class Product
             $radius = $where['radius'];
             $city = new City($this->db);
             $cities = $city->getNearByCity($latitude,$longitude,$radius=50);
+            //$cities = implode(",", $cities);
 
-            $select = "SELECT p.*,pl.status as is_liked,m.city as city,
+            $select = "SELECT p.*,IF(pl.status IS NULL,0,pl.status) as is_liked,m.city as city,
                     $merchants_fields
-                    FROM products as p WHERE p.deleted='0' 
+                    FROM products as p 
                         LEFT JOIN products_likes as pl ON pl.product_id = p.id 
                         LEFT JOIN merchants as m ON p.user_id = m.id
                          WHERE p.deleted='0'
@@ -79,7 +82,7 @@ class Product
         }
         else if($where['type'] == "Promotion")
         {
-            $select = "SELECT p.*,pl.status as is_liked,m.city as city               
+            $select = "SELECT p.*,IF(pl.status IS NULL,0,pl.status) as is_liked,m.city as city               
                          FROM products as p 
             LEFT JOIN products_likes as pl ON pl.product_id = p.id
             LEFT JOIN merchants as m ON p.user_id = m.id
@@ -88,7 +91,7 @@ class Product
         }
         else if($where['type'] == "Search")
         {
-            $select = "SELECT p.*,pl.status as is_liked,m.city as city               
+            $select = "SELECT p.*,IF(pl.status IS NULL,0,pl.status) as is_liked,m.city as city               
                          FROM products as p 
             LEFT JOIN products_likes as pl ON pl.product_id = p.id
             LEFT JOIN merchants as m ON p.user_id = m.id
@@ -98,7 +101,7 @@ class Product
 
         }
         if($where['type'] != "Promotion"){
-            $select .=" ORDER BY p.total_likes DESC ";       
+            $select .=" GROUP BY p.id ORDER BY p.total_likes DESC ";       
         }
     	
         
@@ -106,20 +109,26 @@ class Product
 		$tempData = array();
 		$data = array();
 		$next = "";
-		$response = array();
-		$rpp = 4 ;
+		$response = array();		
 		if($result && mysqli_num_rows($result)){
 			while($row=mysqli_fetch_assoc($result))
 			{
-				$row['thumb1'] = SITE_URL."images/Product/Thumb/".$row['image1'];
-				$row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image2'];
-				$row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image3'];
-				$row['thumb4'] = SITE_URL."images/Product/Thumb/".$row['image4'];
+				
+				// $row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image2'];
+				// $row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image3'];
+				// $row['thumb4'] = SITE_URL."images/Product/Thumb/".$row['image4'];
 
-				$row['image1'] = SITE_URL."images/Product/".$row['image1'];				
-				$row['image2'] = SITE_URL."images/Product/".$row['image2'];
-				$row['image3'] = SITE_URL."images/Product/".$row['image3'];
-				$row['image4'] = SITE_URL."images/Product/".$row['image4'];
+				
+				// $row['image2'] = SITE_URL."images/Product/".$row['image2'];
+				// $row['image3'] = SITE_URL."images/Product/".$row['image3'];
+				// $row['image4'] = SITE_URL."images/Product/".$row['image4'];
+                for ($i=1; $i<=4 ; $i++) { 
+                    if($row['image'.$i]){
+                        $row['thumb'.$i] = SITE_URL."images/Product/Thumb/".$row['image'.$i];
+                        $row['image'.$i] = SITE_URL."images/Product/".$row['image'.$i];         
+                    }
+                    
+                }
 
                 // $row['price'] = round($row['price']);
                 // $row['discount'] = round($row['price']);
@@ -226,16 +235,24 @@ class Product
 
             $row=mysqli_fetch_assoc($result);
 
-			$row['thumb1'] = SITE_URL."images/Product/Thumb/".$row['image1'];
-			$row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image2'];
-			$row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image3'];
-			$row['thumb4'] = SITE_URL."images/Product/Thumb/".$row['image4'];
+			// $row['thumb1'] = SITE_URL."images/Product/Thumb/".$row['image1'];
+			// $row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image2'];
+			// $row['thumb3'] = SITE_URL."images/Product/Thumb/".$row['image3'];
+			// $row['thumb4'] = SITE_URL."images/Product/Thumb/".$row['image4'];
 
-			$row['image1'] = SITE_URL."images/Product/".$row['image1'];				
-			$row['image2'] = SITE_URL."images/Product/".$row['image2'];
-			$row['image3'] = SITE_URL."images/Product/".$row['image3'];
-			$row['image4'] = SITE_URL."images/Product/".$row['image4'];
+			// $row['image1'] = SITE_URL."images/Product/".$row['image1'];			
+			// $row['image2'] = SITE_URL."images/Product/".$row['image2'];
+			// $row['image3'] = SITE_URL."images/Product/".$row['image3'];
+			// $row['image4'] = SITE_URL."images/Product/".$row['image4'];
 
+
+            for ($i=1; $i<=4 ; $i++) { 
+                if($row['image'.$i]){
+                    $row['thumb'.$i] = SITE_URL."images/Product/Thumb/".$row['image'.$i];
+                    $row['image'.$i] = SITE_URL."images/Product/".$row['image'.$i];         
+                }
+                
+            }
             // $row['price'] = round($row['price']);
             // $row['discount'] = round($row['discount']);
             // $row['old_price'] = round($row['old_price']);
@@ -280,6 +297,15 @@ class Product
         $result = mysqli_query($this->db,$update);
         $response = array("status"=>"success","msg"=>"Update Successfully");
         return $response;
+    }
+
+    public function getCount($where = array())
+    {
+        $select = "SELECT * FROM products WHERE deleted='0'";
+        $result = mysqli_query($this->db,$select); 
+        $data = array();
+        $count = mysqli_num_rows($result);
+        return $count;
     }
 
     

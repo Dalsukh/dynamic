@@ -5,7 +5,7 @@ INSERT INTO `category` (`id`, `name`, `logo`, `keywords`, `status`, `created_at`
 */
 $input = new Input();
 $product = new Product($db);
-$products = $product->index($data = array('user_id'=>"1","type"=>"Popular"));
+$products = $product->index($data = array('user_id'=>"1","type"=>"Popular"),100);
 $products = $products['data'];
 
 $header_fields = array(		
